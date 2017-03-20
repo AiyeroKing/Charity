@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charity.Bll", "Charity.Bll\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charity.Dal", "Charity.Dal\Charity.Dal.csproj", "{31005BE2-448E-4208-A819-0E9310A2035A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "项目设计方案流程图", "项目设计方案流程图", "{15C6C64C-492C-491E-A14A-5AE833C2DA01}"
+	ProjectSection(SolutionItems) = preProject
+		框架流程图例.dgml = 框架流程图例.dgml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
