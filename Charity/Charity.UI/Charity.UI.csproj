@@ -111,7 +111,6 @@
     <Compile Include="Configuration\BundleConfig.cs" />
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
-    <Compile Include="Controllers\Foreground\Contact\ContactController.cs" />
     <Compile Include="Controllers\Foreground\Home\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -150,7 +149,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Contact\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
