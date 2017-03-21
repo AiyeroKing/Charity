@@ -21,11 +21,15 @@ namespace Charity.UI
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/iview.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/css/bootstrap.css",
-                      "~/Content/css/site.css"));
+                      "~/Content/css/iview.css",
+                      "~/Content/css/Layout.css"));
+
+            
         }
     }
 }

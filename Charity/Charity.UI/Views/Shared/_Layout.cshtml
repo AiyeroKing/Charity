@@ -8,36 +8,52 @@
     <!--网站图标设定-->
     <link rel="shortcut icon" href="~/Content/icon/favicon.ico" />
     @Styles.Render("~/Content/css")
-    @*@Scripts.Render("~/bundles/modernizr")*@
+    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                    @*<li>@Html.ActionLink("联系方式", "Contact", "Contact")</li>*@
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
-        </footer>
+  
+    <div style="width:100%;height:200px; background-color:cyan">
+        aaa
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
+
+
+
+        @*<div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>*@
+        @*<div class="container body-content">*@
+            @RenderBody()
+            @*<hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year 中国义卖行业协会在线网络义卖平台</p>
+            </footer>
+        </div>*@
+
+
+
+
+        @*<li>@Html.ActionLink("联系方式", "Contact", "Contact")</li>*@
+        <!--jquery.JS导入-->
+        @Scripts.Render("~/bundles/jquery")
+        <!--bootstrap.JS导入-->
+        @Scripts.Render("~/bundles/bootstrap")
+        <!--iview.JS导入-->
+        @Scripts.Render("~/bundles/iview")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
