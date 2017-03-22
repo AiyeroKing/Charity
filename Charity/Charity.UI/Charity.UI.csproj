@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -118,11 +119,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\bootstrap.css" />
-    <Content Include="Content\css\iview.css" />
-    <Content Include="Content\css\Layout.css" />
+    <Content Include="Content\css\bootstrap\bootstrap.css" />
+    <Content Include="Content\css\iview\iview.css" />
+    <Content Include="Content\css\Foreground\Layout.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\icon\favicon.ico" />
+    <Content Include="Content\js\bootstrap\bootstrap.js" />
+    <Content Include="Content\js\bootstrap\jquery.js" />
+    <Content Include="Content\js\iview\iview.js" />
+    <Content Include="Content\js\iview\vue.js" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -154,7 +159,10 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\css\Background\" />
     <Folder Include="Content\fonts\image\" />
+    <Folder Include="Content\js\Background\" />
+    <Folder Include="Content\js\Foreground\" />
     <Folder Include="Controllers\Background\" />
     <Folder Include="DataBase\" />
   </ItemGroup>
