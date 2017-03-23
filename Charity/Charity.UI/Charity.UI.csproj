@@ -123,7 +123,6 @@
     <Content Include="Content\css\iview\iview.css" />
     <Content Include="Content\css\Foreground\Layout.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\icon\architecture_64px_28898_easyicon.net.ico" />
     <Content Include="Content\icon\favicon.ico" />
     <Content Include="Content\img\Layout\png\addline_png.png" />
     <Content Include="Content\img\Layout\png\china_png.png" />
@@ -136,6 +135,9 @@
     <Content Include="Content\img\Layout\png\weibopng_black.png" />
     <Content Include="Content\img\Layout\png\weixinpng.png" />
     <Content Include="Content\img\Layout\png\weixinpng_black.png" />
+    <Content Include="Content\img\Layout\QR Code\QR_QQ.png" />
+    <Content Include="Content\img\Layout\QR Code\QR_weibo.png" />
+    <Content Include="Content\img\Layout\QR Code\QR_weixin.png" />
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
     <Content Include="Content\js\Foreground\LayoutJS.js" />
@@ -189,8 +191,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>Content\icon\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

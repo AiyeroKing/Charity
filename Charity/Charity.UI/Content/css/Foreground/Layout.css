@@ -151,13 +151,6 @@ a {
     margin-top: 0.58em;
     right: 56%;
 }
-/*信息--小图标--无色图片--属性*/
-.Messagepng_black {
-    position: absolute;
-    width: 5%;
-    margin-top: 0.58em;
-    right: 56%;
-}
 /*QQ等图标有色属性*/
 .QQpng {
     padding-left: 4em;
@@ -165,31 +158,6 @@ a {
     padding-bottom: 0.3em;
     width: 5%;
 }
-/*QQ无色图标属性*/
-.QQpng_black {
-    position: absolute;
-    width: 5.6%;
-    margin-top: 0.3em;
-    right: 5.6em;
-}
-/*微信无色图标属性*/
-.weixinpng_black {
-    position: absolute;
-    width: 5.5%;
-    margin-top: 0.3em;
-    right: 11.5em;
-}
-/*微博无色图标属性*/
-.weibopng_black {
-    position: absolute;
-    width: 5.5%;
-    margin-top: 0.4em;
-    right: -0.1em;
-}
-/*鼠标移动到图标时隐藏无色图标属性*/
-.QQpng_black:hover, .Messagepng_black:hover, .weixinpng_black:hover, .weibopng_black:hover {
-        display: none;
-    }
 /*分隔线-div-属性*/
 .fenge_div {
     position: absolute;
@@ -229,6 +197,42 @@ a {
         letter-spacing: 2px;
         color: #707070;
         font-weight: 500;
+    }
+/*-id--弹出二维码--微信--div--*/
+#Charityweixin {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    margin-top: -0.8em;
+    right: 10.4em;
+}
+/*-id--弹出二维码--微信--图片--*/
+#Charityweixin > img {
+        width: 50%;
+    }
+/*-id--弹出二维码--QQ--div--*/
+#Charityqq {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    margin-top: -0.8em;
+    right: 4.8em;
+}
+/*-id--弹出二维码--QQ--图片--*/
+#Charityqq > img {
+        width: 50%;
+    }
+/*-id--弹出二维码--微博--div--*/
+#Charityweibo {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    margin-top: -0.8em;
+    right: -1em;
+}
+/*-id--弹出二维码--微博--图片--*/
+#Charityweibo > img {
+        width: 50%;
     }
 /*透明导航栏底色*/
 .nvb_black {
