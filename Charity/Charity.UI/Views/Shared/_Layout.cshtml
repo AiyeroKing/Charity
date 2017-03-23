@@ -1,59 +1,51 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站义卖系统 - @ViewBag.Title </title>
-    <!--网站图标设定-->
-    <link rel="shortcut icon" href="~/Content/icon/favicon.ico" />
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8">
+    <title>中国义卖网</title>
+    <link href="~/Content/css/Foreground/Layout.css" rel="stylesheet" />
 </head>
 <body>
-  
-    <div style="width:100%;height:200px; background-color:cyan">
-        aaa
+    <div class="topside_bottom">
+    </div>
+    <div class="topside">
+        <div class="topside_left">
+            <img class="left_png" src="~/Content/img/Layout/png/starpng.png" />
+            <div class="left_font"> <a>中国最具权威的慈善义卖网站,欢迎您的到来!</a></div>
+        </div>
+        <div class="topside_right">
+            <a href="#"><img class="Messagepng" src="~/Content/img/Layout/png/Message_png.png" ></a>
+
+            <a href="#"><img class="Messagepng_black" src="~/Content/img/Layout/png/Message_png_black.png"></a>
+            <div class="png_display">
+                <a href="#"><img class="QQpng" src="~/Content/img/Layout/png/weixinpng.png"></a>
+                <a href="#"><img class="weixinpng_black" src="~/Content/img/Layout/png/weixinpng_black.png"></a>
+                <div class="png_size1"><a href="#">微信公众</a></div>
+                <a href="#"><img class="QQpng" src="~/Content/img/Layout/png/QQpng.png"></a>
+                <a href="#"><img class="QQpng_black" src="~/Content/img/Layout/png/QQpng_black.png"></a>
+                <div class="png_size2"><a href="#">QQ联系</a></div>
+                <a href="#"><img class="QQpng" src="~/Content/img/Layout/png/weibopng.png"></a>
+                <a href="#"><img class="weibopng_black" src="~/Content/img/Layout/png/weibopng_black.png"></a>
+                <div class="png_size3"><a href="#">微博关注</a></div>
+                <div class="fenge_div">
+                    <span class="fenge"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chinapng">
+        <span>语言:</span>
+        <img src="~/Content/img/Layout/png/china_png.png">
+    </div>
+    <div class="addlinepng">
+        <img src="~/Content/img/Layout/png/addline_png.png">
+    </div>
+   
+
+    <div class="nvb_black">
     </div>
 
-
-
-
-
-        @*<div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>*@
-        @*<div class="container body-content">*@
-            @RenderBody()
-            @*<hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year 中国义卖行业协会在线网络义卖平台</p>
-            </footer>
-        </div>*@
-
-
-
-
-        @*<li>@Html.ActionLink("联系方式", "Contact", "Contact")</li>*@
-        <!--jquery.JS导入-->
-        @Scripts.Render("~/bundles/jquery")
-        <!--bootstrap.JS导入-->
-        @Scripts.Render("~/bundles/bootstrap")
-        <!--iview.JS导入-->
-        @Scripts.Render("~/bundles/iview")
-        @RenderSection("scripts", required: false)
+        @RenderBody()
+      
 </body>
 </html>

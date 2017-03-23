@@ -123,9 +123,22 @@
     <Content Include="Content\css\iview\iview.css" />
     <Content Include="Content\css\Foreground\Layout.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\icon\architecture_64px_28898_easyicon.net.ico" />
     <Content Include="Content\icon\favicon.ico" />
+    <Content Include="Content\img\Layout\png\addline_png.png" />
+    <Content Include="Content\img\Layout\png\china_png.png" />
+    <Content Include="Content\img\Layout\png\Message_png.png" />
+    <Content Include="Content\img\Layout\png\Message_png_black.png" />
+    <Content Include="Content\img\Layout\png\QQpng.png" />
+    <Content Include="Content\img\Layout\png\QQpng_black.png" />
+    <Content Include="Content\img\Layout\png\starpng.png" />
+    <Content Include="Content\img\Layout\png\weibopng.png" />
+    <Content Include="Content\img\Layout\png\weibopng_black.png" />
+    <Content Include="Content\img\Layout\png\weixinpng.png" />
+    <Content Include="Content\img\Layout\png\weixinpng_black.png" />
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
+    <Content Include="Content\js\Foreground\LayoutJS.js" />
     <Content Include="Content\js\iview\iview.js" />
     <Content Include="Content\js\iview\vue.js" />
     <Content Include="Global.asax" />
@@ -162,7 +175,6 @@
     <Folder Include="Content\css\Background\" />
     <Folder Include="Content\fonts\image\" />
     <Folder Include="Content\js\Background\" />
-    <Folder Include="Content\js\Foreground\" />
     <Folder Include="Controllers\Background\" />
     <Folder Include="DataBase\" />
   </ItemGroup>

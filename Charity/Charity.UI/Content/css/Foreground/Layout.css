@@ -1,1 +1,243 @@
-﻿
+﻿/*全局body标签属性*/
+body {
+    margin: 0;
+    padding: 0;
+}
+/*全局a标签属性*/
+a {
+    text-decoration: none;
+}
+/*最上层导航栏底色属性*/
+.topside_bottom {
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    opacity: 0.7;
+    background-color: #EEEE00;
+    border-bottom: solid red;
+    z-index: -10;
+}
+/*最上层导航栏表层属性*/
+.topside {
+    width: 100%;
+    height: 2em;
+    border-bottom: solid cyan;
+}
+/*最上层导航栏左边表层属性*/
+.topside_left {
+    position: absolute;
+    width: 30%;
+    height: 2em;
+    left: 15%;
+}
+/*最上层导航栏---左边--表层--文字div--属性*/
+.left_font {
+    position: absolute;
+    margin-top: -2em;
+    padding-left: 2em;
+}
+/*最上层导航栏---左边--表层--字体--属性*/
+    .left_font > a {
+        font-size: 0.82em;
+        font-family: "MicrosoftYaHei";
+        letter-spacing: 2px;
+        color: #707070;
+        font-weight: 500;
+        animation: changesizecolor 8s linear 0s infinite;
+    }
+/*最上层导航栏---左边--表层--字体动画--属性*/
+@keyframes changesizecolor {
+    0% {
+        color: #333;
+    }
+
+    25% {
+        color: #ff0;
+    }
+
+    50% {
+        color: #f60;
+    }
+
+    75% {
+        color: #cf0;
+    }
+
+    100% {
+        color: #707070;
+    }
+}
+/*最上层导航栏---左边--表层--星星图片--属性*/
+.left_png {
+    padding: 0.5em;
+    width: 4%;
+    animation: changepng 3s linear 0s infinite;
+}
+/*最上层导航栏---左边--表层--星星图片动画--属性*/
+@keyframes changepng {
+    0% {
+        opacity: 1.0; /*透明度*/
+    }
+
+    25% {
+        opacity: 0.5; /*透明度*/
+    }
+
+    50% {
+        opacity: 0; /*透明度*/
+    }
+
+    75% {
+        opacity: 0.5; /*透明度*/
+    }
+
+    100% {
+        opacity: 1.0; /*透明度*/
+    }
+}
+/*最上层导航栏右边边表层属性*/
+.topside_right {
+    position: absolute;
+    width: 30%;
+    height: 2em;
+    text-align: right;
+    right: 13%;
+}
+/*文字--微信--div*/
+.png_size1 {
+    position: absolute;
+    margin-top: -1.95em;
+    right: 7.8em;
+}
+/*字体--微信--a*/
+.png_size1 > a {
+        font-size: 0.8em;
+        color: #707070;
+    }
+/*文字--QQ--div*/
+.png_size2 {
+    position: absolute;
+    margin-top: -1.95em;
+    right: 2.5em;
+}
+/*字体--QQ--a*/
+.png_size2 > a {
+        font-size: 0.8em;
+        color: #707070;
+    }
+/*文字--微博--div*/
+.png_size3 {
+    position: absolute;
+    margin-top: -1.95em;
+    right: -3.5em;
+}
+/*字体--微博--a*/
+.png_size3 > a {
+        font-size: 0.8em;
+        color: #707070;
+    }
+/*文字--所有--移动改变属性--hover*/
+.png_size1 > a:hover, .png_size2 > a:hover, .png_size3 > a:hover {
+            color: cyan;
+        }
+/*文字--所有--点击改变属性--active*/
+.png_size1 > a:active, .png_size2 > a:active, .png_size3 > a:active {
+            color: red;
+        }
+/*信息--小图标--有色图片--属性*/
+.Messagepng {
+    position: absolute;
+    width: 4.5%;
+    margin-top: 0.58em;
+    right: 56%;
+}
+/*信息--小图标--无色图片--属性*/
+.Messagepng_black {
+    position: absolute;
+    width: 5%;
+    margin-top: 0.58em;
+    right: 56%;
+}
+/*QQ等图标有色属性*/
+.QQpng {
+    padding-left: 4em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    width: 5%;
+}
+/*QQ无色图标属性*/
+.QQpng_black {
+    position: absolute;
+    width: 5.6%;
+    margin-top: 0.3em;
+    right: 5.6em;
+}
+/*微信无色图标属性*/
+.weixinpng_black {
+    position: absolute;
+    width: 5.5%;
+    margin-top: 0.3em;
+    right: 11.5em;
+}
+/*微博无色图标属性*/
+.weibopng_black {
+    position: absolute;
+    width: 5.5%;
+    margin-top: 0.4em;
+    right: -0.1em;
+}
+/*鼠标移动到图标时隐藏无色图标属性*/
+.QQpng_black:hover, .Messagepng_black:hover, .weixinpng_black:hover, .weibopng_black:hover {
+        display: none;
+    }
+/*分隔线-div-属性*/
+.fenge_div {
+    position: absolute;
+    margin-top: -1.8em;
+    right: 51%;
+}
+/*分隔线--属性*/
+.fenge {
+    padding: 12px 6px 1px 6px;
+    margin-left: 6px;
+    font-size: 0;
+    box-shadow: 1px 0px 0px black;
+}
+/*最左上角--图标--属性*/
+.addlinepng {
+    position: absolute;
+    margin-top: -2.2em;
+    margin-left: -0.2em;
+}
+/*最右上角--国旗图标--div*/
+.chinapng {
+    height: 35px;
+    width: 90px;
+    margin-left: 93%;
+    margin-top: -2em;
+    z-index: 2;
+}
+/*最右上角--国旗图标--属性*/
+.chinapng > img {
+        position: absolute;
+        width: 2.8%;
+    }
+/*最右上角--语言文字--属性*/
+.chinapng > span {
+        font-size: 0.82em;
+        font-family: "MicrosoftYaHei";
+        letter-spacing: 2px;
+        color: #707070;
+        font-weight: 500;
+    }
+/*透明导航栏底色*/
+.nvb_black {
+    width: 100%;
+    position:fixed;
+    background-color: black;
+    height: 5em;
+    opacity: 0.8; /*透明度*/
+    margin-top:-0.3em;
+    z-index: 10;
+
+}
