@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>中国义卖网</title>
     <link rel="Shortcut Icon" href="~/Content/icon/favicon.ico" />
+    @*导入bootstarp.css样式*@
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
     @*导入自定义的css样式*@
     <link href="~/Content/css/Foreground/Layout.css" rel="stylesheet" />
     @*导入JQ文件*@
@@ -34,6 +36,12 @@
                     <div class="fenge_div">
                         <span class="fenge"></span>
                     </div>
+                    <div class="fenge1_div">
+                        <span class="fenge"></span>
+                    </div>
+                    <div class="fenge2_div">
+                        <span class="fenge"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,5 +70,10 @@
     <center>
         @RenderBody()
     </center>
+
+    @*导入JQ.js文件*@
+    <script src="~/Content/js/bootstrap/jquery.js"></script>
+    @*导入Bootstarp.js文件*@
+    <script src="~/Content/js/bootstrap/bootstrap.js"></script>
 </body>
 </html>

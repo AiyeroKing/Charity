@@ -4,14 +4,14 @@ body {
     padding: 0;
 }
 /*全局a标签属性*/
-a {
+a{
     text-decoration: none;
 }
 /*最上层导航栏底色属性*/
 .topside_bottom {
     position: absolute;
     width: 100%;
-    height: 2em;
+    height: 3em;
     opacity: 0.3;
     border-bottom: 2px solid #C1C1C1;
     z-index: -10;
@@ -20,28 +20,26 @@ a {
 /*最上层导航栏表层属性*/
 .topside {
     width: 100%;
-    height: 2em;
-    
+    height:3em;
 }
 /*最上层导航栏左边表层属性*/
 .topside_left {
     position: absolute;
     width: 30%;
-    height: 2em;
-    left: 10%;
+    left: 12%;
 }
 /*最上层导航栏---左边--表层--文字div--属性*/
 .left_font {
     position: absolute;
-    margin-top: -2em;
-    padding-left: 2em;
+    margin-top: -1.8em;
+    padding-left: 3em;
     animation: changesizecolor 8s linear 0s infinite;
 }
 /*最上层导航栏---左边--表层--字体--属性*/
  .left_font > a {
-        font-size: 0.82em;
+        font-size: 1.2em;
         font-family: "MicrosoftYaHei";
-        letter-spacing: 2px;
+        letter-spacing:0.25em;
         color: #707070;
         font-weight: 500;
         animation: changesizecolor 6s linear 1.5s infinite;
@@ -66,9 +64,8 @@ a {
 }
 /*最上层导航栏---左边--表层--星星图片--属性*/
 .left_png {
-    padding: 0.5em;
-    width: 4%;
-    animation: changepng 3s linear 0s infinite;
+    width: 5.8%;
+    animation: changepng 4s linear 0s infinite;
 }
 /*最上层导航栏---左边--表层--星星图片动画--属性*/
 @keyframes changepng {
@@ -103,35 +100,35 @@ a {
 /*文字--微信--div*/
 .png_size1 {
     position: absolute;
-    margin-top: -1.75em;
-    right: 7.2em;
+    margin-top:-1.8em;
+    right: 8.5em;
 }
 /*字体--微信--a*/
 .png_size1 > a {
-        font-size: 0.8em;
+        font-size: 1em;
         color: #707070;
     }
 /*文字--QQ--div*/
 .png_size2 {
     position: absolute;
-    margin-top: -1.75em;
-    right: 2.2em;
+    margin-top: -1.8em;
+    right: 2.5em;
 }
 /*字体--QQ--a*/
 .png_size2 > a {
-        font-size: 0.8em;
+        font-size: 1em;
         color: #707070;
     }
 /*文字--微博--div*/
 .png_size3 {
     position: absolute;
     margin-top: -1.75em;
-    right: -3.5em;
+    right: -4.3em;
     font-family: 'Microsoft YaHei'；
 }
 /*字体--微博--a*/
 .png_size3 > a {
-        font-size: 0.8em;
+        font-size: 1em;
         color: #707070;
     }
 /*文字--所有--移动改变属性--hover*/
@@ -146,50 +143,61 @@ a {
 .Messagepng {
     position: absolute;
     width: 4%;
-    margin-top: 0.58em;
-    right: 51%;
+    margin-top: 0.75em;
+    right: 38%;
 }
 /*QQ等图标有色属性*/
 .QQpng {
     padding-left: 4em;
-    padding-top: 0.45em;
-    padding-bottom: 0.3em;
-    width: 3.6%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 13%;
 }
 /*分隔线-div-属性*/
 .fenge_div {
     position: absolute;
-    margin-top: -1.6em;
+    margin-top: -1.92em;
+    right: -11%;
+}
+/*分隔线-div-属性*/
+.fenge1_div {
+    position: absolute;
+    margin-top: -1.92em;
     right: 45%;
+}
+/*分隔线-div-属性*/
+.fenge2_div {
+    position: absolute;
+    margin-top: -2em;
+    right: 35%;
 }
 /*分隔线--属性*/
 .fenge {
-    padding: 12px 4px 1px 6px;
-    margin-left: 6px;
+    padding: 14px 0px 9px 2px;
+    margin-left: 7px;
     font-size: 0;
-    box-shadow: 1px 0px 0px black;
+    box-shadow: 1.1px 0px 0px #ABABAB;
 }
-/*最左上角--图标--属性*/
 /*最右上角--国旗图标--div*/
 .chinapng {
     position: relative;
     height: 35px;
     width: 80px;
-    margin-left: 93%;
-    margin-top: -1.7em;
+    margin-left: 91%;
+    margin-top: -2.3em;
     z-index: 2;
 }
 /*最右上角--国旗图标--属性*/
 .chinapng > img {
         position: absolute;
         width: 50%;
-        margin-top: -0.1em;
+        margin-top: -0.5em;
     }
 /*最右上角--语言文字--属性*/
 .chinapng > span {
-        font-size: 0.8em;
+        font-size: 1.25em;
         font-family: "MicrosoftYaHei";
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         color: #707070;
         font-weight: 500;
     }

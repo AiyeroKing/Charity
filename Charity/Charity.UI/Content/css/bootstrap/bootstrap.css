@@ -57,18 +57,11 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-}
-
 a:focus {
   outline: thin dotted;
 }
 
 a:active,
-a:hover {
-  outline: 0;
-}
 
 h1 {
   margin: 0.67em 0;
@@ -310,13 +303,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
-}
 
 input,
 button,
@@ -334,16 +320,6 @@ textarea {
   background-image: none;
 }
 
-a {
-  color: #428bca;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #2a6496;
-  text-decoration: underline;
-}
 
 a:focus {
   outline: thin dotted #333;
