@@ -1,4 +1,5 @@
-﻿/*全局body标签属性*/
+﻿
+/*全局body标签属性*/
 body {
     margin: 0;
     padding: 0;
@@ -49,15 +50,19 @@ a{
     0% {
         color: #8B8B83;
     }
+
     25% {
         color: #528B8B;
     }
+
     50% {
         color: #EEDFCC;
     }
+
     75% {
         color: #cf0;
     }
+
     100% {
         color: #707070;
     }
@@ -133,12 +138,14 @@ a{
     }
 /*文字--所有--移动改变属性--hover*/
 .png_size1 > a:hover, .png_size2 > a:hover, .png_size3 > a:hover {
-            color: cyan;
-        }
+        color: cyan;
+        transition: all 0.15s linear;
+    }
 /*文字--所有--点击改变属性--active*/
 .png_size1 > a:active, .png_size2 > a:active, .png_size3 > a:active {
-            color: red;
-        }
+        color: red;
+        transition: all 0.15s linear;
+    }
 /*信息--小图标--有色图片--属性*/
 .Messagepng {
     position: absolute;
@@ -173,10 +180,10 @@ a{
 }
 /*分隔线--属性*/
 .fenge {
-    padding: 14px 0px 9px 2px;
+    padding: 22px 0px 9px 2px;
     margin-left: 7px;
     font-size: 0;
-    box-shadow: 1.1px 0px 0px #ABABAB;
+    box-shadow: 1.1px 0px 0px #E5E5E5;
 }
 /*最右上角--国旗图标--div*/
 .chinapng {
@@ -206,11 +213,12 @@ a{
     display: none;
     position: absolute;
     z-index: 100;
-    margin-top: -0.8em;
+    margin-top: -2em;
     right: 7.1em;
+    transition: all 2s linear;
 }
-/*-id--弹出二维码--微信--图片--*/
-#Charityweixin > img {
+/*-id--弹出二维码--微信--微博--QQ--图片--*/
+#Charityweixin > img, #Charityqq > img, #Charityweibo > img {
         width: 50%;
     }
 /*-id--弹出二维码--QQ--div--*/
@@ -218,26 +226,20 @@ a{
     display: none;
     position: absolute;
     z-index: 100;
-    margin-top: -0.8em;
+    margin-top: -2em;
     right: 2.5em;
+    transition: all 0.3s linear;
 }
-/*-id--弹出二维码--QQ--图片--*/
-#Charityqq > img {
-        width: 50%;
-    }
 /*-id--弹出二维码--微博--div--*/
 #Charityweibo {
     display: none;
     position: absolute;
     text-align: right;
     z-index: 100;
-    margin-top: -0.8em;
-    right: 6em;
+    margin-top: -2em;
+    right: 10em;
+    transition: all 0.3s linear;
 }
-/*-id--弹出二维码--微博--图片--*/
-#Charityweibo > img {
-        width: 50%;
-    }
 /*透明导航栏底色*/
 .nvb_black {
     width: 100%;
