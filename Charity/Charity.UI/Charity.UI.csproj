@@ -112,7 +112,8 @@
     <Compile Include="Configuration\BundleConfig.cs" />
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
-    <Compile Include="Controllers\Foreground\Home\HomeController.cs" />
+    <Compile Include="Controllers\Foreground\HomeController.cs" />
+    <Compile Include="Controllers\Foreground\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -141,8 +142,10 @@
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
     <Content Include="Content\js\Foreground\LayoutJS.js" />
+    <Content Include="Content\js\Foreground\UserJS.js" />
     <Content Include="Content\js\iview\iview.js" />
     <Content Include="Content\js\iview\vue.js" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -160,7 +163,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -171,13 +176,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\HomeIndex.cshtml" />
+    <Content Include="Views\User\UserIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\css\Background\" />
     <Folder Include="Content\fonts\image\" />
     <Folder Include="Content\js\Background\" />
     <Folder Include="Controllers\Background\" />
+    <Folder Include="Controllers\Foreground\IBLL\" />
     <Folder Include="DataBase\" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +192,23 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Charity.Bll\Charity.Bll.csproj">
+      <Project>{6d86c1a1-9bf9-47e2-a829-42a22b203721}</Project>
+      <Name>Charity.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Charity.Dal\Charity.Dal.csproj">
+      <Project>{31005BE2-448E-4208-A819-0E9310A2035A}</Project>
+      <Name>Charity.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Charity.Model\Charity.Model.csproj">
+      <Project>{c528cc8f-3f9b-43e7-ac54-681ac24f9ac7}</Project>
+      <Name>Charity.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

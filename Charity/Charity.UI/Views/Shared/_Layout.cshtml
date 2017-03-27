@@ -6,6 +6,8 @@
     <link rel="Shortcut Icon" href="~/Content/icon/favicon.ico" />
     @*导入自定义的css样式*@
     <link href="~/Content/css/Foreground/Layout.css" rel="stylesheet" />
+    @*导入JQ文件*@
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
     @*导入自定义的js文件*@
     <script src="~/Content/js/Foreground/LayoutJS.js" defer></script>
 </head>
@@ -14,7 +16,7 @@
         <div class="topside_bottom"></div>
         <div class="topside">
             <div class="topside_left">
-                <img class="left_png" src="~/Content/img/Layout/png/starpng.png" />
+                <img class="left_png" src="~/Content/icon/favicon.ico" />
                 <div class="left_font"> <a>中国最具权威的慈善义卖网站,欢迎您的到来!</a></div>
             </div>
             <div class="topside_right">
@@ -39,25 +41,26 @@
             <span>语言:</span>
             <img src="~/Content/img/Layout/png/china_png.png">
         </div>
-        <div class="addlinepng">
-            <img src="~/Content/img/Layout/png/addline_png.png">
-        </div>
         <div id="Charityqq">
             <img src="~/Content/img/Layout/QR Code/QR_QQ.png">
         </div>
-
         <div id="Charityweixin">
             <img src="~/Content/img/Layout/QR Code/QR_weixin.png" />
         </div>
-
         <div id="Charityweibo">
             <img src="~/Content/img/Layout/QR Code/QR_weibo.png" />
         </div>
     </div>
-
-    <div class="nvb_black">
+    <div class="nvb_black" style="display:none;">
     </div>
-
-    @RenderBody()
+    <div>
+        <ul>
+            @*<li>@Html.ActionLink("主页", "HomeIndex", "Home")</li>*@
+            @*<li>@Html.ActionLink("登录", "UserIndex", "User")</li>*@
+        </ul>
+    </div>
+    <center>
+        @RenderBody()
+    </center>
 </body>
 </html>

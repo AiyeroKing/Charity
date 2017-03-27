@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="User\UserBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Charity.Dal\Charity.Dal.csproj">
+      <Project>{31005BE2-448E-4208-A819-0E9310A2035A}</Project>
+      <Name>Charity.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Charity.Model\Charity.Model.csproj">
+      <Project>{C528CC8F-3F9B-43E7-AC54-681AC24F9AC7}</Project>
+      <Name>Charity.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

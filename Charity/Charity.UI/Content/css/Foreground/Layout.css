@@ -12,57 +12,54 @@ a {
     position: absolute;
     width: 100%;
     height: 2em;
-    opacity: 0.7;
-    background-color: #EEEE00;
-    border-bottom: solid red;
+    opacity: 0.3;
+    border-bottom: 2px solid #C1C1C1;
     z-index: -10;
+    background-color: #E8E8E8;
 }
 /*最上层导航栏表层属性*/
 .topside {
     width: 100%;
     height: 2em;
-    border-bottom: solid cyan;
+    
 }
 /*最上层导航栏左边表层属性*/
 .topside_left {
     position: absolute;
     width: 30%;
     height: 2em;
-    left: 15%;
+    left: 10%;
 }
 /*最上层导航栏---左边--表层--文字div--属性*/
 .left_font {
     position: absolute;
     margin-top: -2em;
     padding-left: 2em;
+    animation: changesizecolor 8s linear 0s infinite;
 }
 /*最上层导航栏---左边--表层--字体--属性*/
-    .left_font > a {
+ .left_font > a {
         font-size: 0.82em;
         font-family: "MicrosoftYaHei";
         letter-spacing: 2px;
         color: #707070;
         font-weight: 500;
-        animation: changesizecolor 8s linear 0s infinite;
+        animation: changesizecolor 6s linear 1.5s infinite;
     }
 /*最上层导航栏---左边--表层--字体动画--属性*/
 @keyframes changesizecolor {
     0% {
-        color: #333;
+        color: #8B8B83;
     }
-
     25% {
-        color: #ff0;
+        color: #528B8B;
     }
-
     50% {
-        color: #f60;
+        color: #EEDFCC;
     }
-
     75% {
         color: #cf0;
     }
-
     100% {
         color: #707070;
     }
@@ -106,8 +103,8 @@ a {
 /*文字--微信--div*/
 .png_size1 {
     position: absolute;
-    margin-top: -1.95em;
-    right: 7.8em;
+    margin-top: -1.75em;
+    right: 7.2em;
 }
 /*字体--微信--a*/
 .png_size1 > a {
@@ -117,8 +114,8 @@ a {
 /*文字--QQ--div*/
 .png_size2 {
     position: absolute;
-    margin-top: -1.95em;
-    right: 2.5em;
+    margin-top: -1.75em;
+    right: 2.2em;
 }
 /*字体--QQ--a*/
 .png_size2 > a {
@@ -128,8 +125,9 @@ a {
 /*文字--微博--div*/
 .png_size3 {
     position: absolute;
-    margin-top: -1.95em;
+    margin-top: -1.75em;
     right: -3.5em;
+    font-family: 'Microsoft YaHei'；
 }
 /*字体--微博--a*/
 .png_size3 > a {
@@ -147,52 +145,49 @@ a {
 /*信息--小图标--有色图片--属性*/
 .Messagepng {
     position: absolute;
-    width: 4.5%;
+    width: 4%;
     margin-top: 0.58em;
-    right: 56%;
+    right: 51%;
 }
 /*QQ等图标有色属性*/
 .QQpng {
     padding-left: 4em;
-    padding-top: 0.3em;
+    padding-top: 0.45em;
     padding-bottom: 0.3em;
-    width: 5%;
+    width: 3.6%;
 }
 /*分隔线-div-属性*/
 .fenge_div {
     position: absolute;
-    margin-top: -1.8em;
-    right: 51%;
+    margin-top: -1.6em;
+    right: 45%;
 }
 /*分隔线--属性*/
 .fenge {
-    padding: 12px 6px 1px 6px;
+    padding: 12px 4px 1px 6px;
     margin-left: 6px;
     font-size: 0;
     box-shadow: 1px 0px 0px black;
 }
 /*最左上角--图标--属性*/
-.addlinepng {
-    position: absolute;
-    margin-top: -2.2em;
-    margin-left: -0.2em;
-}
 /*最右上角--国旗图标--div*/
 .chinapng {
+    position: relative;
     height: 35px;
-    width: 90px;
+    width: 80px;
     margin-left: 93%;
-    margin-top: -2em;
+    margin-top: -1.7em;
     z-index: 2;
 }
 /*最右上角--国旗图标--属性*/
 .chinapng > img {
         position: absolute;
-        width: 2.8%;
+        width: 50%;
+        margin-top: -0.1em;
     }
 /*最右上角--语言文字--属性*/
 .chinapng > span {
-        font-size: 0.82em;
+        font-size: 0.8em;
         font-family: "MicrosoftYaHei";
         letter-spacing: 2px;
         color: #707070;
@@ -204,7 +199,7 @@ a {
     position: absolute;
     z-index: 100;
     margin-top: -0.8em;
-    right: 10.4em;
+    right: 7.1em;
 }
 /*-id--弹出二维码--微信--图片--*/
 #Charityweixin > img {
@@ -216,7 +211,7 @@ a {
     position: absolute;
     z-index: 100;
     margin-top: -0.8em;
-    right: 4.8em;
+    right: 2.5em;
 }
 /*-id--弹出二维码--QQ--图片--*/
 #Charityqq > img {
@@ -226,9 +221,10 @@ a {
 #Charityweibo {
     display: none;
     position: absolute;
+    text-align: right;
     z-index: 100;
     margin-top: -0.8em;
-    right: -1em;
+    right: 6em;
 }
 /*-id--弹出二维码--微博--图片--*/
 #Charityweibo > img {
@@ -237,11 +233,10 @@ a {
 /*透明导航栏底色*/
 .nvb_black {
     width: 100%;
-    position:fixed;
+    position: fixed;
     background-color: black;
     height: 5em;
     opacity: 0.8; /*透明度*/
-    margin-top:-0.3em;
+    margin-top: -0.3em;
     z-index: 10;
-
 }

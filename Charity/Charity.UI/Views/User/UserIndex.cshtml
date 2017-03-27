@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "UserIndex";
+}
+<script src="~/Content/js/Foreground/UserJS.js" defer></script>
+<h2>用户注册</h2>
+
+
+
+<!--增加账户信息-开始-->
+
+<from  id="UserRegisterForm" method="post">
+    <div>
+      
+        <label>账号</label>
+        <input type="text" name="UserName"/>
+    </div>
+    <div>
+        <label>密码</label>
+        <input type="password" name="PassWord" />
+    </div>
+    <input type="button" onclick="user.addUser()" value="提交" />
+</from>
+
+
+
+
+
+<!--增加账户信息-结束-->
+
