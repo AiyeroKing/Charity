@@ -2,78 +2,29 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>中国义卖网</title>
-    <link rel="Shortcut Icon" href="~/Content/icon/favicon.ico" />
-    @*导入bootstarp.css样式*@
+    <title>慈善义卖网</title>
+    <link rel="Shortcut Icon" href="~/favicon.ico" />
+    <!--导入bootstarp.css样式-->
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
-    @*导入自定义的css样式*@
+    <!--导入自定义的css样式-->
     <link href="~/Content/css/Foreground/Layout.css" rel="stylesheet" />
-    @*导入JQ文件*@
+    <!--导入JQ文件-->
     <script src="~/Scripts/jquery-1.10.2.js"></script>
-    @*导入自定义的js文件*@
+    <!--导入自定义的js文件-->
     <script src="~/Content/js/Foreground/LayoutJS.js" defer></script>
 </head>
 <body>
-    <div>
-        <div class="topside_bottom"></div>
-        <div class="topside">
-            <div class="topside_left">
-                <img class="left_png" src="~/Content/icon/favicon.ico" />
-                <div class="left_font"> <a>中国最具权威的慈善义卖网站,欢迎您的到来!</a></div>
-            </div>
-            <div class="topside_right">
-                <a href="#"><img class="Messagepng" src="~/Content/img/Layout/png/Message_png.png"></a>
-                <div class="png_display">
 
-                    <a href="#"><img class="QQpng" src="~/Content/img/Layout/png/weixinpng.png"></a>
-                    <div class="png_size1"><a href="#" onmouseover="Charityover('Charityweixin')" onmouseout="Charityoff('Charityweixin')">微信公众</a></div>
 
-                    <a href="#" onmouseover="Charityover('Charityqq')" onmouseout="Charityoff('Charityqq')"><img class="QQpng" src="~/Content/img/Layout/png/QQpng.png"></a>
-                    <div class="png_size2"><a href="#" onmouseover="Charityover('Charityqq')" onmouseout="Charityoff('Charityqq')">QQ联系</a></div>
-
-                    <a href="#" onmouseover="Charityover('Charityweibo')" onmouseout="Charityoff('Charityweibo')"><img class="QQpng" src="~/Content/img/Layout/png/weibopng.png"></a>
-                    <div class="png_size3"><a href="#" onmouseover="Charityover('Charityweibo')" onmouseout="Charityoff('Charityweibo')">微博关注</a></div>
-                    <div class="fenge_div">
-                        <span class="fenge"></span>
-                    </div>
-                    <div class="fenge1_div">
-                        <span class="fenge"></span>
-                    </div>
-                    <div class="fenge2_div">
-                        <span class="fenge"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="chinapng">
-            <span>语言:</span>
-            <img src="~/Content/img/Layout/png/china_png.png">
-        </div>
-        <div id="Charityqq">
-            <img src="~/Content/img/Layout/QR Code/QR_QQ.png">
-        </div>
-        <div id="Charityweixin">
-            <img src="~/Content/img/Layout/QR Code/QR_weixin.png" />
-        </div>
-        <div id="Charityweibo">
-            <img src="~/Content/img/Layout/QR Code/QR_weibo.png" />
-        </div>
+    <div style="text-align:center">
+            @RenderBody()
     </div>
-    <div class="nvb_black" style="display:none;">
-    </div>
-    <div>
-        <ul>
-            @*<li>@Html.ActionLink("主页", "HomeIndex", "Home")</li>*@
-            @*<li>@Html.ActionLink("登录", "UserIndex", "User")</li>*@
-        </ul>
-    </div>
-    <center>
-        @RenderBody()
-    </center>
 
-    @*导入JQ.js文件*@
+
+
+    <!---导入JQ.js文件-->
     <script src="~/Content/js/bootstrap/jquery.js"></script>
-    @*导入Bootstarp.js文件*@
+    <!--导入Bootstarp.js文件-->
     <script src="~/Content/js/bootstrap/bootstrap.js"></script>
 </body>
 </html>
