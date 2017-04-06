@@ -167,11 +167,9 @@
   <ItemGroup>
     <Folder Include="Content\css\Background\" />
     <Folder Include="Content\fonts\image\" />
-    <Folder Include="Content\img\Layout\png\" />
-    <Folder Include="Content\img\Layout\QR Code\" />
+    <Folder Include="Content\img\Layout\" />
     <Folder Include="Content\js\Background\" />
     <Folder Include="Controllers\Background\" />
-    <Folder Include="Controllers\Foreground\IBLL\" />
     <Folder Include="DataBase\" />
   </ItemGroup>
   <ItemGroup>

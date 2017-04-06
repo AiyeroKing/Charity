@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Charity.Dal
+namespace Dapper
 {
     class SQLHelper
     {
@@ -55,6 +52,6 @@ namespace Charity.Dal
             return sqlread;
         }
 
-        #endregion 
+        #endregion
     }
 }

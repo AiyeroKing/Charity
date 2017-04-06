@@ -13,11 +13,11 @@ namespace Charity.Bll
 
         #region  --对数据库进行增加的操作--
 
-        //UserDal userDal = new UserDal();
-        //public bool AddUserMSG(UserInfo model)
-        //{
-        //    return userDal.AddUserMSG(model);
-        //}
+        UserDal userDal = new UserDal();
+        public bool AddUserMSG(UserInfo model)
+        {
+            return userDal.AddUserMSG(model);
+        }
 
         #endregion
 

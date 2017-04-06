@@ -5,39 +5,39 @@
     <Node Id="(@1 Namespace=Charity.UI)" Category="CodeSchema_Namespace" Bounds="3.84212205188321,16.48483821568,113.046319573333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Charity‎.UI" />
     <Node Id="(@1 Namespace=Charity.UI.Controllers)" Category="CodeSchema_Namespace" Bounds="3.84212205188319,71.42147821568,178.92700416,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Charity‎.UI‎.Controllers" />
     <Node Id="(@3 Namespace=Charity.Dal Type=Class1)" Category="CodeSchema_Class" Bounds="20.4789110740464,-173.47666136192,96.9966666666667,25" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Class1" />
-    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="242.24,110.36,132.976666666667,25" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="3" Group="Collapsed" Label="Charity.UI.dll">
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="248.797516249101,187.143284618798,132.976666666667,25" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="3" Group="Collapsed" Label="Charity.UI.dll" UseManualLocation="True">
       <Category Ref="Category8" />
     </Node>
-    <Node Id="@4" Category="CodeSchema_Assembly" Bounds="-2.8421709430404E-14,0,139.456666666667,25" CodeSchemaProperty_StrongName="Charity.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" FilePath="$(31005be2-448e-4208-a819-0e9310a2035a.OutputPath)" Group="Collapsed" Label="Charity.Dal.dll">
+    <Node Id="@4" Category="CodeSchema_Assembly" Bounds="244.712010752825,-114.563273851198,139.456666666667,25" CodeSchemaProperty_StrongName="Charity.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" FilePath="$(31005be2-448e-4208-a819-0e9310a2035a.OutputPath)" Group="Collapsed" Label="Charity.Dal.dll" UseManualLocation="True">
       <Category Ref="Category1" />
     </Node>
-    <Node Id="@6" Category="CodeSchema_Assembly" Bounds="55.966666666667,165.6,157.523333333333,25" CodeSchemaProperty_StrongName="Charity.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(c528cc8f-3f9b-43e7-ac54-681ac24f9ac7.OutputPath)" Group="Collapsed" Label="Charity.Model.dll">
+    <Node Id="@6" Category="CodeSchema_Assembly" Bounds="-107.698469529694,21.6874775473463,157.523333333333,25" CodeSchemaProperty_StrongName="Charity.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(c528cc8f-3f9b-43e7-ac54-681ac24f9ac7.OutputPath)" Group="Collapsed" Label="Charity.Model.dll" UseManualLocation="True">
       <Category Ref="Category2" />
     </Node>
-    <Node Id="@8" Category="CodeSchema_Assembly" Bounds="211.525,55.12,134.406666666667,25" CodeSchemaProperty_StrongName="Charity.Bll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(6d86c1a1-9bf9-47e2-a829-42a22b203721.OutputPath)" Group="Collapsed" Label="Charity.Bll.dll">
+    <Node Id="@8" Category="CodeSchema_Assembly" Bounds="247.525,29.52,134.406666666667,25" CodeSchemaProperty_StrongName="Charity.Bll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(6d86c1a1-9bf9-47e2-a829-42a22b203721.OutputPath)" Group="Collapsed" Label="Charity.Bll.dll" UseManualLocation="True">
       <Category Ref="Category10" />
     </Node>
     <Node Id="@9" Category="CodeSchema_Namespace" Bounds="0.478821396294919,-213.55816,136.996666666667,85.0002" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="Charity‎.Dal" UseManualLocation="True" />
-    <Node Id="Model层" Category="Comment" Bounds="100.211666666667,220.72,69.0333333333333,25.24" />
-    <Node Id="UI设计层，UI表现层" Category="Comment" Bounds="244.241666666667,165.48,128.973333333333,25.24" />
-    <Node Id="业务逻辑层" Category="Comment" Bounds="100.728333333333,110.24,80,25.24" />
-    <Node Id="数据访问层" Category="Comment" Bounds="100.728333333333,55,80,25.24" />
+    <Node Id="Model层" Category="Comment" Bounds="-300.557383201483,23.9788300647266,69.0333333333333,25.24" UseManualLocation="True" />
+    <Node Id="UI设计层，UI表现层" Category="Comment" Bounds="526.601679073772,111.841718073202,128.973333333333,25.24" UseManualLocation="True" />
+    <Node Id="业务逻辑层" Category="Comment" Bounds="568.292224846174,30.2885986374146,80,25.24" UseManualLocation="True" />
+    <Node Id="数据访问层" Category="Comment" Bounds="567.077773179907,-45.1922624670374,80,25.24" UseManualLocation="True" />
   </Nodes>
   <Links>
     <Link Source="@2" Target="(@1 Namespace=::)" Category="Contains" FetchingParent="@2" />
     <Link Source="@2" Target="(@1 Namespace=Charity.UI)" Category="Contains" FetchingParent="@2" />
     <Link Source="@2" Target="(@1 Namespace=Charity.UI.Controllers)" Category="Contains" FetchingParent="@2" />
-    <Link Source="@2" Target="@8" Bounds="289.812103271484,88.028923034668,12.127685546875,22.3310775756836" />
+    <Link Source="@2" Target="@8" Bounds="314.804379001322,63.5199437033241,0.437257867676124,123.623340915474" />
     <Link Source="@4" Target="@9" Category="Contains" FetchingParent="@4" />
-    <Link Source="@6" Target="@2" Bounds="174.101974487305,138.083297729492,86.6746368408203,27.5167083740234" />
-    <Link Source="@6" Target="@4" Bounds="69.7283325195313,34,50.2914581298828,131.600006103516" />
-    <Link Source="@6" Target="@8" Bounds="152.152297973633,85.8452911376953,104.470779418945,79.7547149658203" />
-    <Link Source="@8" Target="@4" Bounds="125.827362060547,27.2951126098633,105.504379272461,27.8248863220215" />
+    <Link Source="@6" Target="@2" Bounds="-2.93116890114344,46.6874775473463,284.099782801902,136.556843422036" />
+    <Link Source="@6" Target="@4" Bounds="2.5655139521637,-86.2438750956294,272.007013220092,107.931352642976" />
+    <Link Source="@6" Target="@8" Bounds="49.8248638036389,35.9825462278732,188.702472749739,4.3007456940267" />
+    <Link Source="@8" Target="@4" Bounds="314.48331759357,-80.5632918290015,0.220031121538739,110.083291829001" />
     <Link Source="@9" Target="(@3 Namespace=Charity.Dal Type=Class1)" Category="Contains" FetchingParent="@9" />
-    <Link Source="Model层" Target="@6" Bounds="134.728332519531,199.600006103516,0,21.1199951171875" />
-    <Link Source="UI设计层，UI表现层" Target="@2" Bounds="308.728332519531,144.360000610352,0,21.1199951171875" />
-    <Link Source="业务逻辑层" Target="@8" Bounds="172.255493164063,83.4646072387695,66.8900146484375,26.775390625" />
-    <Link Source="数据访问层" Target="@4" Bounds="92.9386978149414,30.5190849304199,31.5338287353516,24.4809150695801" />
+    <Link Source="Model层" Target="@6" Bounds="-231.524049868149,35.0800110797321,114.82604573461,1.16778365297782" />
+    <Link Source="UI设计层，UI表现层" Target="@2" Bounds="369.825093623204,137.081719512939,174.966964843412,47.6946014473602" />
+    <Link Source="业务逻辑层" Target="@8" Bounds="390.931625436457,42.2506623651171,177.360599409717,0.536858896897492" />
+    <Link Source="数据访问层" Target="@4" Bounds="375.836281980181,-87.4839159326047,191.241491199726,45.4130720162478" />
   </Links>
   <Categories>
     <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
@@ -104,6 +104,15 @@
     <Alias n="9" Id="(@3 Namespace=Charity.Dal)" />
   </IdentifierAliases>
   <Styles>
+    <Style TargetType="Node" GroupLabel="StrongName" ValueLabel="Charity.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Condition Expression="CodeSchemaProperty_StrongName = 'Charity.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="StrongName" ValueLabel="Charity.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Condition Expression="CodeSchemaProperty_StrongName = 'Charity.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="StrongName" ValueLabel="Charity.Bll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Condition Expression="CodeSchemaProperty_StrongName = 'Charity.Bll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'" />
+    </Style>
     <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
       <Condition Expression="HasCategory('Category2')" />
       <Setter Property="Background" Value="#FF339933" />

@@ -21,27 +21,27 @@ namespace Charity.UI.Controllers.Foreground.User
         #region --对数据库进行增加的操作--
 
 
-        //UserBll _userBll = new UserBll();
-        //[HttpPost]
-        //public ActionResult AddUserMSG(UserInfo model)
-        //{
-        //    string message = string.Empty;
-        //    try
-        //    {
-        //        var result = _userBll.AddUserMSG(model);
-        //        if (result)
-        //        {
-        //            return base.Json(new { Result = 1, Message = "增加成功！！" });
-        //        }
-        //        else
-        //            return base.Json(new { Result = -1, Message = "增加失败！" });
-        //    }
-        //    catch (Exception exception)
-        //    {
-        //        message = exception.Message;
-        //    }
-        //    return base.Json(new { Result = -1, Message = message });
-        //}
+        UserBll _userBll = new UserBll();
+        [HttpPost]
+        public ActionResult AddUserMSG(UserInfo model)
+        {
+            string message = string.Empty;
+            try
+            {
+                var result = _userBll.AddUserMSG(model);
+                if (result)
+                {
+                    return base.Json(new { Result = 1, Message = "增加成功！！" });
+                }
+                else
+                    return base.Json(new { Result = -1, Message = "增加失败！" });
+            }
+            catch (Exception exception)
+            {
+                message = exception.Message;
+            }
+            return base.Json(new { Result = -1, Message = message });
+        }
 
         #endregion
 

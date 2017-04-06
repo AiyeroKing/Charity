@@ -11,6 +11,7 @@ namespace Charity.UI.Controllers
         public ActionResult HomeIndex()
         {
             return View();
-        }  
+            //return RedirectToAction("UserIndex", "User");
+        }
     }
 }
