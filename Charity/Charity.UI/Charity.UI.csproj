@@ -122,7 +122,7 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap\bootstrap.css" />
     <Content Include="Content\css\iview\iview.css" />
-    <Content Include="Content\css\Foreground\Layout.css" />
+    <Content Include="Content\css\Foreground\_Layout\Layout.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
@@ -148,6 +148,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Content\css\Foreground\_Layout\nav.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
