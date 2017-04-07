@@ -57,11 +57,18 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 a:focus {
   outline: thin dotted;
 }
 
 a:active,
+a:hover {
+  outline: 0;
+}
 
 h1 {
   margin: 0.67em 0;
@@ -267,9 +274,10 @@ table {
   h3 {
     page-break-after: avoid;
   }
-  .navbar {
-    display: none;
-  }
+    .navbar {
+        display: none;
+       
+    }
   .table td,
   .table th {
     background-color: #fff !important;
@@ -303,6 +311,12 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  
+}
 
 input,
 button,
@@ -319,7 +333,39 @@ select[multiple],
 textarea {
   background-image: none;
 }
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+}
 
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+a:active {
+  color: cyan;
+  text-decoration: none;
+}
 
 a:focus {
   outline: thin dotted #333;
@@ -1989,7 +2035,6 @@ textarea.input-lg {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-       -o-user-select: none;
           user-select: none;
 }
 
@@ -1998,13 +2043,34 @@ textarea.input-lg {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-
+li{
+    font-weight:400;
+    font-family:'Microsoft YaHei UI';
+    
+}
+a{
+    font-size:14px;
+}
 .btn:hover,
 .btn:focus {
   color: #333333;
   text-decoration: none;
 }
-
+.btn-login {
+    background-color: #03a9f4;
+    border-color: #03a9f4;
+    color: #fff;
+}
+.btn-login:hover {
+    background-color:#cccccc;
+    border-color: #03a9f4;
+    color: #fff;
+}
+    .btn-login:active {
+        background-color: #03a9f4;
+        border-color: #03a9f4;
+        color: #fff;
+    }
 .btn:active,
 .btn.active {
   background-image: none;
@@ -3314,9 +3380,9 @@ input[type="button"].btn-block {
 
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
-  border-top: 0 dotted;
-  border-bottom: 4px solid #000000;
-  content: "";
+    border-top: 0 dotted;
+    border-bottom: 4px solid #000000;
+    content: "";
 }
 
 .dropup .dropdown-menu,

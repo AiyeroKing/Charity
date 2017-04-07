@@ -1,1 +1,27 @@
-﻿
+﻿.login {
+    color: #ffffff;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    margin-top: -0.2em;
+}
+.loginset{
+    margin-left:10%;
+}
+.header_navbar{
+    background-color:aquamarine;
+}
+.Htmlfont_clss {
+    color:yellow;
+}
+.Charity_font {
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 1%;
+    font-size: 27px;
+    font-family: 'Adobe Fan Heiti Std';
+    font-weight: 500;
+}
+.fontee{
+    font-size:5px;
+}
