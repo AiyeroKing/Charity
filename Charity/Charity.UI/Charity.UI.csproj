@@ -122,6 +122,7 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap\bootstrap.css" />
     <Content Include="Content\css\Foreground\_Layout\main.min.css" />
+    <Content Include="Content\img\Layout\站长统计.gif" />
     <Content Include="Content\css\iview\iview.css" />
     <Content Include="Content\css\Foreground\_Layout\Layout.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
