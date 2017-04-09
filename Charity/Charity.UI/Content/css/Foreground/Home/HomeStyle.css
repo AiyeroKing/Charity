@@ -1,5 +1,4 @@
 ﻿@charset"utf-8";
-
 abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
     margin: 0;
     padding: 0;
@@ -12,28 +11,22 @@ abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite
     font-family: inherit;
     vertical-align: top
 }
-
 body {
     line-height: 1;
     color: #000;
-    background-color:#d0e1e1;
+    background-color: white;
     font-size: 12px;
-    font-family: 'simsun'
-       
+    font-family: 'simsun';
 }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, hr, menu, nav, section {
     display: block
 }
-
     nav ul, ol, ul {
         list-style: none
     }
-
 :focus, a {
     outline: 0
 }
-
 a {
     margin: 0;
     font-size: 100%;
@@ -41,60 +34,48 @@ a {
     background: 0 0;
     blr:expression(this.onFocus=this.blur())
 }
-
 a, ins {
     text-decoration: none
 }
-
 a, hr {
     padding: 0
 }
-
 ins, mark {
     background-color: #ff9;
     color: #000
 }
-
 mark {
     font-style: italic;
     font-weight: 700
 }
-
 blockquote, q {
     quotes: none
 }
-
     blockquote:after, blockquote:before, q:after, q:before {
         content: '';
         content: none
     }
-
 del {
     text-decoration: line-through
 }
-
 abbr[title], dfn[title] {
     border-bottom: 1px dotted;
     cursor: help
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0
 }
-
 caption, td, th {
     text-align: left;
     font-weight: 400
 }
-
 hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #cccccc;
     margin: 1em 0
 }
-
 input, select {
     vertical-align: middle;
     border: 0
@@ -109,7 +90,6 @@ input, select {
     position: relative;
   
 }
-
     .demo a.control {
         position: absolute;
         display: block;
@@ -120,21 +100,17 @@ input, select {
         z-index: 2;
         background: url('../../../img/Home/buttons.png') no-repeat ;
     }
-
     .demo a.prev {
         left: 0;
         background-position: 0 0
     }
-
     .demo a.next {
         right: 0;
         background-position: -76px 0
     }
-
     .demo a.prev:hover {
         background-position: 0 -112px
     }
-
     .demo a.next:hover {
         background-position: -76px -112px
     }
@@ -144,25 +120,225 @@ input, select {
 }
 .dome_one {
     height: 600px;
+    background-color:cyan;
     box-shadow: 0 0 10px #393937;
-    /*box-shadow: 1px 3px 10px #393937;*/
 }
 
-
-
-
-
-
-
+/*过渡条循环播放*/
 #element{
     animation:keyframe duration;
 }
 #progress_home {
     height: 2px;
     background:#0e1693;
-    animation: pulse 5s infinite;
+    animation: pulse 4s infinite;
 }
 @keyframes pulse{
     0%{width:0;}
     100%{width:100%;}
 }
+
+/*彩虹图片动态旋转*/
+.Home_GIF_A{
+
+    width:100%;
+    height:150px;
+    text-align:center;
+}
+.Home_GIF_A span{
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+    .Home_GIF_A img {
+   width:7%;
+        vertical-align: middle;
+        animation:Caihong 1.5s infinite linear;
+    }
+    @keyframes Caihong{
+        0%{transform:rotate(0deg);}
+        100%{transform:rotate(360deg);}
+    }
+
+
+.Home_Zroe {
+    width:100%;
+    text-align:center;
+}
+.Home_Two {
+    margin-top: 10px;
+    height: 400px;
+    /*width: 90%;*/
+    text-align: center;
+    background-color: white;
+    /*margin-left:5%;*/
+    box-shadow: -1px 0px 1px #808080;
+}
+
+.Home_Three {
+    margin-top: 10px;
+    height: 400px;
+    /*width: 90%;*/
+    text-align: center;
+    /*margin-left:5%;*/
+    box-shadow: -1px 0px 1px #808080;
+}
+.Home_Four_one {
+    width: 60%;
+    margin-left: 20%;
+    padding-top:4%;
+
+}
+.Home_Four_two {
+    position:absolute;
+    margin-top:-23%;
+    padding-left:16%;
+}
+.Home_Four {
+    margin-top: 10px;
+    height: 400px;
+    /*width: 90%;*/
+    /*margin-left:5%;*/
+    box-shadow: -1px 0px 1px #808080;
+}
+.Home_Six {
+    margin-top:10px;
+    height: 200px;
+    /*width: 90%;*/
+    text-align: center;
+    background-color:yellow;
+    /*margin-left:5%;*/
+    box-shadow: -1px 0px 1px #808080;
+}
+
+
+
+/*柱状图CSS*/
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+    .skillbar-title span {
+        display: block;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0 20px;
+        height: 35px;
+        line-height: 35px;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+h2 {
+    clear: both;
+    border-bottom: 1px solid #41b34d;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.fn-clear {
+    zoom: 1;
+}
+
+.wmax {
+    max-width: 100%;
+    min-width: 1083px;
+    height: 146px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.fn-clear::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0px;
+    content: " ";
+    clear: both;
+    height: 0px;
+}
+
+
+
+h2 ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: -7px;
+}
+
+    h2 ul li {
+        display: inline-block;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+        h2 ul li.name {
+            padding: 4px 15px 3px 15px;
+            background: #41b34d;
+            color: #fff;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+        }
