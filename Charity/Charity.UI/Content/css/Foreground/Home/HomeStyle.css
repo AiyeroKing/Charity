@@ -177,11 +177,9 @@ input, select {
 
 .Home_Three {
     margin-top: 10px;
-    height: 400px;
-    /*width: 90%;*/
+    height: 520px;
     text-align: center;
-    /*margin-left:5%;*/
-    box-shadow: -1px 0px 1px #808080;
+
 }
 .Home_Four_one {
     width: 60%;
@@ -197,19 +195,23 @@ input, select {
 .Home_Four {
     margin-top: 10px;
     height: 400px;
-    /*width: 90%;*/
-    /*margin-left:5%;*/
-    box-shadow: -1px 0px 1px #808080;
+ 
 }
 .Home_Six {
     margin-top:10px;
-    height: 200px;
-    /*width: 90%;*/
+    height: 100px;
+
     text-align: center;
-    background-color:yellow;
-    /*margin-left:5%;*/
-    box-shadow: -1px 0px 1px #808080;
+
+
 }
+.Home_Six_one {
+    margin-top: 20px;
+    padding-top:11px;
+    padding-left:22%;
+ 
+}
+
 
 
 
@@ -342,3 +344,191 @@ h2 ul {
             border-radius: 2px;
             -moz-border-radius: 2px;
         }
+
+
+
+        /*图片轮播*/
+.mKeBanner, .mKeBanner div {
+    text-align: center;
+}
+
+.imageflow img {
+    -webkit-box-shadow: 2px 2px 2px 2px hsla(0,0%,0%,0.1);
+    box-shadow: 2px 2px 2px 2px hsla(0,0%,0%,0.1);
+}
+
+.imageflow {
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    visibility: hidden;
+    width: 1200px;
+    margin: 0 auto
+}
+
+    .imageflow img {
+        border: none;
+        position: absolute;
+        top: 0px;
+        visibility: hidden;
+        -ms-interpolation-mode: bicubic
+    }
+
+    .imageflow p {
+        margin: 0 auto;
+        text-align: center
+    }
+
+    .imageflow .loading {
+        border: 1px solid #ccc;
+        height: 15px;
+        left: 50%;
+        margin-left: -106px;
+        padding: 5px;
+        position: relative;
+        visibility: visible;
+        width: 200px
+    }
+
+    .imageflow .loading_bar {
+        background: #ccc;
+        height: 15px;
+        visibility: visible;
+        width: 1%
+    }
+
+    .imageflow .caption {
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        z-index: 10000
+    }
+
+    .imageflow .scrollbar {
+        border-bottom: 1px solid #b3b3b3;
+        position: relative;
+        visibility: hidden;
+        z-index: 10001;
+        height: 1px
+    }
+
+    .imageflow .slider {
+        background-image: url(../../Images/Index/slider.png);
+        background-repeat: no-repeat;
+        height: 14px;
+        margin: -6px 0 0 -7px;
+        position: absolute;
+        width: 14px;
+        z-index: 10002
+    }
+
+    .imageflow .images {
+        overflow: hidden;
+        white-space: nowrap
+    }
+
+    .imageflow .button {
+        cursor: pointer;
+        height: 17px;
+        position: relative;
+        width: 17px
+    }
+
+    .imageflow .previous {
+        background: url(../../Images/Index/button_left.png) top left no-repeat;
+        float: left;
+        margin: -7px 0 0 -30px
+    }
+
+    .imageflow .next {
+        background: url(../../Images/Index/button_right.png) top left no-repeat;
+        float: right;
+        margin: -7px -30px 0 30px
+    }
+
+#LoopDiv {
+    background: url('../../../img/Home/国旗背景.jpg')no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+
+
+.sitemap {
+    margin-bottom: 100px;
+}
+
+.clearfix::after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0px;
+    content: ".";
+}
+
+.wrapper {
+    margin-bottom: 10px;
+}
+
+
+
+
+ul.service_list li {
+    float: left;
+    width: 55px;
+    height: 50px;
+    margin: 25px 15px;
+}
+
+a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+ul.service_list li a {
+    display: inline-block;
+    width: 55px;
+    padding-top: 32px;
+    font-weight: bold;
+    background: url('../../../img/Home/serv_bg.gif') 50% 0 no-repeat;
+}
+
+    ul.service_list li a.s11 {
+        background-position: 50% -522px;
+    }
+
+    ul.service_list li a.s10 {
+        background-position: 50% -472px;
+    }
+
+    ul.service_list li a.s9 {
+        background-position: 50% -423px;
+    }
+
+    ul.service_list li a.s8 {
+        background-position: 50% -369px;
+    }
+
+    ul.service_list li a.s7 {
+        background-position: 50% -315px;
+    }
+
+    ul.service_list li a.s6 {
+        background-position: 50% -266px;
+    }
+
+    ul.service_list li a.s4 {
+        background-position: 50% -159px;
+    }
+
+    ul.service_list li a.s3 {
+        background-position: 50% -103px;
+    }
+
+    ul.service_list li a.s2 {
+        background-position: 50% -50px;
+    }
+          
