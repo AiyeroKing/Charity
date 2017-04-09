@@ -1,4 +1,9 @@
-﻿/*以下内容是顶部导航栏样式*/
+﻿/*以下内容是RenderBody样式*/
+.RenderBody {
+    text-align: center;
+    padding-top: 4.8em;
+    height: 1000px;
+}
 /*一下内容是底部页面尾部导航*/
 .login {
     color: #ffffff;
@@ -35,7 +40,7 @@
 
 .Nbottom {
     background: #24282f;
-    padding: 8px 0;
+    padding: 6px 0;
     display: block;
     text-align: center;
 }
@@ -49,12 +54,12 @@
 
 .siteFooterBox {
     background-color: #24282f;
-    margin-bottom:-1em;
+    margin-bottom:-0.5em;
 }
 
 .mainInnerBox {
     width: 80%;
-    margin: 0px auto;
+    margin: 1px auto;
     display: block;
     font-size: inherit;
 }
@@ -117,7 +122,7 @@
 }
 
 .siteMFooterABox {
-    margin-top:-2.5%;
+    margin-top:-2%;
     color: #485263;
 }
 
@@ -132,3 +137,4 @@
 .siteMFooterABox span {
         margin: 0em 1em;
     }
+

@@ -121,7 +121,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\bootstrap\bootstrap.css" />
+    <Content Include="Content\css\Foreground\Home\HomeStyle.css" />
     <Content Include="Content\css\Foreground\_Layout\main.min.css" />
+    <Content Include="Content\img\Home\1.jpg" />
+    <Content Include="Content\img\Home\2.jpg" />
     <Content Include="Content\img\Layout\站长统计.gif" />
     <Content Include="Content\css\iview\iview.css" />
     <Content Include="Content\css\Foreground\_Layout\Layout.css" />
@@ -130,12 +133,17 @@
     <Content Include="Content\img\Layout\top-pattern.png" />
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
+    <Content Include="Content\js\Foreground\Home\YuxiSlider.jQuery.min.js" />
     <Content Include="Content\js\Foreground\LayoutJS.js" />
     <Content Include="Content\js\Foreground\UserJS.js" />
     <Content Include="Content\js\iview\iview.js" />
     <Content Include="Content\js\iview\vue.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\img\Home\3.jpg" />
+    <Content Include="Content\img\Home\4.jpg" />
+    <Content Include="Content\img\Home\5.jpg" />
+    <Content Include="Content\img\Home\buttons.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

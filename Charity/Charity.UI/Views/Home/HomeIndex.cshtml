@@ -3,8 +3,30 @@
     ViewBag.Title = "Home";
 }
 
+<head>
+    <link href="~/Content/css/Foreground/Home/HomeStyle.css" rel="stylesheet" />
+</head>
+
+<div id="progress_home" >
+
+</div>
+
+<div class="dome_one">
+    <div class="demo">
+        <a class="control prev"></a><a class="control next abs"></a><!--自定义按钮，移动端可不写-->
+        <div class="slider">
+            <!--主体结构，请用此类名调用插件，此类名可自定义-->
+            <ul>
+                <li><a href=""><img src="~/Content/img/Home/1.jpg" /></a></li>
+                <li><a href=""><img src="~/Content/img/Home/2.jpg" /></a></li>
+                <li><a href=""><img src="~/Content/img/Home/3.jpg" /></a></li>
+                <li><a href=""><img src="~/Content/img/Home/4.jpg" /></a></li>
+                <li><a href=""><img src="~/Content/img/Home/5.jpg" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
-
-
-
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Content/js/Foreground/Home/YuxiSlider.jQuery.min.js"></script>
