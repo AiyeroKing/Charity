@@ -1,11 +1,20 @@
-@font-face {
-    font-family: fontello;
-    src: url(../font/fontello.eot?85729057);
-    src: url(../font/fontello.eot?85729057#iefix) format('embedded-opentype'),url(../font/fontello.woff?85729057) format('woff'),url(../font/fontello.ttf?85729057) format('truetype'),url(../font/fontello.svg?85729057#fontello) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
 
+@font-face {
+    font-family: 'glyphicons-halflings-regular';
+    src: url('../../../fonts/glyphicons-halflings-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'glyphicons-halflings-regular';
+    src: url('../../../fonts/glyphicons-halflings-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'glyphicons-halflings-regular';
+    src: url('../../../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'glyphicons-halflings-regular';
+    src: url('../../../fonts/glyphicons-halflings-regular.svg') format('svg');
+}
 [class*=" icon-"]:before, [class^=icon-]:before {
     font-family: fontello;
     font-style: normal;

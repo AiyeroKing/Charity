@@ -165,12 +165,13 @@ input, select {
     width:100%;
     text-align:center;
 }
+
 .Home_Two {
     margin-top: 10px;
-    height: 400px;
+    height: 930px;
     /*width: 90%;*/
     text-align: center;
-    background-color: white;
+    background-color: #cccccc;
     /*margin-left:5%;*/
     box-shadow: -1px 0px 1px #808080;
 }
@@ -179,6 +180,7 @@ input, select {
     margin-top: 10px;
     height: 520px;
     text-align: center;
+    box-shadow:-1px 3px 10px #393937;
 
 }
 .Home_Four_one {
@@ -207,7 +209,7 @@ input, select {
 }
 .Home_Six_one {
     margin-top: 20px;
-    padding-top:11px;
+    padding-top:0px;
     padding-left:22%;
  
 }
@@ -413,7 +415,7 @@ h2 ul {
     }
 
     .imageflow .slider {
-        background-image: url(../../Images/Index/slider.png);
+        /*background-image: url(../../Images/Index/slider.png);*/
         background-repeat: no-repeat;
         height: 14px;
         margin: -6px 0 0 -7px;
@@ -496,6 +498,12 @@ ul.service_list li a {
     background: url('../../../img/Home/serv_bg.gif') 50% 0 no-repeat;
 }
 
+ul.service_list li a:hover{
+    color:hotpink;
+    text-shadow:1px 1px 1px #393937;
+}
+    
+    
     ul.service_list li a.s11 {
         background-position: 50% -522px;
     }
@@ -531,4 +539,193 @@ ul.service_list li a {
     ul.service_list li a.s2 {
         background-position: 50% -50px;
     }
-          
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+figure {
+    margin: 1em 40px;
+}
+
+
+figure {
+    margin: 0;
+}
+
+::selection {
+    background: #91D8EA;
+}
+
+/*.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+
+
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+    .btn-group-vertical > .btn-group::after, .btn-group-vertical > .btn-group::before, .btn-toolbar::after, .btn-toolbar::before, .clearfix::after, .clearfix::before, .container-fluid::after, .container-fluid::before, .container::after, .container::before, .dl-horizontal dd::after, .dl-horizontal dd::before, .form-horizontal .form-group::after, .form-horizontal .form-group::before, .modal-footer::after, .modal-footer::before, .nav::after, .nav::before, .navbar-collapse::after, .navbar-collapse::before, .navbar-header::after, .navbar-header::before, .navbar::after, .navbar::before, .pager::after, .pager::before, .panel-body::after, .panel-body::before, .row::after, .row::before {
+        display: table;
+        content: " ";
+    }
+
+    .btn-group-vertical > .btn-group::after, .btn-toolbar::after, .clearfix::after, .container-fluid::after, .container::after, .dl-horizontal dd::after, .form-horizontal .form-group::after, .modal-footer::after, .nav::after, .navbar-collapse::after, .navbar-header::after, .navbar::after, .pager::after, .panel-body::after, .row::after {
+        clear: both;
+    }
+
+#features {
+    /*background-color: #FFF;*/
+    padding: 60px 0 80px 0;
+    /*border-bottom: 1px solid #D2D6D8;*/
+}
+
+/*body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4285;
+    color: #333;
+    background-color: #fff;
+}*/
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* @media all and (min-width:768px) */
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+}
+/* @media all and (min-width:768px) */
+.col-sm-6 {
+    width: 50%;
+}
+/* @media all and (min-width:992px) */
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+/* @media all and (min-width:992px) */
+.col-md-4 {
+    width: 33.33%;
+}
+/* @media all and (min-width:1200px) */
+.row > div:nth-child(3n+4) {
+    clear: both;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.25em;
+    color: #354953;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #354953;
+}
+
+figure {
+    display: block;
+    margin-bottom: 20px;
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+}
+
+.icon-cog {
+    background-image: url('../../../img/Home/icon-cog.png');
+    background-size: 36px 36px;
+    margin-left:20px;
+}
+
+.icon-upgrades {
+    background-image: url('../../../img/Home/icon-upgrades.png');
+    background-size: 36px 36px;
+}
+
+.icon-box {
+    background-image: url('../../../img/Home/icon-box.png');
+    background-size: 36px 36px;
+}
+
+.icon-vue {
+    background-image: url('../../../img/Home/icon-vue.png');
+    background-size: 38px 36px;
+}
+
+.icon-two {
+    background-image: url('../../../img/Home/icon-two.png');
+    background-size: 36px 36px;
+}
+
+.icon-imp {
+    background-image: url('../../../img/Home/icon-imp.png');
+    background-size: 36px 36px;
+}
+
+.icon-announcement {
+    background-image: url('../../../img/Home/icon-announcement.png');
+    background-size: 36px 36px;
+}
+
+.icon-cart {
+    background-image: url('../../../img/Home/icon-cart.png');
+    background-size: 36px 36px;
+}
+
+.icon-inv {
+    background-image: url('../../../img/Home/icon-inv.png');
+    background-size: 36px 36px;
+}
+
+.icon-team {
+    background-image: url('../../../img/Home/icon-teams.png');
+    background-size: 38px 36px;
+}
+
+.icon-subscribe {
+    background-image: url('../../../img/Home/icon-subscribe.png');
+    background-size: 36px 36px;
+}
+
+.icon-auth {
+    background-image: url('../../../img/Home/icon-auth.png');
+    background-size: 36px 36px;
+
+}
+.col-md-4 {
+    padding-bottom:17px;
+}
+.col-md-4 h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS';
+}
+.col-md-4 p {
+    padding-bottom:10px;
+    font-size: 14px;
+    text-align:left;
+    font-family:YouYuan;
+}
+
+.col-md-4 h3:hover{
+
+    color:burlywood;
+}
+.col-md-4:hover {
+    border-radius:10px;
+    box-shadow:0px 0px 30px #7a7272;
+}
