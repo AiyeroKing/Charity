@@ -113,6 +113,7 @@
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
     <Compile Include="Controllers\Foreground\HomeController.cs" />
+    <Compile Include="Controllers\Foreground\LoginSignUpController.cs" />
     <Compile Include="Controllers\Foreground\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -122,6 +123,7 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap\bootstrap.css" />
     <Content Include="Content\css\Foreground\Home\HomeStyle.css" />
+    <Content Include="Content\css\Foreground\LoginSignUp\LoginStyle.css" />
     <Content Include="Content\css\Foreground\_Layout\main.min.css" />
     <Content Include="Content\img\Home\1.jpg" />
     <Content Include="Content\img\Home\1_1.jpg" />
@@ -158,6 +160,9 @@
     <Content Include="Content\js\bootstrap\jquery.js" />
     <Content Include="Content\js\Foreground\Home\YuxiSlider.jQuery.min.js" />
     <Content Include="Content\js\Foreground\LayoutJS.js" />
+    <Content Include="Content\js\Foreground\LoginSignUp\jquery.js" />
+    <Content Include="Content\js\Foreground\LoginSignUp\Particleground.js" />
+    <Content Include="Content\js\Foreground\LoginSignUp\verificationNumbers.js" />
     <Content Include="Content\js\Foreground\UserJS.js" />
     <Content Include="Content\js\iview\iview.js" />
     <Content Include="Content\js\iview\vue.js" />
@@ -198,6 +203,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\HomeIndex.cshtml" />
     <Content Include="Views\User\UserIndex.cshtml" />
+    <Content Include="Views\LoginSignUp\LoginIndex.cshtml" />
+    <Content Include="Views\LoginSignUp\SignUpIndex.cshtml" />
+    <Content Include="Views\LoginSignUp\UserLoginIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\css\Background\" />

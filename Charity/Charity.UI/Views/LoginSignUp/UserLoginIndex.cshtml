@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Charity—管理员登录</title>
+    <meta name="author" content="DeathGhost" />
+    <link href="~/Content/css/Foreground/LoginSignUp/LoginStyle.css" rel="stylesheet" />
+    <script src="~/Content/js/Foreground/LoginSignUp/jquery.js"></script>
+    <script src="~/Content/js/Foreground/LoginSignUp/verificationNumbers.js"></script>
+    <script src="~/Content/js/Foreground/LoginSignUp/Particleground.js"></script>
+    <script>
+        $(document).ready(function () {
+            //粒子背景特效
+            $('body').particleground({
+                dotColor: '#5cbdaa',
+                lineColor: '#5cbdaa'
+            });
+            //验证码
+            createCode();
+            //测试提交，对接程序删除即可
+            $(".submit_btn").click(function () {
+                location.href = "javascrpt:;"/*tpa=http://***index.html*/;
+            });
+        });
+    </script>
+</head>
+<body class="UserLoginIndex_Body">
+    <div>
+        <form>
+            <dl class="admin_login">
+                <dt>
+
+                    <img src="~/Content/img/Layout/favicon.ico" /> <strong class="User_tital">义卖网管理员系统</strong>
+                    <em class="User_tital">User Management System</em>
+                </dt>
+                <dd class="user_icon">
+                    <input type="text" placeholder="账号" class="login_txtbx" required />
+                </dd>
+                <dd class="pwd_icon">
+                    <input type="password" placeholder="密码" class="login_txtbx" required />
+                </dd>
+                <dd class="val_icon">
+                    <div class="checkcode">
+                        <input type="text" id="J_codetext" placeholder="验证码" maxlength="4" class="login_txtbx">
+                        <canvas class="J_codeimg" id="myCanvas" onclick="createCode()">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+                    </div>
+                    <input type="button" value="验证码核验" class="ver_btn" onClick="validate();">
+                </dd>
+                <dd>
+                    <input type="button" value="立即登陆" class="submit_btn" />
+                </dd>
+                <dd>
+                    <a href="/LoginSignUp/LoginIndex"><input type="button" value="返回用户登录" class="submit_btnblack" /></a>
+                    <a href="/Home/HomeIndex"><input type="button" value="返回主页" class="submit_btnHome" /></a>
+                </dd>
+                <dd>
+                    <p>© 2017-2017 桂林电子科技大学信息科技学院 版权所有</p>
+                    <p>桂Z0-99999999-9</p>
+                </dd>
+            </dl>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+

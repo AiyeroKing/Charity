@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Charity—用户注册</title>
+    <link href="~/Content/css/Foreground/LoginSignUp/LoginStyle.css" rel="stylesheet" />
+    <script src="~/Content/js/Foreground/LoginSignUp/jquery.js"></script>
+    <script src="~/Content/js/Foreground/LoginSignUp/verificationNumbers.js"></script>
+    <script src="~/Content/js/Foreground/LoginSignUp/Particleground.js"></script>
+    <script>
+        $(document).ready(function () {
+            //粒子背景特效
+            $('body').particleground({
+                dotColor: '#5cbdaa',
+                lineColor: '#5cbdaa'
+            });
+            //验证码
+            createCode();
+            //测试提交，对接程序删除即可
+            $(".submit_btn").click(function () {
+                location.href = "javascrpt:;"/*tpa=http://***index.html*/;
+            });
+        });
+    </script>
+</head>
+
+<body class="LoginIndex_Body">
+    <div class="SignUP_Allcom">
+      
+    </div>
+</body>
+</html>
+
+
+
+
+
+
