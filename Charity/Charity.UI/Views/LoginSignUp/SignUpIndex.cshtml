@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
     <title>Charity—用户注册</title>
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/css/Foreground/LoginSignUp/LoginStyle.css" rel="stylesheet" />
     <script src="~/Content/js/Foreground/LoginSignUp/jquery.js"></script>
-    <script src="~/Content/js/Foreground/LoginSignUp/verificationNumbers.js"></script>
+    @*<script src="~/Content/js/Foreground/LoginSignUp/verificationNumbers.js"></script>*@
     <script src="~/Content/js/Foreground/LoginSignUp/Particleground.js"></script>
     <script>
         $(document).ready(function () {
@@ -22,7 +23,7 @@
                 lineColor: '#5cbdaa'
             });
             //验证码
-            createCode();
+            //createCode();
             //测试提交，对接程序删除即可
             $(".submit_btn").click(function () {
                 location.href = "javascrpt:;"/*tpa=http://***index.html*/;
@@ -31,9 +32,90 @@
     </script>
 </head>
 
-<body class="LoginIndex_Body">
+<body class="SignUpIndex_Body">
     <div class="SignUP_Allcom">
-      
+        <div class="SignUP_ico">
+            <img src="~/favicon.ico" />
+            <h3>我的在线义卖网站.<span>注册</span></h3>
+            <div class="span_oli"></div>
+
+            <form>
+                <div class="input_only_one" style=" position: absolute; width: 39%;height: 500px;">
+
+                    <div class="size_font_one">
+                        必填信息<span>*</span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">姓名</span>
+                        <input name="" class="form-control" placeholder="请输入您的真实姓名！" style="width:40%" type="text">
+                    </div><span class="help-block">根据国家规定请输入您的真实姓名.....</span>
+
+                    <div class="input_height"></div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">昵称</span>
+                        <input name="" class="form-control" placeholder="请输入您的昵称！" style="width:40%" type="text">
+                    </div><span class="help-block">根据您的喜爱输入昵称....</span>
+
+                    <div class="input_height"></div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">账号</span>
+                        <input name="" class="form-control" placeholder="请输入您要注册的账号！" style="width:52%" type="text">
+                    </div><span class="help-block">账号字符限制为数字....</span>
+
+                    <div class="input_height"></div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">密码</span>
+                        <input name="" class="form-control" placeholder=" 请输入您要注册的密码！" style="width:52%" type="password">
+                    </div><span class="help-block">账号字符限制为20字符....</span>
+
+                </div>
+
+
+
+
+                <div class="input_only_two" style=" position:absolute;width: 36.5%;height: 500px;margin-left: 39%;">
+
+                    <div class="size_font_one">
+                        必填信息<span>*</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">联系电话</span>
+                        <input name="" class="form-control" placeholder="请输入您的真实姓名！" style="width:40%" type="text">
+                    </div><span class="help-block">根据国家规定请输入您的真实姓名.....</span>
+                    <div class="input_height"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon">电子邮箱</span>
+                        <input name="" class="form-control" placeholder="请输入您的昵称！" style="width:40%" type="text">
+                    </div><span class="help-block">根据您的喜爱输入昵称....</span>
+                    <div class="input_height"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon">居民身份证</span>
+                        <input name="" class="form-control" placeholder="请输入您要注册的账号！" style="width:52%" type="text">
+                    </div><span class="help-block">账号字符限制为数字....</span>
+                    <div class="input_height"></div>
+
+                    <div class="input-group">
+                        <label class="col-md-4 control-label" for="textarea" style="padding-top:20px;margin-left:-20px;">备 注 :</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" style="width:400px;height:100px; margin-left:-90px; border-radius:10px;" name="textarea">请输入您的留言!(备注:字数在500以内).</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="but_from_one">
+                    <div class="button_sign">
+                        <button type="submit" class="btn btn-success">注册一下</button><span class="width_buttom">&</span>
+                        <button type="reset" class="btn btn-danger">重置一下</button>
+                    </div>
+                </div>
+            </form>
+            <div class="sign_close">
+                <a href="LoginIndex"><button class="btn btn-danger"><span>X</span></button></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
