@@ -1,0 +1,109 @@
+﻿body {
+    margin-top:-1.3em;
+}
+
+.content {
+    width: 960px;
+    height: 1000px;
+    margin: auto;
+    line-height: 35px;
+}
+
+.content .list {
+        width: 100%;
+        padding: 30px 0 20px 0;
+        min-height: 200px;
+    }
+
+.content .list.bottom {
+            border-bottom: solid 1px #dadde3;
+        }
+
+.content .list.social {
+            height: 200px;
+        }
+
+.content .title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+a {
+    text-decoration: none;
+}
+
+.content a {
+    color: black;
+}
+
+.content .sina {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 125px;
+    padding-top: 38px;
+    line-height: 150px;
+    color: #000000;
+}
+
+.content .wechat {
+    float: left;
+    margin: 90px 0 0 15px;
+    line-height: 40px;
+}
+
+img {
+    border: none;
+}
+
+.content .wechat img {
+    float: left;
+    margin: 5px 10px 0 0;
+    width: 36px;
+    height: 29px;
+}
+
+.content .qrcode img {
+    width: 87px;
+    height: 87px;
+    float: left;
+    margin-top: 40px;
+}
+
+.content .sina img {
+    float: left;
+    margin: 55px 20px 0 0;
+    width: 36px;
+    height: 29px;
+}
+
+.top_contUS_img {
+    width: 100%;
+    height: 650px;
+    background: url(../../../img/ContactUs/地图.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#progress_contactUs {
+    height: 2px;
+    background:#0094ff;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.nav_ContactUs_top{
+    padding-top:20px;
+}
+.cont_two{
+    text-align:left;
+    padding-left:15em;
+}
