@@ -13,5 +13,10 @@ namespace Charity.UI.Controllers.Foreground
         {
             return View();
         }
+
+        public ActionResult ContactBoardIndex()
+        {
+            return View();
+        }
     }
 }

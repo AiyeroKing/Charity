@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "ContactBoardIndex";
+}
+<head>
+    <title>Charity—留言板</title>
+    @*<link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />*@
+    <link href="~/Content/css/Foreground/ContactUs/ContactUsStyle.css" rel="stylesheet" />
+
+</head>
+
+<style>
+    body {
+        width: 100%;
+        background-image: url('../../Content/img/ContactUs/留言背景.jpg');
+    }
+
+    .input-group {
+        padding: 2px 20px;
+    }
+
+    a {
+        font-family: YouYuan;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: none;
+        }
+</style>
+
+
+
+<div id="progress_contactBoard"></div>
+
+<div class="Board_massage">
+    <div class="box_massage_all"></div>
+    <div class="box_massage_all_0"></div>
+    <div class="box_massage_all_1">
+        <h2>留言板 << <span class="massage_color">Massage</span></h2>
+        <div class="box_massage_all_2">
+            <form>
+                <div class="input-group">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">标题</button></span>
+                    <input type="text" class="form-control" style="width:60%;">
+                    <span class="fuhao_xinghao">*</span>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">联系人</button></span>
+                    <input type="text" class="form-control" style="width:20%;">
+                    <span class="fuhao_xinghao">*</span>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">主页</button></span>
+                    <input type="text" class="form-control" style="width:40%;">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">联系方式</button></span>
+                    <input type="text" class="form-control" style="width:30%;">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">邮箱</button></span>
+                    <input type="email" class="form-control" style="width:40%;">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; height:140px; background-color:#ad7ee4;">我的留言</button></span>
+                    <textarea class="form-control" rows="6" style="width:400px;" maxlength="500"></textarea>
+                    <span class="fuhao_xinghao">*</span>
+                </div>
+                <div class="height_gaodu"></div>
+                <button type="submit" class="btn btn-success" style="margin-right:150px; margin-left:80px;">提交一下</button>
+                <button type="reset" class="btn btn-info">重置一下</button>
+            </form>
+        </div>
+        <h3 class="box_massage_all_3"><marquee scrollamount=3>备注:带<span class="xinghao_xinghao_buttom">*</span>号为必填;不带<span class="xinghao_xinghao_buttom">*</span>号则选填</marquee></h3>
+    </div>
+</div>
+

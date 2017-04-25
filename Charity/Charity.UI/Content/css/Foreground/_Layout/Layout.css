@@ -25,7 +25,7 @@
 
 .Charity_font {
     position: absolute;
-    margin-left: 3%;
+    margin-left: 4%;
     margin-top: 1%;
     font-size: 27px;
     font-family: 'Adobe Fan Heiti Std';
@@ -126,17 +126,56 @@
 
 .siteMFooterABox a {
         color: #616c7f;
-    }
+}
 
 .siteMFooterABox a:hover {
         color: cyan;
-    }
+}
 
 .siteMFooterABox span {
         margin: 0em 1em;
-    }
-
+}
 .signUp_Login{
     border-radius:30px;
 }
-
+.li_massage_borad {
+    left: 240px;
+    background: #485263;
+    border-radius: 6px;
+    height: 30px;
+    width:73px;
+    margin-top: 12px;
+    box-shadow: 3px 3px 2px #485263;
+}
+.li_massage_borad_one {
+    left: 250px;
+    background: cyan;
+    border-radius: 6px;
+    height: 30px;
+    width: 60px;
+    margin-top: 13px;
+    box-shadow: 3px 3px 2px yellow;
+}
+    .li_massage_borad_one:hover {
+        background: #485263;
+        box-shadow: 3px 3px 2px yellow;
+    }
+.li_massage_borad_one a {
+   margin-top:-0.8em;
+}
+.li_massage_borad_two {
+    left: 250px;
+    background: yellow;
+    border-radius: 6px;
+    height: 30px;
+    width: 60px;
+    margin-top: 13px;
+    box-shadow: 2px 3px 2px cyan;
+}
+    .li_massage_borad_two:hover {
+        background: #485263;
+        box-shadow: 3px 3px 2px cyan;
+    }
+.li_massage_borad_two a {
+    margin-top: -0.8em;
+}

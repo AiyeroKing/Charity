@@ -13,10 +13,34 @@
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <!--导入自定义的js文件-->
     <script src="~/Content/js/Foreground/LayoutJS.js" defer></script>
-
+    
 </head>
 <body>
+    <style type="text/css">
+        a {
+            font-family: YouYuan;
+            font-weight: 600;
+            text-decoration: none;
+        }
+            a:hover {
+                text-decoration: none;
+            }
+        .li_massage_borad:hover {
+            background: #777;
+        }
 
+        .li_massage_borad a {
+            top: -14px;
+            padding-left: 30px;
+            color: hotpink;
+            text-decoration: none;
+        }
+
+            .li_massage_borad a:hover {
+                color: hotpink;
+                text-decoration: none;
+            }
+    </style>
     <!--顶部导航栏-->
     <div class="header_navbar">
         <header class="clearfix">
@@ -61,14 +85,32 @@
                             <li>@Html.ActionLink("贫困捐助", "HomeIndex", "Home")</li>
                             <li>@Html.ActionLink("最新资讯", "HomeIndex", "Home")</li>
                             <li>@Html.ActionLink("联系我们", "ContactUsIndex", "ContactUs")</li>
-                            <li style="margin-left:2em;" class="="signUp_Login">@Html.ActionLink("登陆", "LoginIndex", "LoginSignUp")</li>
-                            <li class="="signUp_Login">@Html.ActionLink("注册", "SignUpIndex", "LoginSignUp")</li>
+
+                             <li class="li_massage_borad"><a href="../ContactUs/ContactBoardIndex">留言板</a></li>
+
+                            <li class="li_massage_borad_one"><a href="../LoginSignUp/LoginIndex">登录</a></li>
+                           
+                            <li class="li_massage_borad_two"><a href="../LoginSignUp/SignUpIndex">注册</a></li>
+
+                            @*<li style="margin-left:2em;" class="="signUp_Login">@Html.ActionLink("登陆", "LoginIndex", "LoginSignUp")</li>
+                            <li class="="signUp_Login">@Html.ActionLink("注册", "SignUpIndex", "LoginSignUp")</li>*@
+                            
                         </ul>
                     </div>
                 </div>
             </div>
+
+           
+
         </header>
     </div>
+
+
+
+
+
+
+
     <!--跳转的网页显示区域-->
     <div class="RenderBody">
 
@@ -84,7 +126,7 @@
         <div class="mainInnerBox">
             <div class="siteMFooter">
                 <div class="siteMFooterABox">
-                    <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">关于我们</a><span>|</span>
+                    <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">留言板</a><span>|</span>
                     <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">联系我们</a><span>|</span>
                     <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">服务协议</a><span>|</span>
                     <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">项目发起规范</a><span>|</span>
@@ -128,7 +170,7 @@
         </div>
     </div>
     <div class="Nbottom">
-        <p>Copyright@2017-2017 www.Charity.com All Rights Reserved ICP备案号：桂ICP备000000009号-9</p><br/>
+        <p>Copyright@2017-2017 www.Charity.com All Rights Reserved ICP备案号：桂ICP备000000009号-9</p>
         <p>
             本站声明所有资源均是网上搜集或网友上传提供，若有侵犯您的版权，请及时与我们联系（邮箱:AiyeroKing@163.com），我们将尽快处理。
             <img border="0" hspace="0" vspace="0" src="~/Content/img/Layout/站长统计.gif">
