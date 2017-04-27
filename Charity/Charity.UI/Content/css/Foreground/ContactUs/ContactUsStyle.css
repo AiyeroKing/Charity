@@ -102,7 +102,7 @@ img {
 #progress_contactBoard {
     height: 3px;
     border-radius:90px;
-    background: #0a4866;
+    background: #468847;
     animation: Boardpulse 4s infinite;
     position:absolute;
 }

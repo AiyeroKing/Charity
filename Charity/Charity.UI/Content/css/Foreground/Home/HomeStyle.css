@@ -723,3 +723,161 @@ figure {
     border-radius:10px;
     box-shadow:0px 0px 30px #7a7272;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.tshop-um-zgc .wd_self_rel {
+    position: relative;
+}
+
+.tshop-um-zgc .wd_self_suspen1920 {
+    width: 1920px;
+    left: -485px;
+}
+
+.tshop-um-zgc .wd_self_rel {
+    position: relative;
+}
+
+.tshop-um-zgc .wd_self_suspen1920 {
+    width: 1920px;
+    left: -485px;
+}
+
+.tshop-um-zgc {
+    color: black;
+    min-height: 10px;
+}
+
+.col-extra, .col-sub, .layout, .main-wrap {
+    zoom: 1;
+}
+
+.layout, .main-wrap, .col-sub, .col-extra {
+    *zoom: 1:;
+}
+
+    .col-extra::after, .col-sub::after, .layout::after, .main-wrap::after {
+        content: "\20";
+        display: block;
+        height: 0px;
+        clear: both;
+    }
+
+    .layout::after, .main-wrap::after, .col-sub::after, .col-extra::after {
+        content: "\20";
+        display: block;
+        height: 0px;
+        clear: both;
+    }
+
+.grid-m0 .main-wrap, .grid-m .main-wrap {
+    width: 990px;
+}
+
+.col-main {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+}
+
+.col-main {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+}
+
+#bd, #ft, #content .layout, #footer {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bd {
+    position: relative;
+    overflow: hidden;
+}
+
+#page #content #bd {
+    width: 100%;
+}
+
+#content, #footer, #header, #page {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content, #mall-category, #mall-desc {
+    width: 990px;
+    margin: auto;
+}
+
+#content, #copyright, #mall-category, #mall-desc {
+    width: auto;
+}
+
+#content {
+    background: url(about:blank) repeat left 0;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    -ms-overflow-style: scrollbar;
+}
+
+html {
+    zoom: expression(function(ele){ ele.style.zoom = "1"; document.execCommand("BackgroundImageCache", false, true); }(this));
+}
+
+.w1190#mallPage, .mui-top-banner-1190, .w1190, .w1190 #mallPage {
+    min-width: 1190px;
+}
+
+.tshop-um-zgc .abs {
+    position: absolute;
+}
+
+.tshop-um-zgc .working .gm-box {
+    z-index: 9;
+}
+
+.tshop-um-zgc .working .gm-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.tshop-um-zgc ._trans {
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.tshop-um-zgc .working ._trans {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.tshop-um-zgc .working .gm-box .gm-tx-common {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
