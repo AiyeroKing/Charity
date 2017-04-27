@@ -112,10 +112,18 @@
     <Compile Include="Configuration\BundleConfig.cs" />
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
+    <Compile Include="Controllers\Foreground\AuctionController.cs" />
+    <Compile Include="Controllers\Foreground\CapitalController.cs" />
     <Compile Include="Controllers\Foreground\ContactUsController.cs" />
+    <Compile Include="Controllers\Foreground\FundsReleasedController.cs" />
     <Compile Include="Controllers\Foreground\HomeController.cs" />
+    <Compile Include="Controllers\Foreground\ItemsCollectionController.cs" />
     <Compile Include="Controllers\Foreground\LoginSignUpController.cs" />
+    <Compile Include="Controllers\Foreground\LoveactivityController.cs" />
+    <Compile Include="Controllers\Foreground\loveBIZController.cs" />
+    <Compile Include="Controllers\Foreground\MarketController.cs" />
     <Compile Include="Controllers\Foreground\NewNewsController.cs" />
+    <Compile Include="Controllers\Foreground\SubsidizationController.cs" />
     <Compile Include="Controllers\Foreground\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -123,7 +131,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\Foreground\Auction\AuctionStyle.css" />
+    <Content Include="Content\css\Foreground\Capital\CapitalStyle.css" />
+    <Content Include="Content\css\Foreground\FundsReleased\FundsReleasedStyle.css" />
+    <Content Include="Content\css\Foreground\ItemsCollection\ItemsCollectionStyle.css" />
+    <Content Include="Content\css\Foreground\Loveactivity\LoveactivityStyle.css" />
+    <Content Include="Content\css\Foreground\loveBIZ\loveBIZStyle.css" />
+    <Content Include="Content\css\Foreground\Market\MarketStyle.css" />
     <Content Include="Content\css\Foreground\NewNews\NewNewsStyle.css" />
+    <Content Include="Content\css\Foreground\Subsidization\SubsidizationStyle.css" />
     <Content Include="Content\img\ContactUs\微信二维码.png" />
     <Content Include="Content\css\bootstrap\bootstrap.css" />
     <Content Include="Content\css\Foreground\ContactUs\ContactUsStyle.css" />
@@ -159,13 +175,13 @@
     <Content Include="Content\img\Home\serv_bg.gif" />
     <Content Include="Content\img\Home\彩虹.png" />
     <Content Include="Content\img\Home\国旗背景.jpg" />
-    <Content Include="Content\img\Layout\站长统计.gif" />
     <Content Include="Content\css\iview\iview.css" />
     <Content Include="Content\css\Foreground\_Layout\Layout.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\img\Layout\favicon.ico" />
-    <Content Include="Content\img\Layout\top-pattern.png" />
     <Content Include="Content\img\ContactUs\微信图标.png" />
+    <Content Include="Content\img\Layout\top-pattern.png" />
+    <Content Include="Content\img\Layout\站长统计.gif" />
     <Content Include="Content\img\NewNews\标签0.gif" />
     <Content Include="Content\img\NewNews\标签1.gif" />
     <Content Include="Content\img\NewNews\标签2.gif" />
@@ -173,12 +189,22 @@
     <Content Include="Content\img\NewNews\标签4.gif" />
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
+    <Content Include="Content\js\Foreground\Auction\Auction.js" />
+    <Content Include="Content\js\Foreground\Capital\Capital.js" />
+    <Content Include="Content\js\Foreground\ContactUs\ContactUs.js" />
+    <Content Include="Content\js\Foreground\FundsReleased\FundsReleased.js" />
     <Content Include="Content\js\Foreground\Home\YuxiSlider.jQuery.min.js" />
-    <Content Include="Content\js\Foreground\LayoutJS.js" />
+    <Content Include="Content\js\Foreground\ItemsCollection\ItemsCollection.js" />
     <Content Include="Content\js\Foreground\LoginSignUp\jquery.js" />
     <Content Include="Content\js\Foreground\LoginSignUp\Particleground.js" />
     <Content Include="Content\js\Foreground\LoginSignUp\verificationNumbers.js" />
+    <Content Include="Content\js\Foreground\Loveactivity\Loveactivity.js" />
+    <Content Include="Content\js\Foreground\loveBIZ\loveBIZ.js" />
+    <Content Include="Content\js\Foreground\Market\Market.js" />
+    <Content Include="Content\js\Foreground\NewNews\NewNews.js" />
+    <Content Include="Content\js\Foreground\Subsidization\Subsidization.js" />
     <Content Include="Content\js\Foreground\UserJS.js" />
+    <Content Include="Content\js\Foreground\_Layout\Layout.js" />
     <Content Include="Content\js\iview\iview.js" />
     <Content Include="Content\js\iview\vue.js" />
     <Content Include="favicon.ico" />
@@ -224,10 +250,27 @@
     <Content Include="Views\ContactUs\ContactUsIndex.cshtml" />
     <Content Include="Views\ContactUs\ContactBoardIndex.cshtml" />
     <Content Include="Views\NewNews\NewNewsIndex.cshtml" />
+    <Content Include="Views\Capital\CapitalIndex.cshtml" />
+    <Content Include="Views\Loveactivity\LoveactivityIndex.cshtml" />
+    <Content Include="Views\loveBIZ\loveBIZIndex.cshtml" />
+    <Content Include="Views\ItemsCollection\ItemsCollectionIndex.cshtml" />
+    <Content Include="Views\Subsidization\SubsidizationIndex.cshtml" />
+    <Content Include="Views\FundsReleased\FundsReleasedIndex.cshtml" />
+    <Content Include="Views\Auction\AuctionIndex.cshtml" />
+    <Content Include="Views\Market\MarketIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\css\Background\" />
     <Folder Include="Content\fonts\image\" />
+    <Folder Include="Content\img\Auction\" />
+    <Folder Include="Content\img\Capital\" />
+    <Folder Include="Content\img\FundsReleased\" />
+    <Folder Include="Content\img\ItemsCollection\" />
+    <Folder Include="Content\img\LoginSignUp\" />
+    <Folder Include="Content\img\Loveactivity\" />
+    <Folder Include="Content\img\loveBIZ\" />
+    <Folder Include="Content\img\Market\" />
+    <Folder Include="Content\img\Subsidization\" />
     <Folder Include="Content\js\Background\" />
     <Folder Include="Controllers\Background\" />
     <Folder Include="DataBase\" />

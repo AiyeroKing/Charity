@@ -4048,7 +4048,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 .navbar {
     position: relative;
     min-height: 50px;
-    background: url("../../../img/Layout/top-pattern.png") top repeat-x;
+    background: url('../../../img/Layout/top-pattern.png') top repeat-x;
     border: 1px solid transparent
 }
 

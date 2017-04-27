@@ -187,7 +187,6 @@ fieldset, img {
     }
 }
 
-
 .breadcrumb {
     padding: 8px 15px;
     /*margin-top: 20px;*/
@@ -242,7 +241,7 @@ fieldset, img {
 .News_bosy_div_all_2 {
     position:absolute;
     width: 60%;
-    height: 800px;
+    height: 738px;
     background-color:rgba(192, 185, 185, 0.23);
     padding: 0 0;
     border:1px solid #999999;
