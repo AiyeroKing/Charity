@@ -120,7 +120,7 @@ input, select {
 }
 .dome_one {
     height: 600px;
-    background-color:cyan;
+    /*background-color:rgba(65, 57, 57, 0.74);*/
     box-shadow: 0 0 10px #393937;
 }
 

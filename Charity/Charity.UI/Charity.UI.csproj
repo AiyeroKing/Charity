@@ -112,6 +112,7 @@
     <Compile Include="Configuration\BundleConfig.cs" />
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
+    <Compile Include="Controllers\Background\BendHomeController.cs" />
     <Compile Include="Controllers\Foreground\AuctionController.cs" />
     <Compile Include="Controllers\Foreground\CapitalController.cs" />
     <Compile Include="Controllers\Foreground\ContactUsController.cs" />
@@ -131,6 +132,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BE_favicon.ico" />
+    <Content Include="Content\css\Background\_BackEnd_Layout\_BackEnd_LayoutStyle.css" />
     <Content Include="Content\css\Foreground\Auction\AuctionStyle.css" />
     <Content Include="Content\css\Foreground\Capital\CapitalStyle.css" />
     <Content Include="Content\css\Foreground\FundsReleased\FundsReleasedStyle.css" />
@@ -187,6 +190,7 @@
     <Content Include="Content\img\NewNews\标签2.gif" />
     <Content Include="Content\img\NewNews\标签3.gif" />
     <Content Include="Content\img\NewNews\标签4.gif" />
+    <Content Include="Content\js\Background\_BackEnd_Layout\_BackEnd_Layout.js" />
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
     <Content Include="Content\js\Foreground\Auction\Auction.js" />
@@ -258,9 +262,11 @@
     <Content Include="Views\FundsReleased\FundsReleasedIndex.cshtml" />
     <Content Include="Views\Auction\AuctionIndex.cshtml" />
     <Content Include="Views\Market\MarketIndex.cshtml" />
+    <Content Include="Views\Shared\_BackEnd_Layout.cshtml" />
+    <Content Include="Views\BendHome\BendHomeIndex.cshtml" />
+    <Content Include="Scripts\vue.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\css\Background\" />
     <Folder Include="Content\fonts\image\" />
     <Folder Include="Content\img\Auction\" />
     <Folder Include="Content\img\Capital\" />
@@ -271,8 +277,6 @@
     <Folder Include="Content\img\loveBIZ\" />
     <Folder Include="Content\img\Market\" />
     <Folder Include="Content\img\Subsidization\" />
-    <Folder Include="Content\js\Background\" />
-    <Folder Include="Controllers\Background\" />
     <Folder Include="DataBase\" />
   </ItemGroup>
   <ItemGroup>
