@@ -1,2 +1,109 @@
-﻿body {
+﻿body{
+    margin-top:-1.2em;
+    
+}
+
+/*过滤线*/
+#progress_Subsidization {
+    height: 3px;
+    border-radius: 90px;
+    background: red;
+    animation: Subsidizatpulse 4s infinite;
+    position: absolute;
+}
+
+@keyframes Subsidizatpulse {
+    0% {
+        width: 0;
+        background: red;
+    }
+    20% {
+        background:rgba(119, 117, 117, 0.12);
+    }
+    40% {
+        background: #3159d1;
+    }
+    60% {
+        background: rgba(119, 117, 117, 0.12);
+    }
+
+    80% {
+        background: #3159d1;
+    }
+
+    100% {
+        width: 100%;
+        background: red;
+    }
+}
+
+/*小导航*/
+.nav_Subsidizate {
+    margin-top:0.2em;
+}
+
+.img_nav_Subsidizte {
+    height:20px;
+    background: url('../../../img/Layout/top-pattern.png')/*no-repeat*/ repeat-x;
+    background-size:10%;
+    z-index:99;
+}
+
+.img_nav_Subsidizte_one {
+    /*position: absolute;*/
+    margin-top:-1.3em;
+    height: 20px;
+    background: url('../../../img/Layout/top-pattern.png')repeat-x;
+    background-size: 10%;
+    z-index: 999;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    /*margin-bottom: 20px;*/
+    list-style: none;
+    margin-top: -1em;
+    /*background-color: #f5f5f5;*/
+    border-radius: 4px;
+    border-bottom: dashed 1px #dadde3;
+    z-index: 88;
+}
+
+.breadcrumb > li {
+        display: inline-block;
+    }
+
+.breadcrumb > li + li:before {
+            padding: 0 5px;
+            color: #cccccc;
+            content: "/\00a0";
+        }
+
+.breadcrumb > .active {
+        color: #999999;
+    }
+
+.sub_all_body{
+    width:90%;
+    height:700px;
+    background-color:rgba(119, 117, 117, 0.12);
+    margin-left:5%;
+}
+.col-md-12{
+    padding-top:0.5em;
+}
+.col-md-3{
+    padding:8px;
+    /*border:  dashed 1.5px #999999;*/
+}
+.thumbnail{
+    height:280px;
+}
+.link_btn_chakan{
+    margin-top:-1.3em;
+    margin-left:72%;
+}
+.button_nav_bottom{
+    position:absolute;
+    bottom:-5.5em;
+    margin-left:37%;
 }
