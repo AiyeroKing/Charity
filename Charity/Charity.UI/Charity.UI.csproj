@@ -153,7 +153,8 @@
     <Content Include="Content\img\ContactUs\地图.jpg" />
     <Content Include="Content\img\ContactUs\留言板背景.jpg" />
     <Content Include="Content\img\ContactUs\留言背景.jpg" />
-    <Content Include="Content\img\default4.jpg" />
+    <Content Include="Content\img\Loveactivity\about_left.jpg" />
+    <Content Include="Content\img\Subsidization\default4.jpg" />
     <Content Include="Content\img\Home\1.jpg" />
     <Content Include="Content\img\Home\1_1.jpg" />
     <Content Include="Content\img\Home\2.jpg" />
@@ -198,6 +199,7 @@
     <Content Include="Content\js\Foreground\Capital\Capital.js" />
     <Content Include="Content\js\Foreground\ContactUs\ContactUs.js" />
     <Content Include="Content\js\Foreground\FundsReleased\FundsReleased.js" />
+    <Content Include="Content\img\Loveactivity\help_head.jpg" />
     <Content Include="Content\js\Foreground\Home\YuxiSlider.jQuery.min.js" />
     <Content Include="Content\js\Foreground\ItemsCollection\ItemsCollection.js" />
     <Content Include="Content\js\Foreground\LoginSignUp\jquery.js" />
@@ -274,10 +276,8 @@
     <Folder Include="Content\img\FundsReleased\" />
     <Folder Include="Content\img\ItemsCollection\" />
     <Folder Include="Content\img\LoginSignUp\" />
-    <Folder Include="Content\img\Loveactivity\" />
     <Folder Include="Content\img\loveBIZ\" />
     <Folder Include="Content\img\Market\" />
-    <Folder Include="Content\img\Subsidization\" />
     <Folder Include="DataBase\" />
   </ItemGroup>
   <ItemGroup>

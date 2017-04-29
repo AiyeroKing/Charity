@@ -44,6 +44,7 @@
 
 .img_nav_Subsidizte {
     height:20px;
+
     background: url('../../../img/Layout/top-pattern.png')/*no-repeat*/ repeat-x;
     background-size:10%;
     z-index:99;
