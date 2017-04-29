@@ -268,6 +268,8 @@
     <Content Include="Views\Shared\_BackEnd_Layout.cshtml" />
     <Content Include="Views\BendHome\BendHomeIndex.cshtml" />
     <Content Include="Scripts\vue.min.js" />
+    <Content Include="Views\Loveactivity\LovehelpIndex.cshtml" />
+    <Content Include="Views\Loveactivity\LovemeatIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
