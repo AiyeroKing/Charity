@@ -144,6 +144,7 @@
     <Content Include="Content\css\Foreground\Market\MarketStyle.css" />
     <Content Include="Content\css\Foreground\NewNews\NewNewsStyle.css" />
     <Content Include="Content\css\Foreground\Subsidization\SubsidizationStyle.css" />
+    <Content Include="Content\img\Capital\about_head.jpg" />
     <Content Include="Content\img\ContactUs\微信二维码.png" />
     <Content Include="Content\css\bootstrap\bootstrap.css" />
     <Content Include="Content\css\Foreground\ContactUs\ContactUsStyle.css" />
@@ -330,7 +331,6 @@
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
     <Folder Include="Content\img\Auction\" />
-    <Folder Include="Content\img\Capital\" />
     <Folder Include="Content\img\FundsReleased\" />
     <Folder Include="Content\img\LoginSignUp\" />
     <Folder Include="Content\img\Market\" />
