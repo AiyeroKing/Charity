@@ -142,6 +142,12 @@
     <Content Include="Content\css\Foreground\loveBIZ\loveBIZStyle.css" />
     <Content Include="Content\css\Foreground\loveBIZ\slideStyle.css" />
     <Content Include="Content\css\Foreground\Market\MarketStyle.css" />
+    <Content Include="Content\img\Market\link-bg.png" />
+    <Content Include="Content\img\Market\link-mark.jpg" />
+    <Content Include="Content\img\Market\sub-content-bottom-bg.png" />
+    <Content Include="Content\img\Market\sub-content-middle-bg.png" />
+    <Content Include="Content\img\Market\sub-content-top-bg.png" />
+    <Content Include="Content\img\Market\sub-menu-bg.png" />
     <Content Include="Content\css\Foreground\NewNews\NewNewsStyle.css" />
     <Content Include="Content\css\Foreground\Subsidization\SubsidizationStyle.css" />
     <Content Include="Content\img\Capital\about_head.jpg" />
@@ -184,6 +190,7 @@
     <Content Include="Content\img\loveBIZ\sponsor\sony.png" />
     <Content Include="Content\img\loveBIZ\sponsor\vimeo.png" />
     <Content Include="Content\img\loveBIZ\sponsor\yahoo.png" />
+    <Content Include="Content\img\Market\1.png" />
     <Content Include="Content\img\Subsidization\default4.jpg" />
     <Content Include="Content\img\Home\1.jpg" />
     <Content Include="Content\img\Home\1_1.jpg" />
@@ -333,7 +340,6 @@
     <Folder Include="Content\img\Auction\" />
     <Folder Include="Content\img\FundsReleased\" />
     <Folder Include="Content\img\LoginSignUp\" />
-    <Folder Include="Content\img\Market\" />
     <Folder Include="DataBase\" />
   </ItemGroup>
   <ItemGroup>
