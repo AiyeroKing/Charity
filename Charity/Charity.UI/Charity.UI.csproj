@@ -300,6 +300,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Content\img\FundsReleased\shangkuang.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -334,11 +335,11 @@
     <Content Include="Scripts\vue.min.js" />
     <Content Include="Views\Loveactivity\LovehelpIndex.cshtml" />
     <Content Include="Views\Loveactivity\LovemeatIndex.cshtml" />
+    <Content Include="Views\FundsReleased\FundsReleasedtwoIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
     <Folder Include="Content\img\Auction\" />
-    <Folder Include="Content\img\FundsReleased\" />
     <Folder Include="Content\img\LoginSignUp\" />
     <Folder Include="DataBase\" />
   </ItemGroup>

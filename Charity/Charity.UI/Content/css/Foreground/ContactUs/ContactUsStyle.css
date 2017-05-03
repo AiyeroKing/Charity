@@ -1,5 +1,5 @@
 ﻿body {
-    margin-top:-1.3em;
+    margin-top: -1.3em;
 }
 
 .content {
@@ -9,21 +9,21 @@
     line-height: 35px;
 }
 
-.content .list {
+    .content .list {
         width: 100%;
         padding: 30px 0 20px 0;
         min-height: 200px;
     }
 
-.content .list.bottom {
+        .content .list.bottom {
             border-bottom: solid 1px #dadde3;
         }
 
-.content .list.social {
+        .content .list.social {
             height: 200px;
         }
 
-.content .title {
+    .content .title {
         font-size: 20px;
         font-weight: bold;
     }
@@ -86,7 +86,7 @@ img {
 
 #progress_contactUs {
     height: 2px;
-    background:#0094ff;
+    background: #0094ff;
     animation: pulse 4s infinite;
 }
 
@@ -99,12 +99,13 @@ img {
         width: 100%;
     }
 }
+
 #progress_contactBoard {
     height: 3px;
-    border-radius:90px;
+    border-radius: 90px;
     background: #468847;
     animation: Boardpulse 4s infinite;
-    position:absolute;
+    position: absolute;
 }
 
 @keyframes Boardpulse {
@@ -121,17 +122,18 @@ img {
 .nav_ContactUs_top {
     padding-top: 20px;
 }
-.cont_two{
-    text-align:left;
-    padding-left:15em;
+
+.cont_two {
+    text-align: left;
+    padding-left: 15em;
 }
+
 .Board_massage {
     margin-top: -11px;
     height: 670px;
     width: 100%;
     background: url("../../../img/ContactUs/留言板背景.jpg")no-repeat center;
     background-size: 80%;
-    
 }
 
 .box_massage_all {
@@ -146,6 +148,7 @@ img {
     background-color: #ffffff;
     z-index: 10;
 }
+
 .box_massage_all_0 {
     position: absolute;
     width: 58%;
@@ -155,8 +158,8 @@ img {
     opacity: 0.4;
     background-color: #dadde3;
     z-index: 9;
-    
 }
+
 .box_massage_all_1 {
     position: absolute;
     width: 58%;
@@ -166,36 +169,38 @@ img {
     z-index: 11;
     letter-spacing: 2px;
 }
-.box_massage_all_1 h2 {
-    
-  box-shadow:0px 0px 2px black;
-  background:#0d455e;
-  color:#ced39b;
-  font-family:'Microsoft YaHei';
-  font-weight:100;
-  font-size:20px;
-  padding:10px 30px;
-}
-.massage_color{
-    color:#ff6a00;
-    font-family:Verdana;
-    font-weight:200;
-    font-size:19px;
 
-}
-.fuhao_xinghao{
-    color:red;
-    font-size:24px;
-    margin-left:3px;
-}
-.box_massage_all_2{
-    margin-top:2em;
-    padding-left:13em;
-}
-.height_gaodu{
-    height:25px;
-    width:100%;
+    .box_massage_all_1 h2 {
+        box-shadow: 0px 0px 2px black;
+        background: #0d455e;
+        color: #ced39b;
+        font-family: 'Microsoft YaHei';
+        font-weight: 100;
+        font-size: 20px;
+        padding: 10px 30px;
+    }
 
+.massage_color {
+    color: #ff6a00;
+    font-family: Verdana;
+    font-weight: 200;
+    font-size: 19px;
+}
+
+.fuhao_xinghao {
+    color: red;
+    font-size: 24px;
+    margin-left: 3px;
+}
+
+.box_massage_all_2 {
+    margin-top: 2em;
+    padding-left: 13em;
+}
+
+.height_gaodu {
+    height: 25px;
+    width: 100%;
 }
 
 .box_massage_all_3 {
@@ -206,13 +211,14 @@ img {
     font-weight: 400;
     font-size: 12px;
     margin-top: 3%;
-    padding-top:0.5em;
-    padding-bottom:0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     letter-spacing: 8px;
 }
-.xinghao_xinghao_buttom{
-    font-size:15px;
-    color:red;
+
+.xinghao_xinghao_buttom {
+    font-size: 15px;
+    color: red;
 }
 
 .has-warning .input-group-addon {
@@ -220,11 +226,13 @@ img {
     background-color: #fcf8e3;
     border-color: #c09853;
 }
+
 .has-error .input-group-addon {
     color: #b94a48;
     background-color: #f2dede;
     border-color: #b94a48;
 }
+
 .has-success .input-group-addon {
     color: #468847;
     background-color: #dff0d8;

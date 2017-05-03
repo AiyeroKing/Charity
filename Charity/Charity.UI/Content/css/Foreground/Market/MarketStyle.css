@@ -1,5 +1,5 @@
-﻿body{
-    background-color:#000000;
+﻿body {
+    background-color: #000000;
 }
 
 
@@ -52,17 +52,17 @@
     background-color: #d01212;
 }
 
-.breadcrumb > li {
+    .breadcrumb > li {
         display: inline-block;
     }
 
-.breadcrumb > li + li:before {
+        .breadcrumb > li + li:before {
             padding: 0 5px;
             color: #cccccc;
             content: "/\00a0";
         }
 
-.breadcrumb > .active {
+    .breadcrumb > .active {
         color: #999999;
     }
 
@@ -75,17 +75,17 @@
     margin-top: -20px;
 }
 
-.body_little_2{
-   width:100%;
-   height:800px;
+.body_little_2 {
+    width: 100%;
+    height: 800px;
 }
 
-.area_one{
-    width:80%;
-    height:98%;
-    background-color:white;
-    margin:5% 10%;
-    border:solid 8px #808080;
+.area_one {
+    width: 80%;
+    height: 98%;
+    background-color: white;
+    margin: 5% 10%;
+    border: solid 8px #808080;
 }
 
 .main_left_one_nav {
@@ -94,8 +94,8 @@
     float: left;
     display: inline;
     background: url('../../../img/Market/sub-menu-bg.png') no-repeat;
-    margin-left:5%;
-    margin-top:-1.8%;
+    margin-left: 5%;
+    margin-top: -1.8%;
 }
 
 .main-menu-title {
@@ -105,28 +105,28 @@
     margin: 57px 17px 22px 17px;
     color: #ea0caf;
     font-size: 21px;
-    font-weight:800;
+    font-weight: 800;
     text-align: center;
-
 }
 
-.main-menu-item{
+.main-menu-item {
     width: 93px;
     height: 36px;
     line-height: 36px;
     margin: 0px 32px;
     padding: 0px 8px;
     border-bottom: 1px solid #73665c;
-    text-align:center;
+    text-align: center;
 }
 
-.main-menu-item a{
-    color:#f3e208;
-    font-size:18px;
-}
-.main-menu-item a:hover {
-        color:cyan;
+    .main-menu-item a {
+        color: #f3e208;
+        font-size: 18px;
     }
+
+        .main-menu-item a:hover {
+            color: cyan;
+        }
 
 .web-address {
     width: 780px;
@@ -135,9 +135,10 @@
     margin-left: 25%;
     margin-top: 3%;
 }
-.web-address ul {
-    margin-top: 14px;
-}
+
+    .web-address ul {
+        margin-top: 14px;
+    }
 
 ul {
     list-style-type: none;
@@ -163,11 +164,11 @@ ul {
     float: left;
 }
 
-.body_little_3{
-    width:70%;
-    height:85%;
+.body_little_3 {
+    width: 70%;
+    height: 85%;
     /*background-color:antiquewhite;*/
-    margin-left:26%;
+    margin-left: 26%;
 }
 
 .main-content-top {

@@ -1,2 +1,239 @@
-﻿body {
+﻿
+#progress_FundsReleased {
+    height: 3px;
+    border-radius: 90px;
+    animation: FundsReleasedpulse 2s infinite;
+    position: absolute;
+    margin-top: -1.3em;
+}
+
+@keyframes FundsReleasedpulse {
+    0% {
+        width: 0;
+        background: cyan;
+    }
+
+    20% {
+        background: #808080;
+    }
+
+    40% {
+        background: #f3e208;
+    }
+
+    60% {
+        background: #a70d7e;
+    }
+
+    80% {
+        background: #7603ca;
+    }
+
+    100% {
+        width: 100%;
+        background: #b6ff00;
+    }
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    /*margin-bottom: 20px;*/
+    list-style: none;
+    margin-top: -1.2em;
+    /*background-color: #f5f5f5;*/
+    border-radius: 0px;
+    /*border-bottom: dashed 1px #dadde3;*/
+    z-index: 88;
+    background-color: #af5050;
+}
+
+    .breadcrumb > li {
+        display: inline-block;
+    }
+
+        .breadcrumb > li + li:before {
+            padding: 0 5px;
+            color: #cccccc;
+            content: "/\00a0";
+        }
+
+    .breadcrumb > .active {
+        color: #999999;
+    }
+
+.help_head_img {
+    background: url('../../../img/FundsReleased/shangkuang.png')no-repeat;
+    background-size: 80%;
+    width: 100%;
+    height: 91px;
+}
+
+.boxc_a1_con {
+    background-color: red;
+    width: 80%;
+    height: 70px;
+}
+
+.marginsss_aa1 {
+    margin-left: 18%;
+    height: 700px;
+}
+
+.boxc_a1_con_one {
+    width: 100%;
+    height: 96%;
+    background-color: #cccccc;
+    margin-top: 1%;
+}
+
+    .boxc_a1_con_one ul {
+        font: 12px verdana, arial, sans-serif; /* 设置文字大小和字体样式 */
+    }
+
+        .boxc_a1_con_one ul li {
+            list-style: none; /* 将默认的列表符号去掉 */
+            float: left; /* 往左浮动 */
+            width: 20%;
+            height: 67.5px;
+            text-align: center;
+        }
+
+.ooood_1 {
+    width: 100%;
+    height: 100%;
+    background: red;
+    color: white;
+}
+
+.ooood_2 {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #cccccc;
+}
+
+.ooood_1:hover {
+    /*color: black;*/
+    animation: colorfontbus 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorfontbus {
+    0% {
+    }
+
+    100% {
+        background: #f3e208;
+        color: black;
+    }
+}
+
+.ooood_2:hover {
+    /*color: black;*/
+    animation: colorfontbus2 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorfontbus2 {
+    0% {
+    }
+
+    100% {
+        background: yellow;
+        color: #af5050;
+    }
+}
+
+
+.order-now {
+    position: absolute;
+    float: right;
+    line-height: 60px;
+    right: 5%;
+    margin-top: 1.3em;
+}
+
+    .order-now a {
+        width: 116px;
+        height: 36px;
+        display: block;
+        text-align: center;
+        line-height: 36px;
+        font-size: 14px;
+        border-radius: 18px;
+        background-color: #222426;
+        /*position: relative;*/
+    }
+
+        .order-now a:hover {
+            animation: shuaxinjilu 0.8s;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes shuaxinjilu {
+    100% {
+        background-color: red;
+        color: #fff;
+    }
+}
+
+.button_cishanggongkai {
+    position: absolute;
+    width: 7%;
+    height: 35px;
+    background-color: deepskyblue;
+    margin-left: 5%;
+    margin-top: 1.5em;
+    border-radius: 8px;
+}
+
+    .button_cishanggongkai:hover {
+        background-color: burlywood;
+    }
+
+    .button_cishanggongkai span {
+        position: absolute;
+        padding-left: 20%;
+        padding-top: 5%;
+        color: #18181a;
+    }
+
+        .button_cishanggongkai span :hover {
+            color: yellow;
+        }
+
+.boxc_a2_con_one {
+    margin-top: 0px;
+    width: 100%;
+    height: 500px;
+    /*background-color:cyan;*/
+    border: solid 1px red;
+}
+
+.td_checkmesg {
+}
+
+    .td_checkmesg a {
+    }
+
+        .td_checkmesg a div {
+            text-align: center;
+            width: 50%;
+            padding-top: 2px;
+            height: 25px;
+            border-radius: 5px;
+            color: red;
+            font-size: 15px;
+        }
+
+            .td_checkmesg a div:hover {
+                animation: box_uui 1s;
+                animation-fill-mode: forwards;
+            }
+
+@keyframes box_uui {
+    100% {
+        color: #cccccc;
+        background-color: red;
+    }
 }

@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -13,7 +14,6 @@
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <!--导入自定义的js文件-->
     @*<script src="~/Content/js/Foreground/LayoutJS.js" defer></script>*@
-    
 </head>
 <body>
     <style type="text/css">
@@ -22,9 +22,11 @@
             font-weight: 600;
             text-decoration: none;
         }
+
             a:hover {
                 text-decoration: none;
             }
+
         .li_massage_borad:hover {
             background: #777;
         }
@@ -56,11 +58,10 @@
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-left" style="margin-left:10%;">
                             <li>@Html.ActionLink("首页", "HomeIndex", "Home")</li>
-                            <li>@Html.ActionLink("义卖超市", "MarketIndex", "Market")</li>
+                            <li>@Html.ActionLink("慈善义卖", "MarketIndex", "Market")</li>
                             @*<li>@Html.ActionLink("义拍卖会", "AuctionIndex", "Auction")</li>*@
                             <li>@Html.ActionLink("物品募捐", "ItemsCollectionIndex", "ItemsCollection")</li>
                             <li>@Html.ActionLink("资金募捐", "CapitalIndex", "Capital")</li>
-                           
                             <!--<li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">募捐系列 <b class="caret"></b> </a>
                                 <ul class="dropdown-menu">
@@ -73,61 +74,37 @@
                                     <li class="divider"></li>*@
                                 </ul>
                             </li>-->
-
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">爱心系列 <b class="caret"></b> </a>
                                 <ul class="dropdown-menu">
                                     <li class="divider"></li>
                                     <li>@Html.ActionLink("爱心活动", "LoveactivityIndex", "Loveactivity")</li>
-
                                     <li class="divider"></li>
                                     <li>@Html.ActionLink("爱心团队", "loveBIZIndex", "loveBIZ")</li>
-
                                     <li class="divider"></li>
                                     <li>@Html.ActionLink("善款公布", "FundsReleasedIndex", "FundsReleased")</li>
                                     <li class="divider"></li>
                                 </ul>
                             </li>
-
                             <li>@Html.ActionLink("贫困捐助", "SubsidizationIndex", "Subsidization")</li>
                             <li>@Html.ActionLink("最新资讯", "NewNewsIndex", "NewNews")</li>
                             <li>@Html.ActionLink("联系我们", "ContactUsIndex", "ContactUs")</li>
-
-                             <li class="li_massage_borad"><a href="../ContactUs/ContactBoardIndex">留言板</a></li>
-
+                            <li class="li_massage_borad"><a href="../ContactUs/ContactBoardIndex">留言板</a></li>
                             <li class="li_massage_borad_one"><a href="../LoginSignUp/LoginIndex">登录</a></li>
-                           
                             <li class="li_massage_borad_two"><a href="../LoginSignUp/SignUpIndex">注册</a></li>
-
                             @*<li style="margin-left:2em;" class="="signUp_Login">@Html.ActionLink("登陆", "LoginIndex", "LoginSignUp")</li>
-                            <li class="="signUp_Login">@Html.ActionLink("注册", "SignUpIndex", "LoginSignUp")</li>*@
-                            
+                                <li class="="signUp_Login">@Html.ActionLink("注册", "SignUpIndex", "LoginSignUp")</li>*@
                         </ul>
                     </div>
                 </div>
             </div>
-
-           
-
         </header>
     </div>
 
-
-
-
-
-
-
     <!--跳转的网页显示区域-->
-    <div class="RenderBody">
-
-        @RenderBody()
-
-    </div>
-
+    <div class="RenderBody">@RenderBody()</div>
 
     <!--底部导航栏-->
-
 
     <div class="siteFooterBox">
         <div class="mainInnerBox">
@@ -142,7 +119,6 @@
                 </div>
             </div>
         </div>
-
         <div class="siteBFooter">
             <div class="siteBF_yqlj siteIlB_box">
                 <a class="site_hoverCss3A siteIlB_item" href="http://iof.hexun.com/zhongchou/index.html" target="_blank" rel="nofollow">和讯网</a>
@@ -184,15 +160,9 @@
         </p>
     </div>
 
-
-   
-   
-        <div class="home blog logged-in" wd="1524">
-            <div class="ico" id="gotop" style="display: block;"></div>
-        </div>
- 
-
-
+    <div class="home blog logged-in" wd="1524">
+        <div class="ico" id="gotop" style="display: block;"></div>
+    </div>
 
     <!---导入JQ.js文件-->
     <script src="~/Content/js/bootstrap/jquery.js"></script>

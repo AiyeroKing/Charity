@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-.Nbottom p {
+    .Nbottom p {
         font-size: 12px;
         color: #999;
         text-align: center;
@@ -52,7 +52,7 @@
 
 .siteFooterBox {
     background-color: #24282f;
-    margin-bottom:-0.5em;
+    margin-bottom: -0.5em;
 }
 
 .mainInnerBox {
@@ -107,9 +107,9 @@
     margin: 0px 4px 0 0;
 }
 
-.siteBF_yqlj a:hover {
-    color: cyan;
-}
+    .siteBF_yqlj a:hover {
+        color: cyan;
+    }
 
 .siteMFooter {
     height: 45px;
@@ -120,33 +120,36 @@
 }
 
 .siteMFooterABox {
-    margin-top:-2%;
+    margin-top: -2%;
     color: #485263;
 }
 
-.siteMFooterABox a {
+    .siteMFooterABox a {
         color: #616c7f;
-}
+    }
 
-.siteMFooterABox a:hover {
-        color: cyan;
-}
+        .siteMFooterABox a:hover {
+            color: cyan;
+        }
 
-.siteMFooterABox span {
+    .siteMFooterABox span {
         margin: 0em 1em;
+    }
+
+.signUp_Login {
+    border-radius: 30px;
 }
-.signUp_Login{
-    border-radius:30px;
-}
+
 .li_massage_borad {
     left: 240px;
     background: #485263;
     border-radius: 6px;
     height: 30px;
-    width:73px;
+    width: 73px;
     margin-top: 12px;
     box-shadow: 3px 3px 2px #485263;
 }
+
 .li_massage_borad_one {
     left: 250px;
     background: cyan;
@@ -156,13 +159,16 @@
     margin-top: 13px;
     box-shadow: 3px 3px 2px yellow;
 }
+
     .li_massage_borad_one:hover {
         background: #485263;
         box-shadow: 3px 3px 2px yellow;
     }
-.li_massage_borad_one a {
-   margin-top:-0.8em;
-}
+
+    .li_massage_borad_one a {
+        margin-top: -0.8em;
+    }
+
 .li_massage_borad_two {
     left: 250px;
     background: yellow;
@@ -172,10 +178,12 @@
     margin-top: 13px;
     box-shadow: 2px 3px 2px cyan;
 }
+
     .li_massage_borad_two:hover {
         background: #485263;
         box-shadow: 3px 3px 2px cyan;
     }
-.li_massage_borad_two a {
-    margin-top: -0.8em;
-}
+
+    .li_massage_borad_two a {
+        margin-top: -0.8em;
+    }

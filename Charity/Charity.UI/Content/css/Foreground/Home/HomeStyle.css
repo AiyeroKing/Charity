@@ -1,4 +1,5 @@
 ﻿@charset"utf-8";
+
 abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite
     font-family: inherit;
     vertical-align: top
 }
+
 body {
     line-height: 1;
     color: #000;
@@ -18,64 +20,80 @@ body {
     font-size: 12px;
     font-family: 'simsun';
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, hr, menu, nav, section {
     display: block
 }
+
     nav ul, ol, ul {
         list-style: none
     }
+
 :focus, a {
     outline: 0
 }
+
 a {
     margin: 0;
     font-size: 100%;
     vertical-align: baseline;
     background: 0 0;
-    blr:expression(this.onFocus=this.blur())
+    blr: expression(this.onFocus=this.blur())
 }
+
 a, ins {
     text-decoration: none
 }
+
 a, hr {
     padding: 0
 }
+
 ins, mark {
     background-color: #ff9;
     color: #000
 }
+
 mark {
     font-style: italic;
     font-weight: 700
 }
+
 blockquote, q {
     quotes: none
 }
+
     blockquote:after, blockquote:before, q:after, q:before {
         content: '';
         content: none
     }
+
 del {
     text-decoration: line-through
 }
+
 abbr[title], dfn[title] {
     border-bottom: 1px dotted;
     cursor: help
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0
 }
+
 caption, td, th {
     text-align: left;
     font-weight: 400
 }
+
 hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #cccccc;
     margin: 1em 0
 }
+
 input, select {
     vertical-align: middle;
     border: 0
@@ -88,8 +106,8 @@ input, select {
     height: 450px;
     font-size: 16px;
     position: relative;
-  
 }
+
     .demo a.control {
         position: absolute;
         display: block;
@@ -98,19 +116,23 @@ input, select {
         height: 112px;
         cursor: pointer;
         z-index: 2;
-        background: url('../../../img/Home/buttons.png') no-repeat ;
+        background: url('../../../img/Home/buttons.png') no-repeat;
     }
+
     .demo a.prev {
         left: 0;
         background-position: 0 0
     }
+
     .demo a.next {
         right: 0;
         background-position: -76px 0
     }
+
     .demo a.prev:hover {
         background-position: 0 -112px
     }
+
     .demo a.next:hover {
         background-position: -76px -112px
     }
@@ -118,6 +140,7 @@ input, select {
 .slider {
     display: none;
 }
+
 .dome_one {
     height: 600px;
     /*background-color:rgba(65, 57, 57, 0.74);*/
@@ -125,45 +148,59 @@ input, select {
 }
 
 /*过渡条循环播放*/
-#element{
-    animation:keyframe duration;
+#element {
+    animation: keyframe duration;
 }
+
 #progress_home {
     height: 2px;
-    background:#0e1693;
+    background: #0e1693;
     animation: pulse 4s infinite;
 }
-@keyframes pulse{
-    0%{width:0;}
-    100%{width:100%;}
+
+@keyframes pulse {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 /*彩虹图片动态旋转*/
-.Home_GIF_A{
+.Home_GIF_A {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
 
-    width:100%;
-    height:150px;
-    text-align:center;
-}
-.Home_GIF_A span{
-    height:100%;
-    display:inline-block;
-    vertical-align:middle;
-}
-    .Home_GIF_A img {
-   width:7%;
+    .Home_GIF_A span {
+        height: 100%;
+        display: inline-block;
         vertical-align: middle;
-        animation:Caihong 1.5s infinite linear;
     }
-    @keyframes Caihong{
-        0%{transform:rotate(0deg);}
-        100%{transform:rotate(360deg);}
+
+    .Home_GIF_A img {
+        width: 7%;
+        vertical-align: middle;
+        animation: Caihong 1.5s infinite linear;
     }
+
+@keyframes Caihong {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 .Home_Zroe {
-    width:100%;
-    text-align:center;
+    width: 100%;
+    text-align: center;
 }
 
 .Home_Two {
@@ -180,38 +217,36 @@ input, select {
     margin-top: 10px;
     height: 520px;
     text-align: center;
-    box-shadow:-1px 3px 10px #393937;
-
+    box-shadow: -1px 3px 10px #393937;
 }
+
 .Home_Four_one {
     width: 60%;
     margin-left: 20%;
-    padding-top:4%;
+    padding-top: 4%;
+}
 
-}
 .Home_Four_two {
-    position:absolute;
-    margin-top:-23%;
-    padding-left:16%;
+    position: absolute;
+    margin-top: -23%;
+    padding-left: 16%;
 }
+
 .Home_Four {
     margin-top: 10px;
     height: 400px;
- 
 }
+
 .Home_Six {
-    margin-top:10px;
+    margin-top: 10px;
     height: 100px;
-
     text-align: center;
-
-
 }
+
 .Home_Six_one {
     margin-top: 20px;
-    padding-top:0px;
-    padding-left:22%;
- 
+    padding-top: 0px;
+    padding-left: 22%;
 }
 
 
@@ -349,7 +384,7 @@ h2 ul {
 
 
 
-        /*图片轮播*/
+/*图片轮播*/
 .mKeBanner, .mKeBanner div {
     text-align: center;
 }
@@ -428,7 +463,7 @@ h2 ul {
         overflow: hidden;
         white-space: nowrap
     }
-    
+
     .imageflow .button {
         cursor: pointer;
         height: 17px;
@@ -498,12 +533,12 @@ ul.service_list li a {
     background: url('../../../img/Home/serv_bg.gif') 50% 0 no-repeat;
 }
 
-ul.service_list li a:hover{
-    color:hotpink;
-    text-shadow:1px 1px 1px #393937;
-}
-    
-    
+    ul.service_list li a:hover {
+        color: hotpink;
+        text-shadow: 1px 1px 1px #393937;
+    }
+
+
     ul.service_list li a.s11 {
         background-position: 50% -522px;
     }
@@ -641,7 +676,7 @@ figure {
 .icon-cog {
     background-image: url('../../../img/Home/icon-cog.png');
     background-size: 36px 36px;
-    margin-left:20px;
+    margin-left: 20px;
 }
 
 .icon-upgrades {
@@ -697,32 +732,35 @@ figure {
 .icon-auth {
     background-image: url('../../../img/Home/icon-auth.png');
     background-size: 36px 36px;
-
 }
+
 .col-md-4 {
-    padding-bottom:17px;
-}
-.col-md-4 h3 {
-    padding-bottom: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Trebuchet MS';
-}
-.col-md-4 p {
-    padding-bottom:10px;
-    font-size: 14px;
-    text-align:left;
-    font-family:YouYuan;
+    padding-bottom: 17px;
 }
 
-.col-md-4 h3:hover{
+    .col-md-4 h3 {
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Trebuchet MS';
+    }
 
-    color:burlywood;
-}
-.col-md-4:hover {
-    border-radius:10px;
-    box-shadow:0px 0px 30px #7a7272;
-}
+    .col-md-4 p {
+        padding-bottom: 10px;
+        font-size: 14px;
+        text-align: left;
+        font-family: YouYuan;
+    }
+
+    .col-md-4 h3:hover {
+        color: burlywood;
+    }
+
+    .col-md-4:hover {
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px #7a7272;
+    }
+
 * {
     margin: 0;
     padding: 0;
