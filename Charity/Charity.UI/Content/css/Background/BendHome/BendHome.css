@@ -1,0 +1,51 @@
+﻿body{
+    width:99%;
+    height:98%
+    /*background-color:yellow;*/
+}
+
+.Bank_home_font {
+    text-align: center;
+    margin-top: 20%;
+    text-decoration-line: none;
+    letter-spacing: 2em;
+    font-family: STSong;
+    animation: ccvbg 2s infinite linear;
+}
+@keyframes ccvbg{
+    0% {
+        text-shadow: 2px 1.7px 12px black;
+    }
+    20% {
+        text-shadow: 2px 1.7px 12px cyan;
+    }
+    40% {
+        text-shadow: 2px 1.7px 12px yellow;
+    }
+    60% {
+        text-shadow: 2px 1.7px 12px red;
+    }
+    80% {
+        text-shadow: 2px 1.7px 12px #521c6c;
+    }
+    100% {
+        text-shadow: 2px 1.7px 12px #b6ff00;
+    }
+}
+
+.Bank_home_png_icon{
+    position:absolute;
+    margin-top:-22%;
+    margin-left:1%;
+}
+.Bank_home_png_icon img{
+    width:20%;
+}
+.Bank_home_png_icon h6{
+    position:absolute;
+    font-size:20px;
+    font-family:SimHei;
+    margin-top:-13%;
+    margin-left:20%;
+    text-shadow:0px 0px 2px  black;
+}

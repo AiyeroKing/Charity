@@ -133,7 +133,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BE_favicon.ico" />
+    <Content Include="Content\css\Background\BendHome\BendHome.css" />
     <Content Include="Content\css\Background\_BackEnd_Layout\_BackEnd_LayoutStyle.css" />
+    <Content Include="Content\img\BendHome\qq.png" />
+    <Content Include="Content\img\BendHome\qq 1.png" />
+    <Content Include="Content\img\BendHome\weibo 1.png" />
+    <Content Include="Content\img\BendHome\weibo.png" />
+    <Content Include="Content\img\BendHome\主页.png" />
     <Content Include="Content\css\Foreground\Auction\AuctionStyle.css" />
     <Content Include="Content\css\Foreground\Capital\CapitalStyle.css" />
     <Content Include="Content\css\Foreground\FundsReleased\FundsReleasedStyle.css" />

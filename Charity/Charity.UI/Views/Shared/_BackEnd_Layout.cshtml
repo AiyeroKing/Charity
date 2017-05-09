@@ -1,32 +1,101 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
     <title>义卖网后台管理</title> <!--慈善义卖网站-->
     <link rel="Shortcut Icon" href="~/BE_favicon.ico" />
-    <!--导入Iview-->
-    <script src="~/Scripts/vue.min.js"></script>
-    <link rel="stylesheet" href="~/Content/css/iview/iview.css" />
-    <script src="~/Scripts/iview.min.js"></script>
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+
     <!--导入内置CSS-->
     <link href="~/Content/css/Background/_BackEnd_Layout/_BackEnd_LayoutStyle.css" rel="stylesheet" />
+    <style>
+    </style>
 </head>
 <body>
+    <div class="nav_all_back_top">
 
+        <div class="toy_imgcon">
+            <img src="~/BE_favicon.ico" />
+        </div>
+        <div class="toy_font_top">
+            <h3><span class="font_charity_cha">Cha</span><span class="font_charity_rity">rity</span></h3>
+        </div>
 
-    <!--跳转的网页显示区域-->
-    <div>
-
-        @RenderBody()
-
+        <div class="toy_font_tital">
+            <h4>义卖网后台管理系统欢迎您的到来！</h4>
+        </div>
+        <a href="#">
+            <div class="toy_font_guanliyuan">
+                <h4>管理员</h4>
+            </div>
+        </a>
+        <a href="../Home/HomeIndex">
+            <div class="toy_font_fanghui">
+                <h4>官方首页</h4>
+            </div>
+        </a>
     </div>
 
+    <div class="nav_all_back_left">
+        <div class="nav_all_back_one_1"></div>
+        <ul class="nav_backl_ul">
 
+            <li class="space_nav_backl_li_one">
+                <a href="#"><div> 用户管理</div></a>
+            </li>
 
+            <li class="space_nav_backl_li_one">
+                <a href="#"><div> 商品管理</div></a>
+            </li>
 
+            <li class="space_nav_backl_li_one">
+                <a href="#"><div> 资金管理</div></a>
+            </li>
+
+            <li class="space_nav_backl_li_one">
+                <a href="#"><div> 贫困管理</div></a>
+            </li>
+
+            <li class="space_nav_backl_li_one">
+                <a href="#"><div> 资讯管理</div></a>
+            </li>
+
+            <li class="space_nav_backl_li_one">
+                <a href="#"><div> 留言管理</div></a>
+            </li>
+
+            <li class="space_nav_backl_li_one">
+                <a href="#"><div> 管理员</div></a>
+            </li>
+
+        </ul>
+
+        <div class="vvbc_all_buttom">
+            <div  class="vvbc_all_buttom_1"></div>
+            <div class="vvbc_all_buttom_2"></div>
+            <div class="vvbc_all_buttom_3"></div>
+            <div class="vvbc_all_buttom_4"></div>
+    
+        </div>
+    </div>
+
+    <!--跳转的网页显示区域-->
+    <div class="RenderBody_blank">
+        @RenderBody()
+    </div>
+
+    <div class="nav_all_back_buttom">
+        <div class="nav_all_back_buttom_one"><a href="#">桂林电子科技大学信息科技学院</a></div>
+        <div id="show_time">
+            <script>
+                setInterval("show_time.innerHTML=new Date().toLocaleString()+'&nbsp;&nbsp;&nbsp; 星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
+            </script>
+        </div>
+    </div>
 
 
     <!--导入JS-->
     <script src="~/Content/js/Background/_BackEnd_Layout/_BackEnd_Layout.js"></script>
+
 </body>
 </html>
