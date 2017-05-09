@@ -112,7 +112,14 @@
     <Compile Include="Configuration\BundleConfig.cs" />
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
+    <Compile Include="Controllers\Background\BendAccountController.cs" />
+    <Compile Include="Controllers\Background\BendadminController.cs" />
+    <Compile Include="Controllers\Background\BendGuestbookController.cs" />
     <Compile Include="Controllers\Background\BendHomeController.cs" />
+    <Compile Include="Controllers\Background\BendInfoController.cs" />
+    <Compile Include="Controllers\Background\BendMoneyController.cs" />
+    <Compile Include="Controllers\Background\BendPovertyController.cs" />
+    <Compile Include="Controllers\Background\BendShopController.cs" />
     <Compile Include="Controllers\Foreground\AuctionController.cs" />
     <Compile Include="Controllers\Foreground\CapitalController.cs" />
     <Compile Include="Controllers\Foreground\ContactUsController.cs" />
@@ -133,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BE_favicon.ico" />
+    <Content Include="Content\css\Background\Bendadmin\BendaminStyle.css" />
     <Content Include="Content\css\Background\BendHome\BendHome.css" />
     <Content Include="Content\css\Background\_BackEnd_Layout\_BackEnd_LayoutStyle.css" />
     <Content Include="Content\img\BendHome\qq.png" />
@@ -342,6 +350,13 @@
     <Content Include="Views\Loveactivity\LovehelpIndex.cshtml" />
     <Content Include="Views\Loveactivity\LovemeatIndex.cshtml" />
     <Content Include="Views\FundsReleased\FundsReleasedtwoIndex.cshtml" />
+    <Content Include="Views\BendAccount\BendAccountIndex.cshtml" />
+    <Content Include="Views\BendShop\BendShopIndex.cshtml" />
+    <Content Include="Views\BendMoney\BendMoneyIndex.cshtml" />
+    <Content Include="Views\BendPoverty\BendPovertyIndex.cshtml" />
+    <Content Include="Views\BendInfo\BendInfoIndex.cshtml" />
+    <Content Include="Views\BendGuestbook\BendGuestbookIndex.cshtml" />
+    <Content Include="Views\Bendadmin\BendadminIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "BendInfoIndex";
+    Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
+}
+
+
+<head>
+    <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<div class="back_div_color">
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../BendHome/BendHomeIndex">后台主页</a>
+            </li>
+            <li class="active">
+                资讯管理
+            </li>
+        </ul>
+    </div>
+
+    <div class="back_div_color_two">
+
+        <table class="table table-striped" align="center" border="1" style="text-align:center">
+            <thead>
+                <tr>
+                    <th width="10%" style="text-align:center;">资讯标题</th>
+                    <th width="10%" style="text-align:center;">编辑人姓名</th>
+                    <th width="50%" style="text-align:center;">资讯内容</th>
+                    <th width="10%" style="text-align:center;">资讯创建时间</th>
+                    <th width="20%" style="text-align:center;"> 操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>abc</td>
+                    <td>艾英明</td>
+
+
+                    <td><a href="#">详细请点开....</a></td>
+                    <td>2017-7-8</td>
+
+                    <td style="text-align:center">
+                        <a href="#">
+                            <div class="add_action_one">增加</div>
+                        </a>
+                        <a href="#">
+                            <div class="add_edit_one">修改</div>
+                        </a>
+                        <a href="#">
+                            <div class="add_delect_one">删除</div>
+                        </a>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+

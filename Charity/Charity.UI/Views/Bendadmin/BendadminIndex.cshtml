@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "BendadminIndex";
+    Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <style>
+        a{
+            text-decoration:none;
+        }
+            a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<div class="back_div_color">
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../BendHome/BendHomeIndex">后台主页</a>
+            </li>
+            <li class="active">
+                管理员
+            </li>
+        </ul>
+    </div>
+
+    <div class="back_div_color_two">
+
+        <table class="table table-striped" align="center"  >
+            <thead >
+                <tr >
+                    <th width="10%" style="text-align:center;">用户账号</th>
+                    <th width="10%" style="text-align:center;">用户姓名</th>
+                    <th width="10%" style="text-align:center;">联系方式</th>
+                    <th width="10%" style="text-align:center;">身份证号码</th>
+                    <th width="5%" style="text-align:center;">部门</th>
+                    <th width="20%"  style="text-align:center;">备注</th>
+                    <th width="20%"  style="text-align:center;">操作</th>
+                    <th  width="10%" style="display:none">密码</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="text-align:center">
+                    <td>abc2885171</td>
+                    <td>艾英明</td>
+                    <td>18677395470</td>
+                    <td>431102199409203090</td>
+                    <td>开发部</td>
+                    <td>无</td>
+                    <td>
+                        <a href="#">
+                            <div class="add_action_one">增加</div>
+                        </a>
+                        <a href="#">
+                            <div class="add_edit_one">修改</div>
+                        </a>
+                        <a href="#">
+                            <div class="add_delect_one">删除</div>
+                        </a>
+                    </td>
+
+                </tr>
+               
+            </tbody>
+        </table>
+
+    </div>
+</div>
