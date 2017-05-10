@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "BendAccountArtialIndex";
+    Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<div class="color_1_accout" style=" position: absolute;
+            width: 200px;
+            height: 70px;
+            background-color: yellow;
+            margin-left: -10%;
+            margin-top: 4.8%;
+            z-index: -999;">
+</div>
+
+<div class="back_div_color">
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../BendHome/BendHomeIndex">后台主页</a>
+            </li>
+            <li class="active">
+                <a href="../Bendadmin/BendadminIndex">用户管理</a>
+            </li>
+            <li class="active">
+                普通用户账户明细
+            </li>
+        </ul>
+    </div>
+
+
+
+    <form>
+
+        <h2 class="admin_add_one_h2">普通用户账户明细</h2>
+
+        <div class="admin_add_one_div_1">
+
+            <div class="admin_add_one_div_2">
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户账号</span>
+                    <input type="text" class="form-control" required readonly>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户密码</span>
+                    <input type="text" class="form-control" required readonly>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户姓名</span>
+                    <input type="text" style="width:150px;" class="form-control" required readonly>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户昵称</span>
+                    <input type="text" style="width:150px;" class="form-control" required readonly>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">联系方式</span>
+                    <input type="text" class="form-control" required readonly> 
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">身份证</span>
+                    <input type="text" style="width:300px;" class="form-control" required readonly>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">电子邮箱</span>
+                    <input type="text" class="form-control" required readonly> 
+                </div><br>
+
+
+            </div>
+            <div class="hr_lone_long"></div>
+            <div class="hr_lone_textarea">
+                <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
+                <textarea class="message" readonly name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+            </div>
+        </div>
+
+        <div style="margin-left:46%;margin-top:-8%;">
+            <a href="../BendAccount/BendAccountEditorIndex"><input type="button" class="btn btn-success" value="编辑用户信息"></a>
+        </div>
+
+    </form>
+</div>

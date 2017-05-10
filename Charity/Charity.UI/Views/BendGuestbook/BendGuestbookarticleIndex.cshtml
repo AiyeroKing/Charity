@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "BendGuestbookarticleIndex";
+    Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
+}
+
+
+<head>
+    <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<div style=" position: absolute;
+            width: 200px;
+            height: 70px;
+            background-color: yellow;
+            margin-left: -10%;
+            margin-top: 36%;
+            z-index: -999;">
+</div>
+
+<div class="back_div_color">
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../BendHome/BendHomeIndex">后台主页</a>
+            </li>
+            <li >
+                <a href="../BendGuestbook/BendGuestbookIndex">留言管理</a>
+            </li>
+            <li class="active">
+                留言板详情
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <form>
+
+        <h2 class="admin_add_one_h2">留言板详细页面</h2>
+
+        <div class="admin_add_one_div_1">
+
+            <div class="admin_add_one_div_3">
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人标题</span>
+                    <input type="text" class="form-control" required readonly>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人姓名</span>
+                    <input type="text" class="form-control" required readonly>
+                </div><br>
+            </div>
+            <div class="ook_liuyanbang">
+                <p class="cd-label" for="cd-textarea">留言内容:</p>
+                <textarea readonly class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+            </div>
+        </div>
+
+        <div class="button_sign_1">
+            <a href="../BendGuestbook/BendEditerGuestbookIndex"><input type="button" class="btn btn-success" value="编辑此页"></a>
+
+        </div>
+
+
+
+    </form>
+
+
+
+
+</div>
+

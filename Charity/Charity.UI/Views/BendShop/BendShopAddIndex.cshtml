@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "BendShopAddIndex";
+    Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
+}
+
+
+<head>
+    <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<div style=" position: absolute;
+            width: 200px;
+            height: 70px;
+            background-color: yellow;
+            margin-left: -10%;
+            margin-top: 11%;
+            z-index: -999;">
+</div>
+
+<div class="back_div_color">
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../BendHome/BendHomeIndex">后台主页</a>
+            </li>
+            <li>
+                <a href="../BendShop/BendShopIndex">捐赠商品管理</a>
+            </li>
+            <li class="active">
+                捐赠商品添加
+            </li>
+        </ul>
+    </div>
+
+    <form>
+
+        <h2 class="admin_add_one_h2">捐赠商品添加页面</h2>
+
+        <div class="admin_add_one_div_1">
+
+            <div class="admin_add_one_div_4">
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">物品名称</span>
+                    <input type="text" class="form-control" required>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">物品价值</span>
+                    <input type="text" class="form-control" required>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">物品类型</span>
+                    <input type="text" class="form-control" required>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠地区</span>
+                    <input type="text" class="form-control" required>
+                </div><br>
+
+                <div class="nnv_hr_cor"></div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠人姓名</span>
+                    <input type="text" class="form-control" required>
+                </div><br>
+
+
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠人联系方式</span>
+                    <input type="text" class="form-control" required>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠方式</span>
+                    <input type="text" style="width:150px;" class="form-control" required>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠人证件</span>
+                    <input type="text" class="form-control" required>
+                </div><br>
+
+
+
+
+            </div>
+
+            <div class="img_prove_show">
+                商品图片
+            </div>
+
+            <div class="hr_lone_long_2"></div>
+            <div class="hr_lone_textarea_3">
+                <p class="cd-label" for="cd-textarea">捐赠商品介绍:</p>
+                <textarea class="message_2" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+            </div>
+        </div>
+
+        <div style="margin-left:42%;margin-top:-3%;">
+
+            <button type="submit" class="btn btn-success">添加提交</button><span class="width_buttom">&</span>
+            <button type="reset" class="btn btn-danger">重置一下</button>
+        </div>
+    </form>
+
+</div>

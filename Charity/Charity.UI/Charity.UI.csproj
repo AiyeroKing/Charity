@@ -140,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BE_favicon.ico" />
+    <Content Include="Content\css\Background\Bendadmin\adminBend.css" />
     <Content Include="Content\css\Background\Bendadmin\BendaminStyle.css" />
     <Content Include="Content\css\Background\BendHome\BendHome.css" />
     <Content Include="Content\css\Background\_BackEnd_Layout\_BackEnd_LayoutStyle.css" />
@@ -357,6 +358,27 @@
     <Content Include="Views\BendInfo\BendInfoIndex.cshtml" />
     <Content Include="Views\BendGuestbook\BendGuestbookIndex.cshtml" />
     <Content Include="Views\Bendadmin\BendadminIndex.cshtml" />
+    <Content Include="Views\Bendadmin\BendAddadminoneIndex.cshtml" />
+    <Content Include="Views\Bendadmin\BendAddadmintwoIndex.cshtml" />
+    <Content Include="Views\Bendadmin\BendEditIndex.cshtml" />
+    <Content Include="Views\BendGuestbook\BendGuestbookarticleIndex.cshtml" />
+    <Content Include="Views\BendGuestbook\BendEditerGuestbookIndex.cshtml" />
+    <Content Include="Views\BendGuestbook\BendAddGuestbookIndex.cshtml" />
+    <Content Include="Views\BendInfo\BendInfoAritialIndex.cshtml" />
+    <Content Include="Views\BendInfo\BendInfoEditorIndex.cshtml" />
+    <Content Include="Views\BendInfo\BendInfoAddIndex.cshtml" />
+    <Content Include="Views\BendPoverty\BendPovertyArtialIndex.cshtml" />
+    <Content Include="Views\BendPoverty\BendPovertyEditorIndex.cshtml" />
+    <Content Include="Views\BendPoverty\BendPovertyAddIndex.cshtml" />
+    <Content Include="Views\BendMoney\BendMoneyArtialIndex.cshtml" />
+    <Content Include="Views\BendMoney\BendMoneyEidtorIndex.cshtml" />
+    <Content Include="Views\BendMoney\BendMoneyAddIndex.cshtml" />
+    <Content Include="Views\BendShop\BendShopArtialIndex.cshtml" />
+    <Content Include="Views\BendShop\BendShopEidtorIndex.cshtml" />
+    <Content Include="Views\BendShop\BendShopAddIndex.cshtml" />
+    <Content Include="Views\BendAccount\BendAccountArtialIndex.cshtml" />
+    <Content Include="Views\BendAccount\BendAccountEditorIndex.cshtml" />
+    <Content Include="Views\BendAccount\BendAccountAddIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
