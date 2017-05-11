@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Configuration;
-using System.Data.Common;
-using Charity.Dal;
+﻿using System.Data.Common;
 using Charity.Model;
+using System.Data.SqlClient;
+using Charity.Dal.Common;
+using Dapper;
 
 namespace Charity.Dal
 {
@@ -24,16 +19,35 @@ namespace Charity.Dal
                                 VALUES  ( @UserName, 
                                           @PassWord 
                                     ) ";
-            SqlParameter[] para = new SqlParameter[]
-            {
-                new SqlParameter("UserName",model.UserName),
-                new SqlParameter("PassWord", model.PassWord)
-                };
-            sqlh.ExecData(adduserMSGSql, para);
 
-            return result;
+
+            try
+            {
+                using (DbConnection conn = DbFactory.CreateConnection())
+                {
+                    result = conn.Execute(adduserMSGSql, model) > 0;
+
+                    return result;
+                }
+            }
+            catch (System.Exception ex)
+            {
+
+                throw;
+            }
+
+            //SqlParameter[] para = new SqlParameter[]
+            //{
+            //    new SqlParameter("UserName",model.UserName),
+            //    new SqlParameter("PassWord", model.PassWord)
+            //    };
+            //sqlh.ExecData(adduserMSGSql, para);
+
+            //return result;
 
         }
+
+        
         #endregion
     }
 }

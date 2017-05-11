@@ -30,7 +30,7 @@ namespace Charity.UI.Controllers.Foreground.User
             {
                 var result = _userBll.AddUserMSG(model);
                 if (result)
-                {
+                { 
                     return base.Json(new { Result = 1, Message = "增加成功！！" });
                 }
                 else

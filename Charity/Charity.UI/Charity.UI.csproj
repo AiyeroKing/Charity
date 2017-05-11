@@ -405,6 +405,10 @@
       <Project>{c528cc8f-3f9b-43e7-ac54-681ac24f9ac7}</Project>
       <Name>Charity.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\Aiyero\Desktop\Dapper\Dapper.csproj">
+      <Project>{6d8c0932-f043-4a4f-b781-f7a05e25ac88}</Project>
+      <Name>Dapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

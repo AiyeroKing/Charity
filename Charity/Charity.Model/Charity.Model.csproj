@@ -39,6 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\ExcuteResult.cs" />
+    <Compile Include="Common\PagerParam.cs" />
+    <Compile Include="Common\PagerResult.cs" />
+    <Compile Include="Common\QueryParam.cs" />
+    <Compile Include="Common\UpdateType.cs" />
+    <Compile Include="Tadmin.cs" />
+    <Compile Include="TAllmoney.cs" />
+    <Compile Include="TGuestbook.cs" />
+    <Compile Include="Tinfo.cs" />
+    <Compile Include="Tmoney.cs" />
+    <Compile Include="Tpoverty.cs" />
+    <Compile Include="Tshop.cs" />
+    <Compile Include="Tuseraccount.cs" />
     <Compile Include="UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

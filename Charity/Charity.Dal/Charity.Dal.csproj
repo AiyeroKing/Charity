@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\BaseDal.cs" />
+    <Compile Include="Common\CommonSqlStrings.cs" />
+    <Compile Include="Common\DbFactory.cs" />
+    <Compile Include="Common\SqlStringExtensions.cs" />
     <Compile Include="SQLHelper.cs" />
     <Compile Include="User\UserDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -48,6 +52,10 @@
     <ProjectReference Include="..\Charity.Model\Charity.Model.csproj">
       <Project>{C528CC8F-3F9B-43E7-AC54-681AC24F9AC7}</Project>
       <Name>Charity.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Aiyero\Desktop\Dapper\Dapper.csproj">
+      <Project>{6d8c0932-f043-4a4f-b781-f7a05e25ac88}</Project>
+      <Name>Dapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
