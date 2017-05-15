@@ -46,7 +46,7 @@
 
 
 
-    <form>
+    <form method="post" action="../BendAccount/AddAccountMSG">
 
         <h2 class="admin_add_one_h2">普通用户账户添加</h2>
 
@@ -56,37 +56,37 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">用户账号</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="UsAccount">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">用户密码</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="UsPassword">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">用户姓名</span>
-                    <input type="text" style="width:150px;" class="form-control" required>
+                    <input type="text" style="width:150px;" class="form-control" required name="UsName">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">用户昵称</span>
-                    <input type="text" style="width:150px;" class="form-control" required>
+                    <input type="text" style="width:150px;" class="form-control" required name="UsNiname">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">联系方式</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="UsPhone">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">身份证</span>
-                    <input type="text" style="width:300px;" class="form-control" required>
+                    <input type="text" style="width:300px;" class="form-control" required name="UsIdcard">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">电子邮箱</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="Usmail">
                 </div><br>
 
 
@@ -94,7 +94,7 @@
             <div class="hr_lone_long"></div>
             <div class="hr_lone_textarea">
                 <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
-                <textarea class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message"  id="cd-textarea" style="color:#ff6a00" name="UsRemark"></textarea>
             </div>
         </div>
 
