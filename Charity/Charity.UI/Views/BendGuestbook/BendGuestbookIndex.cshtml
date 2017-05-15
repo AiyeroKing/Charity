@@ -46,13 +46,13 @@
         <table class="table table-striped" align="center" style="text-align:center">
             <thead>
                 <tr>
-                    <th width="10%" style="text-align:center;">留言标题</th>
-                    <th width="10%" style="text-align:center;">留言人姓名</th>
-                    <th width="20%" style="text-align:center;">留言内容</th>
-                    <th width="10%" style="text-align:center;">留言人主页</th>
+                    <th width="8%" style="text-align:center;">留言标题</th>
+                    <th width="8%" style="text-align:center;">留言人姓名</th>
+                    <th width="15%" style="text-align:center;">留言内容</th>
+                    <th width="8%" style="text-align:center;">留言人主页</th>
                     <th width="10%" style="text-align:center;">留言人电子邮箱</th>
                     <th width="10%" style="text-align:center;">留言人联系方式</th>
-                    <th width="10%" style="text-align:center;">留言创建时间</th>
+                    <th width="20%" style="text-align:center;">留言创建时间</th>
                     <th width="20%" style="text-align:center;">
                         操作<a href="../BendGuestbook/BendAddGuestbookIndex">
                             <div class="add_action_one" style="position:absolute;width:60px; margin-left:13.5%;">增加</div>
@@ -74,10 +74,10 @@
                             <td>@item.BoredSetTime</td>
 
                             <td style="text-align:center">
-                                <a href="../BendGuestbook/BendEditerGuestbookIndex">
+                                <a href="../BendGuestbook/BendEditerGuestbookIndex?Id=@item.ID">
                                     <div class="add_edit_one">修改</div>
                                 </a>
-                                <a href="#">
+                                <a href="../BendGuestbook/BendInfoDelected?Id=@item.ID">
                                     <div class="add_delect_one">删除</div>
                                 </a>
                             </td>

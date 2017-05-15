@@ -44,7 +44,6 @@ body {
 .space_nav_backl_li_one {
     /*padding-bottom: 1em;*/
 }
-
 .nav_backl_ul{
     margin-top:3em;
     list-style-type:none;
@@ -102,12 +101,12 @@ body {
 
 .RenderBody_blank {
     position: absolute;
-    height: 640px;
-    width: 1250px;
-    margin-top: -44%;
+    height: 86.5%;
+    width: 81.9%;
+    margin-top: -47.8%;
     margin-left: 17%;
     background-color: #21c56e;
-    border-radius:10px;
+    border-radius: 10px;
     box-shadow: 0px 0px 20px #cbe43c;
 }
 
@@ -210,6 +209,26 @@ body {
 .toy_font_guanliyuan h4:hover {
             background-color: #fff;
             color:black;
+        }
+
+.toy_font_houtai {
+    position: absolute;
+    margin-top: -3.56em;
+    margin-left: 78.5%;
+}
+
+    .toy_font_houtai h4 {
+        padding: 5px 10px;
+        font-size: 15px;
+        color: #fff;
+        font-family: YouYuan;
+        border: solid 1px #fff;
+        background-color: #605f74;
+    }
+
+        .toy_font_houtai h4:hover {
+            background-color: #fff;
+            color: black;
         }
 
 .space_nav_backl_li_one a div{

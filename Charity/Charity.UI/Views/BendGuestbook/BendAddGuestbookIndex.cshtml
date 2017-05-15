@@ -48,7 +48,7 @@
 
 
 
-    <form>
+    <form method="post" action="/BendGuestbook/AddGuestbookMSG">
 
         <h2 class="admin_add_one_h2">留言添加页面</h2>
 
@@ -58,17 +58,33 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">留言人标题</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="BoredTital"> 
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">留言人姓名</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="BoredName">
                 </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人主页</span>
+                    <input type="text" class="form-control" required name="BoredIndex">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人电子邮箱</span>
+                    <input type="text" class="form-control" required name="BoredEmail">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人联系方式</span>
+                    <input type="text" class="form-control" required name="BoredTelphone">
+                </div><br>
+
             </div>
             <div class="ook_liuyanbang">
                 <p class="cd-label" for="cd-textarea">留言内容:</p>
-                <textarea class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message" name="BoredBody" id="cd-textarea" style="color:#ff6a00"></textarea>
             </div>
         </div>
 

@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
 
-
+@model Charity.Model.TGuestbook
 
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
@@ -48,7 +48,7 @@
 
 
 
-    <form>
+    <form method="post"  action="/BendGuestbook/EditorBendInfoMSG">
 
         <h2 class="admin_add_one_h2">留言编辑页面</h2>
 
@@ -58,17 +58,39 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">留言人标题</span>
-                    <input type="text" class="form-control" required >
+                    <input type="text" class="form-control" name="BoredTital" required value="@Model.BoredTital">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">留言人姓名</span>
-                    <input type="text" class="form-control" required >
+                    <input type="text" class="form-control" name="BoredName"  required value="@Model.BoredName">
                 </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人主页</span>
+                    <input type="text" class="form-control" required  name="BoredIndex" value="@Model.BoredIndex">
+                </div><br>
+
+                <div style="display:none">
+                    <input type="text" class="form-control" required name="ID" value="@Model.ID">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人电子邮箱</span>
+                    <input type="text" class="form-control" required  name="BoredEmail" value="@Model.BoredEmail">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">留言人联系方式</span>
+                    <input type="text" class="form-control" required  name="BoredTelphone" value="@Model.BoredTelphone">
+                </div><br>
+                <div style="display:none">
+                    <input type="text" class="form-control" required  name="BoredSetTime" value="@Model.BoredSetTime">
+                </div>
+
             </div>
             <div class="ook_liuyanbang">
                 <p class="cd-label" for="cd-textarea">留言内容:</p>
-                <textarea  class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea  class="message" name="BoredBody" id="cd-textarea" style="color:#ff6a00">@Model.BoredBody</textarea>
             </div>
         </div>
 

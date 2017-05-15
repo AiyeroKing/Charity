@@ -11,16 +11,6 @@ namespace Charity.Bll.Bend
     public class BendInfoBll
     {
         BendInfoDal bendinfoDal = new BendInfoDal();
-        #region  --对数据库进行BendInfo增加的操作--
-        public bool AddMesgBendInfo(Tinfo model)
-        {
-            var NowTime = DateTime.Now;
-            model.InfoSetTime = NowTime;
-            return bendinfoDal.AddMesgBendInfo(model);
-        }
-
-        #endregion
-
 
         #region  --对数据库进行BendInfo遍历的操作--
         public IList<Tinfo> Query_scanbendinfo()
@@ -30,7 +20,16 @@ namespace Charity.Bll.Bend
 
         #endregion
 
+        #region  --对数据库进行BendInfo增加的操作--
+        public bool AddMesgBendInfo(Tinfo model)
+        {
+            var NowTime = DateTime.Now;
+            model.InfoSetTime = NowTime;
+            return bendinfoDal.AddMesgBendInfo(model);
+        }
 
+        #endregion
+        
         #region  --对数据库进行BendInfo单个查找的操作--
         public Tinfo Query_bendinfoaritial(int Id)
         {
@@ -46,8 +45,7 @@ namespace Charity.Bll.Bend
         }
 
         #endregion
-
-
+        
         #region  --对数据库进行BendInfo删除的操作--
         public bool delectResult(int Id)
         {

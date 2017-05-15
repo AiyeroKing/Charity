@@ -25,7 +25,7 @@
             height: 70px;
             background-color: yellow;
             margin-left: -10%;
-            margin-top: 42%;
+            margin-top: 40%;
             z-index: -999;">
 </div>
 
@@ -44,16 +44,12 @@
         </ul>
     </div>
 
-    <form>
-
+    <form method="post" action="../Bendadmin/CheckXuliehao">
          <h2 class="admin_add_one_h2">管理员序列号验证页面</h2>
-       
-
         <div class="admin_add_one_div">
             <p>请输入该系统的序列号:</p>
-            <input type="text" name="xuliehao" required  class="admin_add_one_div_xuliehao" maxlength="9" placeholder="字数限定为9!(必填)"/>    
-            @*<input type="submit" class="btn btn-primary  admin_add_one_div_submit" value="下一步">*@ 
-       <a href="../Bendadmin/BendAddadmintwoIndex"><input type="button" class="btn btn-primary  admin_add_one_div_submit" value="下一步"></a>
+            <input type="text" name="xuliehao" required  class="admin_add_one_div_xuliehao" maxlength="6" placeholder="字数限定为9!(必填)"/>    
+         <input type="submit" class="btn btn-primary  admin_add_one_div_submit" value="下一步">
         </div>
 
     </form>
