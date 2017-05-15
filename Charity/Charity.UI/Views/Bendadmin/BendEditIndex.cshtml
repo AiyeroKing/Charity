@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
 
+@model Charity.Model.Tadmin
 
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
@@ -46,7 +47,7 @@
 
 
 
-    <form>
+    <form method="post"  action="/Bendadmin/UpdateBendadmindMSG">
 
         <h2 class="admin_add_one_h2">管理员账户编辑页面</h2>
 
@@ -56,37 +57,44 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">管理员账号</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="AdAccount" value="@Model.AdAccount">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">管理员密码</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="AdPassWord" value="@Model.AdPassWord">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">用户姓名</span>
-                    <input type="text" style="width:150px;" class="form-control" required>
+                    <input type="text" style="width:150px;" class="form-control" required name="AdName" value="@Model.AdName">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">联系方式</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="AdPhone" value="@Model.AdPhone">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">身份证</span>
-                    <input type="text" style="width:300px;" class="form-control" required>
+                    <input type="text" style="width:300px;" class="form-control" required name="AdIdCard" value="@Model.AdIdCard">
                 </div><br>
+
+                <div class="input-group" style="display:none">
+                    <span class="input-group-addon" style="width:100px;">创建时间</span>
+                    <input type="text" style="width:300px;" class="form-control" required  name="AdSetTime" value="@Model.AdSetTime">
+                    <input type="text" style="width:300px;" class="form-control" required  name="ID" value="@Model.ID">
+                </div><br>
+
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">部门</span>
-                    <select class="budget" style="color:#ff6a00;width:200px;height:35px;" required>
-                        <option value="无" disabled selected>请选择部门类型...</option>
-                        <option value="1">销售部</option>
-                        <option value="2">运营部</option>
-                        <option value="3">管理层</option>
-                        <option value="3">志捐层</option>
+                    <select  class="budget" style="color:#ff6a00;width:200px;height:35px;" required   name="AdSection" >
+                        <option value="无部门" selected>请选择部门类型...</option>
+                        <option value="销售部">销售部</option>
+                        <option value="运营部">运营部</option>
+                        <option value="管理层">管理层</option>
+                        <option value="志捐层">志捐层</option>
                     </select>
                 </div><br>
 
@@ -95,7 +103,7 @@
             <div class="hr_lone_long"></div>
             <div class="hr_lone_textarea">
                 <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
-                <textarea class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message" name="AdRemark" id="cd-textarea" style="color:#ff6a00">@Model.AdRemark</textarea>
             </div>
         </div>
 

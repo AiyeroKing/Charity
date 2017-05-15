@@ -1,14 +1,12 @@
-﻿using Charity.Model.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Charity.Bll.Bend;
+using Charity.Model;
 using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
     public class BendadminController : Controller
     {
+        BendadmindBll _bendadmindBll = new BendadmindBll();
         #region --返回页面
         /// <summary>
         /// 管理员主页面
@@ -17,6 +15,8 @@ namespace Charity.UI.Controllers.Background
         // GET: Bendadmin
         public ActionResult BendadminIndex()
         {
+            var queryResult = _bendadmindBll.Scan_Bendadmind();
+            ViewBag.List = queryResult;
             return View();
         }
 
@@ -41,9 +41,11 @@ namespace Charity.UI.Controllers.Background
         /// </summary>
         /// <returns></returns>
 
-        public ActionResult BendEditIndex()
+        public ActionResult BendEditIndex(int Id = 0)
         {
-            return View();
+            var queryResult = _bendadmindBll.Query_Bendadmind(Id);
+            ViewData.Model = queryResult;
+            return View(ViewData.Model);
         }
         #endregion
 
@@ -62,5 +64,35 @@ namespace Charity.UI.Controllers.Background
         }
 
         #endregion
+
+        #region --增加管理员信息
+        [HttpPost]
+        public ActionResult AddBendadmindMSG(Tadmin model)
+        {
+            var result = false;
+            result = _bendadmindBll.AddBendadmindMSG(model);
+            return RedirectToAction("BendadminIndex", "Bendadmin");
+
+        }
+        #endregion
+
+        #region --编辑管理员信息
+        public ActionResult UpdateBendadmindMSG(Tadmin model)
+        {
+            var result = false;
+            result = _bendadmindBll.UpdateBendadmindMSG(model);
+            return RedirectToAction("BendadminIndex", "Bendadmin");
+        }
+        #endregion
+
+        #region --删除管理员信息
+        public ActionResult BendadminDelected(int Id = 0)
+        {
+            var delectResult = _bendadmindBll.DelectResult(Id);
+            return RedirectToAction("BendadminIndex", "Bendadmin");
+
+        }
+        #endregion
+
     }
 }

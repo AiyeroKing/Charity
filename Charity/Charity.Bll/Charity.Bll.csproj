@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bend\BendadmindBll.cs" />
     <Compile Include="Bend\BendGuestbookBll.cs" />
     <Compile Include="Bend\BendInfoBll.cs" />
     <Compile Include="User\UserBll.cs" />

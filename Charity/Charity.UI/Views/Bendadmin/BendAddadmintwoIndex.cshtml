@@ -44,7 +44,7 @@
         </ul>
     </div>
 
-    <form>
+    <form method="post" action="../Bendadmin/AddBendadmindMSG">
 
         <h2 class="admin_add_one_h2">管理员账户添加页面</h2>
 
@@ -54,46 +54,44 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">管理员账号</span>
-                    <input type="text" class="form-control" placeholder="请输入管理员账号！" required>
+                    <input type="text" class="form-control" placeholder="请输入管理员账号！" name="AdAccount" required >
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">管理员密码</span>
-                    <input type="text" class="form-control" placeholder="请输入管理员密码！" required>
+                    <input type="text" class="form-control" placeholder="请输入管理员密码！"  name="AdPassWord" required >
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">用户姓名</span>
-                    <input type="text" style="width:150px;" class="form-control" placeholder="请输入管理员姓名！" required>
+                    <input type="text" style="width:150px;" class="form-control" placeholder="请输入管理员姓名！"  name="AdName" required>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">联系方式</span>
-                    <input type="text" class="form-control" placeholder="请输入管理员联系方式！" required>
+                    <input type="text" class="form-control" placeholder="请输入管理员联系方式！"  name="AdPhone" required>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">身份证</span>
-                    <input type="text" style="width:300px;" class="form-control" placeholder="请输入管理员身份证！" required>
+                    <input type="text" style="width:300px;" class="form-control" placeholder="请输入管理员身份证！"  name="AdIdCard" required>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">部门</span>
-                    <select class="budget" style="color:#ff6a00;width:200px;height:35px;" required>
-                        <option value="无" disabled selected>请选择部门类型...</option>
-                        <option value="1">销售部</option>
-                        <option value="2">运营部</option>
-                        <option value="3">管理层</option>
-                        <option value="3">志捐层</option>
+                    <select class="budget" style="color:#ff6a00;width:200px;height:35px;"name="AdSection">
+                        <option value="无部门" selected = "selected">请选择部门类型...</option>
+                        <option value="销售部">销售部</option>
+                        <option value="运营部">运营部</option>
+                        <option value="管理层">管理层</option>
+                        <option value="志捐层">志捐层</option>
                     </select>
                 </div><br>
-
-
             </div>
             <div class="hr_lone_long"></div>
             <div class="hr_lone_textarea">
                 <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
-                <textarea class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message"  id="cd-textarea" style="color:#ff6a00" name="AdRemark" maxlength="500"></textarea>
             </div>
         </div>
        
