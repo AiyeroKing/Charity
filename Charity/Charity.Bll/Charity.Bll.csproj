@@ -39,11 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bend\BendAccountBll.cs" />
     <Compile Include="Bend\BendadmindBll.cs" />
     <Compile Include="Bend\BendGuestbookBll.cs" />
     <Compile Include="Bend\BendInfoBll.cs" />
     <Compile Include="Bend\BendMoneyBll.cs" />
     <Compile Include="Bend\BendPovertyBll.cs" />
+    <Compile Include="Bend\BendShopBll.cs" />
     <Compile Include="User\UserBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

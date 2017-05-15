@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
 
+@model Charity.Model.Tshop
 
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
@@ -44,7 +45,7 @@
         </ul>
     </div>
 
-        <form>
+        <form method="post" action="../BendShop/Update_ShopMSG">
 
             <h2 class="admin_add_one_h2">捐赠商品编辑页面</h2>
 
@@ -54,47 +55,51 @@
 
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">物品名称</span>
-                        <input type="text" class="form-control" required >
+                        <input type="text" class="form-control" required  value="@Model.ShopName" name="ShopName">
                     </div><br>
 
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">物品价值</span>
-                        <input type="text" class="form-control" required >
+                        <input type="text" class="form-control" required  value="@Model.ShopValue" name="ShopValue">
                     </div><br>
 
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">物品类型</span>
-                        <input type="text" class="form-control" required >
+                        <input type="text" class="form-control" required  value="@Model.ShopSale" name="ShopSale">
                     </div><br>
 
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">捐赠地区</span>
-                        <input type="text" class="form-control" required >
+                        <input type="text" class="form-control" required  value="@Model.ShopArea" name="ShopArea">
                     </div><br>
 
                     <div class="nnv_hr_cor"></div>
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">捐赠人姓名</span>
-                        <input type="text" class="form-control" required >
+                        <input type="text" class="form-control" required  value="@Model.ShopCharityName" name="ShopCharityName">
                     </div><br>
 
 
 
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">捐赠人联系方式</span>
-                        <input type="text" class="form-control" required >
+                        <input type="text" class="form-control" required  value="@Model.ShopCharityPhone" name="ShopCharityPhone">
                     </div><br>
 
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">捐赠方式</span>
-                        <input type="text" style="width:150px;" class="form-control" required >
+                        <input type="text" style="width:150px;" class="form-control" required  value="@Model.ShopCharityWay" name="ShopCharityWay">
                     </div><br>
 
                     <div class="input-group">
                         <span class="input-group-addon" style="width:100px;">捐赠人证件</span>
-                        <input type="text" class="form-control" required >
+                        <input type="text" class="form-control" required  value="@Model.ShopCharityIdcard" name="ShopCharityIdcard">
                     </div><br>
 
+                    <div class="input-group" style="display:none">
+                        <input type="text" class="form-control" required readonly name="ID" value="@Model.ID">
+                        <input type="text" class="form-control" required readonly name="ShopSetTime" value="@Model.ShopSetTime">
+                    </div>
 
 
 
@@ -107,8 +112,8 @@
                 <div class="hr_lone_long_2"></div>
                 <div class="hr_lone_textarea_3">
                     <p class="cd-label" for="cd-textarea">捐赠商品介绍:</p>
-                    <textarea class="message_2"  name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
-                </div>
+                    <textarea class="message_2"   id="cd-textarea" style="color:#ff6a00" name="ShopRemark">@Model.ShopRemark</textarea>
+                </div> 
             </div>
 
             <div style="margin-left:42%;margin-top:-3%;">

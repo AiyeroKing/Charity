@@ -34,7 +34,6 @@ namespace Charity.UI.Controllers.Background
             ViewData.Model = queryResult;
             return View(ViewData.Model);
         }
-
         /// <summary>
         /// 贫困编辑
         /// </summary>
