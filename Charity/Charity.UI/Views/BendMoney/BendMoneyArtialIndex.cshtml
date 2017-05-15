@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
 
+@model Charity.Model.Tmoney
 
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
@@ -56,22 +57,26 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人姓名</span>
-                    <input type="text" class="form-control" required readonly>
+                    <input type="text" class="form-control" required readonly value="@Model.ChrityName">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠资金</span>
-                    <input type="tel" class="form-control" style="background-color:hotpink" required readonly>
+                    <input type="tel" class="form-control" style="background-color:hotpink" required readonly value="@Model.ChrityMoney">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人联系方式</span>
-                    <input type="text" class="form-control" required readonly>
+                    <input type="text" class="form-control" required readonly value="@Model.ChrityPhone">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人证件</span>
-                    <input type="text" style="width:300px;" class="form-control" required readonly>
+                    <input type="text" style="width:300px;" class="form-control" required readonly value="@Model.ChrityIdcard">
+                </div><br>
+                <div class="input-group" style="display:none">
+                    <span class="input-group-addon" style="width:100px;">捐赠信息创建时间</span>
+                    <input type="text" style="width:300px;" class="form-control" required readonly value="@Model.ChritySetTime">
                 </div><br>
 
              
@@ -79,12 +84,12 @@
             <div class="hr_lone_long_1"></div>
             <div class="hr_lone_textarea" style="margin-top:-18%">
                 <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
-                <textarea class="message" readonly name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message" readonly  id="cd-textarea" style="color:#ff6a00">@Model.ChrityRemark</textarea>
             </div>
         </div>
 
         <div style="margin-left:47%;margin-top:-10%;" >
-            <a href="../BendMoney/BendMoneyEidtorIndex"><input type="button"  class="btn btn-success" value="编辑此页"></a>
+            <a href="../BendMoney/BendMoneyEidtorIndex?Id=@Model.ID"><input type="button"  class="btn btn-success" value="编辑此页"></a>
         </div>
     </form>
 </div>

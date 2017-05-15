@@ -45,7 +45,7 @@
 
 
 
-    <form>
+    <form method="post" action="../BendMoney/AddMoneyMSG">
 
         <h2 class="admin_add_one_h2">资金捐助添加页面</h2>
 
@@ -55,22 +55,22 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人姓名</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required  name="ChrityName">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠资金</span>
-                    <input type="tel" class="form-control" style="background-color:red;color:white;" required>
+                    <input type="tel" class="form-control" style="background-color:red;color:white;" required  name="ChrityMoney">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人联系方式</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required  name="ChrityPhone">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人证件</span>
-                    <input type="text" style="width:300px;" class="form-control" required>
+                    <input type="text" style="width:300px;" class="form-control" required  name="ChrityIdcard">
                 </div><br>
 
 
@@ -78,7 +78,7 @@
             <div class="hr_lone_long_1"></div>
             <div class="hr_lone_textarea" style="margin-top:-18%">
                 <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
-                <textarea class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message"  id="cd-textarea" style="color:#ff6a00"  name="ChrityRemark"></textarea>
             </div>
         </div>
 

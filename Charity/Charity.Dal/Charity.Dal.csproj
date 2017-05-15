@@ -43,6 +43,7 @@
     <Compile Include="Bend\BendadmindDal.cs" />
     <Compile Include="Bend\BendGuestbookDal.cs" />
     <Compile Include="Bend\BendInfoDal.cs" />
+    <Compile Include="Bend\BendMoneyDal.cs" />
     <Compile Include="Bend\BendPovertyDal.cs" />
     <Compile Include="Common\BaseDal.cs" />
     <Compile Include="Common\CommonSqlStrings.cs" />

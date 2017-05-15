@@ -11,6 +11,7 @@ namespace Charity.UI.Controllers.Background
     public class BendPovertyController : Controller
     {
         BendPovertyBll _bendpovertyBll = new BendPovertyBll();
+
         #region --返回页面
         /// <summary>
         /// 贫困管理首页
