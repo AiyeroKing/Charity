@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bend\BendGuestbookDal.cs" />
+    <Compile Include="Bend\BendInfoDal.cs" />
     <Compile Include="Common\BaseDal.cs" />
     <Compile Include="Common\CommonSqlStrings.cs" />
     <Compile Include="Common\DbFactory.cs" />
@@ -53,10 +55,13 @@
       <Project>{C528CC8F-3F9B-43E7-AC54-681AC24F9AC7}</Project>
       <Name>Charity.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Aiyero\Desktop\Dapper\Dapper.csproj">
-      <Project>{6d8c0932-f043-4a4f-b781-f7a05e25ac88}</Project>
+    <ProjectReference Include="..\Dapper\Dapper.csproj">
+      <Project>{a2cb89e9-cd2b-4050-8a82-cbb73e806410}</Project>
       <Name>Dapper</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="foreground\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

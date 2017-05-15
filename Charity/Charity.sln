@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charity.UI", "Charity.UI\Charity.UI.csproj", "{04E6E46A-4309-416D-881A-75A9AA9D04A4}"
 EndProject
@@ -13,14 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charity.Dal", "Charity.Dal\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "项目设计方案", "项目设计方案", "{15C6C64C-492C-491E-A14A-5AE833C2DA01}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\Aiyero\Desktop\Charity项目DataBase需求.docx = C:\Users\Aiyero\Desktop\Charity项目DataBase需求.docx
-		C:\Users\Aiyero\Desktop\Charity项目总计划.xlsx = C:\Users\Aiyero\Desktop\Charity项目总计划.xlsx
-		C:\Users\Aiyero\Desktop\Charity项目计划明细.xlsx = C:\Users\Aiyero\Desktop\Charity项目计划明细.xlsx
+		..\..\..\..\Aiyero\Desktop\Charity项目DataBase需求.docx = ..\..\..\..\Aiyero\Desktop\Charity项目DataBase需求.docx
+		..\..\..\..\Aiyero\Desktop\Charity项目总计划.xlsx = ..\..\..\..\Aiyero\Desktop\Charity项目总计划.xlsx
+		..\..\..\..\Aiyero\Desktop\Charity项目计划明细.xlsx = ..\..\..\..\Aiyero\Desktop\Charity项目计划明细.xlsx
 		框架流程图例.dgml = 框架流程图例.dgml
-		C:\Users\Aiyero\Desktop\流程图.vsdx = C:\Users\Aiyero\Desktop\流程图.vsdx
+		..\..\..\..\Aiyero\Desktop\流程图.vsdx = ..\..\..\..\Aiyero\Desktop\流程图.vsdx
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper", "C:\Users\Aiyero\Desktop\Dapper\Dapper.csproj", "{6D8C0932-F043-4A4F-B781-F7A05E25AC88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper", "Dapper\Dapper.csproj", "{A2CB89E9-CD2B-4050-8A82-CBB73E806410}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,14 +62,14 @@ Global
 		{31005BE2-448E-4208-A819-0E9310A2035A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{31005BE2-448E-4208-A819-0E9310A2035A}.Release|x64.ActiveCfg = Release|Any CPU
 		{31005BE2-448E-4208-A819-0E9310A2035A}.Release|x64.Build.0 = Release|Any CPU
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Debug|x64.ActiveCfg = Debug|x64
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Debug|x64.Build.0 = Debug|x64
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Release|x64.ActiveCfg = Release|x64
-		{6D8C0932-F043-4A4F-B781-F7A05E25AC88}.Release|x64.Build.0 = Release|x64
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Debug|x64.Build.0 = Debug|Any CPU
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Release|x64.ActiveCfg = Release|Any CPU
+		{A2CB89E9-CD2B-4050-8A82-CBB73E806410}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,5 @@
 ﻿using System.Data.Common;
 using Charity.Model;
-using System.Data.SqlClient;
 using Charity.Dal.Common;
 using Dapper;
 
@@ -15,9 +14,11 @@ namespace Charity.Dal
             var result = false;
             const string adduserMSGSql = @"
                                 INSERT INTO dbo.UserInfo
-                                        ( UserName, PassWord) 
-                                VALUES  ( @UserName, 
-                                          @PassWord 
+                                        ( InfoTital, InfoName,InfoBody,InfoSetTime) 
+                                VALUES  ( @InfoTital, 
+                                          @InfoName,
+                                          @InfoBody,
+                                          @InfoSetTime
                                     ) ";
 
 

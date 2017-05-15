@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
 
+@model Charity.Model.Tinfo
 
 
 <head>
@@ -48,7 +49,7 @@
 
 
 
-    <form>
+    <form method="post"  action="/BendInfo/EditorBendInfoMSG">
 
         <h2 class="admin_add_one_h2">资讯编辑页面</h2>
 
@@ -58,19 +59,26 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">资讯标题</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required value="@Model.InfoTital" name="InfoTital">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">编辑人姓名</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required value="@Model.InfoName" name="InfoName">
                 </div><br>
             </div>
             <div class="ook_liuyanbang">
                 <p class="cd-label" for="cd-textarea">资讯内容:</p>
-                <textarea class="message"  id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message"  id="cd-textarea" style="color:#ff6a00" name="InfoBody">@Model.InfoBody</textarea>
             </div>
         </div>
+
+        <div  style="display:none">
+            <input type="text" class="form-control" required value="@Model.ID" name="ID">
+            <input type="text" class="form-control" required value="@Model.InfoSetTime" name="InfoSetTime">
+        </div>
+
+
 
         <div class="button_sign_2">
             <button type="submit" class="btn btn-success">编辑保存</button><span class="width_buttom">&</span>

@@ -8,6 +8,7 @@
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
     <style>
         a {
             text-decoration: none;
@@ -42,42 +43,48 @@
 
     <div class="back_div_color_two">
 
-        <table class="table table-striped" align="center"  style="text-align:center">
+        <table class="table table-striped" align="center" style="text-align:center">
             <thead>
                 <tr>
-                    <th width="10%" style="text-align:center;">资讯标题</th>
+                    <th width="20%" style="text-align:center;">资讯标题</th>
                     <th width="10%" style="text-align:center;">编辑人姓名</th>
-                    <th width="50%" style="text-align:center;">资讯内容</th>
-                    <th width="10%" style="text-align:center;">资讯创建时间</th>
-                    <th width="20%" style="text-align:center;"> 操作</th>
+                    <th width="25%" style="text-align:center;">资讯内容</th>
+                    <th width="15%" style="text-align:center;">资讯创建时间</th>
+                    <th width="20%" style="text-align:center;">
+                        操作
+                       
+                            <a href="../BendInfo/BendInfoAddIndex">
+                                <div class="add_action_one">增加</div>
+                            </a>
+                       
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>abc</td>
-                    <td>艾英明</td>
+                @{
+                    foreach (var item in ViewBag.List)
+                    {
+                        <tr>
+                            <td>@item.InfoTital</td>
+                            <td>@item.InfoName</td>
+                            <td><a href="../BendInfo/BendInfoAritialIndex?Id=@item.ID">详细请点开....</a></td>
+                            <td pattern="yyyy-MM-dd HH:mm:ss">@item.InfoSetTime</td>
 
+                            <td style="text-align:center">
+                                <a href="../BendInfo/BendInfoEditorIndex?Id=@item.ID">
+                                    <div class="add_edit_one">修改</div>
+                                </a>
+                                <a href="../BendInfo/BendInfoDelected?Id=@item.ID">
+                                    <div class="add_delect_one">删除</div>
+                                </a>
+                            </td>
 
-                    <td><a href="../BendInfo/BendInfoAritialIndex">详细请点开....</a></td>
-                    <td>2017-7-8</td>
-
-                    <td style="text-align:center">
-                        <a href="../BendInfo/BendInfoAddIndex">
-                            <div class="add_action_one">增加</div>
-                        </a>
-                        <a href="../BendInfo/BendInfoEditorIndex">
-                            <div class="add_edit_one">修改</div>
-                        </a>
-                        <a href="#">
-                            <div class="add_delect_one">删除</div>
-                        </a>
-                    </td>
-
-                </tr>
+                        </tr>
+                    }
+                }
 
             </tbody>
         </table>
 
     </div>
 </div>
-

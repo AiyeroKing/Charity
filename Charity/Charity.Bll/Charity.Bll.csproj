@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bend\BendGuestbookBll.cs" />
+    <Compile Include="Bend\BendInfoBll.cs" />
     <Compile Include="User\UserBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,6 +53,9 @@
       <Project>{C528CC8F-3F9B-43E7-AC54-681AC24F9AC7}</Project>
       <Name>Charity.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="foreground\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

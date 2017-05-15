@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
 
+@model Charity.Model.Tinfo
 
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
@@ -57,23 +58,23 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">资讯标题</span>
-                    <input type="text" class="form-control" required readonly>
+                    <input type="text" class="form-control" required readonly value="@Model.InfoTital">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">编辑人姓名</span>
-                    <input type="text" class="form-control" required readonly>
+                    <input type="text" class="form-control" required readonly value="@Model.InfoName">
                 </div><br>
             </div>
             <div class="ook_liuyanbang">
                 <p class="cd-label" for="cd-textarea">资讯内容:</p>
-                <textarea readonly class="message"  id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea readonly class="message"  id="cd-textarea" style="color:#ff6a00">@Model.InfoBody</textarea>
             </div>
+            <a pattern="yyyy-MM-dd HH:mm:ss">创建时间:@Model.InfoSetTime</a>
         </div>
 
         <div class="button_sign_1">
-            <a href="../BendInfo/BendInfoEditorIndex"><input type="button" class="btn btn-success" value="编辑此资讯"></a>
-
+            <a href="../BendInfo/BendInfoEditorIndex?Id=@Model.ID"><input type="button" class="btn btn-success" value="编辑此资讯"></a>
         </div>
 
 

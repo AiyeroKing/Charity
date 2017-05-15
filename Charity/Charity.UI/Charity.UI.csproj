@@ -41,6 +41,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -244,6 +247,7 @@
     <Content Include="Content\img\NewNews\标签2.gif" />
     <Content Include="Content\img\NewNews\标签3.gif" />
     <Content Include="Content\img\NewNews\标签4.gif" />
+    <Content Include="Content\js\Background\Bendinfoaddindex\BendinfoAddScript.js" />
     <Content Include="Content\js\Background\_BackEnd_Layout\_BackEnd_Layout.js" />
     <Content Include="Content\js\bootstrap\bootstrap.js" />
     <Content Include="Content\js\bootstrap\jquery.js" />
@@ -405,8 +409,8 @@
       <Project>{c528cc8f-3f9b-43e7-ac54-681ac24f9ac7}</Project>
       <Name>Charity.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Aiyero\Desktop\Dapper\Dapper.csproj">
-      <Project>{6d8c0932-f043-4a4f-b781-f7a05e25ac88}</Project>
+    <ProjectReference Include="..\Dapper\Dapper.csproj">
+      <Project>{a2cb89e9-cd2b-4050-8a82-cbb73e806410}</Project>
       <Name>Dapper</Name>
     </ProjectReference>
   </ItemGroup>

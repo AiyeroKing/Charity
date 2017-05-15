@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Charity.Bll.Bend;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,13 +9,17 @@ namespace Charity.UI.Controllers.Background
 {
     public class BendGuestbookController : Controller
     {
+
+        BendGuestbookBll _bendguestbookBll = new BendGuestbookBll();
+        #region --留言板返回页面
         /// <summary>
         /// 留言板主页面
         /// </summary>
         /// <returns></returns>
-        // GET: BendGuestbook
         public ActionResult BendGuestbookIndex()
         {
+            var queryResult = _bendguestbookBll.Query_scanbendguestbook();
+            ViewBag.List = queryResult;
             return View();
         }
         /// <summary>
@@ -42,6 +47,8 @@ namespace Charity.UI.Controllers.Background
         {
             return View();
         }
+        #endregion
+
 
     }
 }

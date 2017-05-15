@@ -9,6 +9,8 @@
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+
+    @*<script src="~/Content/js/Background/Bendinfoaddindex/BendinfoAddScript.js"></script>*@
     <style>
         a {
             text-decoration: none;
@@ -47,7 +49,7 @@
 
 
 
-    <form>
+    <form id="BendInfoAddForm" method="post" action="/BendInfo/AddBendInfoMSG">
 
         <h2 class="admin_add_one_h2">资讯添加页面</h2>
 
@@ -57,22 +59,22 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">资讯标题</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" name="InfoTital" required>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">编辑人姓名</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" name="InfoName" required>
                 </div><br>
             </div>
             <div class="ook_liuyanbang">
                 <p class="cd-label" for="cd-textarea">资讯内容:</p>
-                <textarea class="message"  id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message" required  type="text"  id="cd-textarea" name="InfoBody" style="color:#ff6a00"></textarea>
             </div>
         </div>
 
         <div class="button_sign_2">
-            <button type="submit" class="btn btn-success">添加提交</button><span class="width_buttom">&</span>
+            <button type="submit"  class="btn btn-success">添加提交</button> <span class="width_buttom">&</span>
             <button type="reset" class="btn btn-danger">重置一下</button>
         </div>
 
