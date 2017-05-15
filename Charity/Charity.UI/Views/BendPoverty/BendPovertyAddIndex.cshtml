@@ -45,7 +45,7 @@
         </ul>
     </div>
 
-    <form>
+    <form method="post" action="../BendPoverty/AddPovertyMSG">
 
         <h2 class="admin_add_one_h2">贫困详情添加页面</h2>
 
@@ -55,38 +55,33 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">贫困地区</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="ApplyArea">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">负责人姓名</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="ApplyName">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">负责人联系方式</span>
-                    <input type="text" style="width:150px;" class="form-control" required>
+                    <input type="text" style="width:150px;" class="form-control" required name="ApplyPhone">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">贫困申请资金</span>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" required name="ApplyValue">
                 </div><br>
-
             </div>
-
-            <div class="img_prove_show">
-
-            </div>
-
+            <div class="img_prove_show"></div>
             <div class="hr_lone_long_1"></div>
             <div class="hr_lone_textarea_1">
                 <p class="cd-label" for="cd-textarea">贫困地区介绍:</p>
-                <textarea class="message_1" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message_1"  id="cd-textarea" style="color:#ff6a00" name="ApplyInfo"></textarea>
             </div>
         </div>
 
-        <div  style="margin-left: 40%;margin-top: -4%;">
+        <div  style="margin-left: 40%;margin-top:-4%;">
             <button type="submit" class="btn btn-success">添加提交</button><span class="width_buttom">&</span>
             <button type="reset" class="btn btn-danger">重置一下</button>
         </div>

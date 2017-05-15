@@ -1,8 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "BendEditIndex";
+    ViewBag.Title = "BendadminAritialIndex";
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
+
 
 @model Charity.Model.Tadmin
 
@@ -40,16 +41,16 @@
                 <a href="../Bendadmin/BendadminIndex">用户管理</a>
             </li>
             <li class="active">
-                编辑管理员账户
+                管理员账户明细
             </li>
         </ul>
     </div>
 
 
 
-    <form method="post"  action="/Bendadmin/UpdateBendadmindMSG">
+    <form method="post" action="/Bendadmin/UpdateBendadmindMSG">
 
-        <h2 class="admin_add_one_h2">管理员账户编辑页面</h2>
+        <h2 class="admin_add_one_h2">管理员账户明细页面</h2>
 
         <div class="admin_add_one_div_1">
 
@@ -57,45 +58,39 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">管理员账号</span>
-                    <input type="text" class="form-control" required name="AdAccount" value="@Model.AdAccount">
+                    <input type="text" class="form-control" required name="AdAccount" value="@Model.AdAccount" readonly>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">管理员密码</span>
-                    <input type="text" class="form-control" required name="AdPassWord" value="@Model.AdPassWord">
+                    <input type="text" class="form-control" required name="AdPassWord" value="@Model.AdPassWord" readonly>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">用户姓名</span>
-                    <input type="text" style="width:150px;" class="form-control" required name="AdName" value="@Model.AdName">
+                    <input type="text" style="width:150px;" class="form-control" required name="AdName" value="@Model.AdName" readonly>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">联系方式</span>
-                    <input type="text" class="form-control" required name="AdPhone" value="@Model.AdPhone">
+                    <input type="text" class="form-control" required name="AdPhone" value="@Model.AdPhone" readonly>
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">身份证</span>
-                    <input type="text" style="width:300px;" class="form-control" required name="AdIdCard" value="@Model.AdIdCard">
+                    <input type="text" style="width:300px;" class="form-control" required name="AdIdCard" value="@Model.AdIdCard" readonly>
                 </div><br>
 
                 <div class="input-group" style="display:none">
                     <span class="input-group-addon" style="width:100px;">创建时间</span>
-                    <input type="text" style="width:300px;" class="form-control" required  name="AdSetTime" value="@Model.AdSetTime">
-                    <input type="text" style="width:300px;" class="form-control" required  name="ID" value="@Model.ID">
+                    <input type="text" style="width:300px;" class="form-control" required name="AdSetTime" value="@Model.AdSetTime" readonly>
+                    <input type="text" style="width:300px;" class="form-control" required name="ID" value="@Model.ID" readonly>
                 </div><br>
 
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">部门</span>
-                    <select  class="budget" style="color:#ff6a00;width:200px;height:35px;" required   name="AdSection"  >
-                        <option value="无部门" selected>请选择部门类型...</option>
-                        <option value="销售部">销售部</option>
-                        <option value="运营部">运营部</option>
-                        <option value="管理层">管理层</option>
-                        <option value="志捐层">志捐层</option>
-                    </select>
+                    <input type="text" class="form-control" required name="AdSection" value="@Model.AdSection" readonly>
                 </div><br>
 
 
@@ -103,18 +98,14 @@
             <div class="hr_lone_long"></div>
             <div class="hr_lone_textarea">
                 <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
-                <textarea class="message" name="AdRemark" id="cd-textarea" style="color:#ff6a00" >@Model.AdRemark</textarea>
+                <textarea class="message" name="AdRemark" id="cd-textarea" style="color:#ff6a00" readonly>@Model.AdRemark</textarea>
             </div>
         </div>
 
         <div class="button_sign">
-            <button type="submit" class="btn btn-success">编辑保存</button><span class="width_buttom">&</span>
-            <button type="reset" class="btn btn-danger">重置一下</button>
+            <a href="../Bendadmin/BendEditIndex?Id=@Model.ID"><input type="button" class="btn btn-success" value="编辑此信息"></a>
         </div>
     </form>
 </div>
-
-
-
 
 

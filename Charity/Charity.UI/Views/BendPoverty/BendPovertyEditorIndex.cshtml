@@ -4,6 +4,8 @@
     Layout = "~/Views/Shared/_BackEnd_Layout.cshtml";
 }
 
+@model Charity.Model.Tpoverty
+
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -45,7 +47,7 @@
         </ul>
     </div>
 
-    <form>
+    <form method="post" action="../BendPoverty/Update_PovertyMSG">
 
         <h2 class="admin_add_one_h2">贫困详情编辑页面</h2>
 
@@ -55,22 +57,29 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">贫困地区</span>
-                    <input type="text" class="form-control" required >
+                    <input type="text" class="form-control" required  value="@Model.ApplyArea" name="ApplyArea">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">负责人姓名</span>
-                    <input type="text" class="form-control" required >
+                    <input type="text" class="form-control" required value="@Model.ApplyName" name="ApplyName">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">负责人联系方式</span>
-                    <input type="text" style="width:150px;" class="form-control" required >
+                    <input type="text" style="width:150px;" class="form-control" required value="@Model.ApplyPhone" name="ApplyPhone">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">贫困申请资金</span>
-                    <input type="text" class="form-control" required >
+                    <input type="text" class="form-control" required value="@Model.ApplyValue" name="ApplyValue">
+                </div><br>
+
+                <div class="input-group" style="display:none">
+                    <span class="input-group-addon" style="width:100px;">贫困申请创建时间</span>
+                    <input type="text" class="form-control" required value="@Model.ApplySetTime" name="ApplySetTime">
+                    <span class="input-group-addon" style="width:100px;">ID</span>
+                    <input type="text" class="form-control" required value="@Model.ID" name="ID">
                 </div><br>
 
             </div>
@@ -82,7 +91,7 @@
             <div class="hr_lone_long_1"></div>
             <div class="hr_lone_textarea_1">
                 <p class="cd-label" for="cd-textarea">贫困地区介绍:</p>
-                <textarea class="message_1"  name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                <textarea class="message_1" id="cd-textarea" style="color:#ff6a00"  name="ApplyInfo">@Model.ApplyInfo</textarea>
             </div>
         </div>
 

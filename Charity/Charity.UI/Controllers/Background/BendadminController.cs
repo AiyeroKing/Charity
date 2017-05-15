@@ -40,13 +40,22 @@ namespace Charity.UI.Controllers.Background
         /// 管理员编辑页面
         /// </summary>
         /// <returns></returns>
-
+  
         public ActionResult BendEditIndex(int Id = 0)
         {
             var queryResult = _bendadmindBll.Query_Bendadmind(Id);
             ViewData.Model = queryResult;
             return View(ViewData.Model);
         }
+
+        public ActionResult BendadminAritialIndex(int Id = 0)
+        {
+            var queryResult = _bendadmindBll.Query_Bendadmind(Id);
+            ViewData.Model = queryResult;
+            return View(ViewData.Model);
+        }
+        
+
         #endregion
 
         #region --序列号验证

@@ -383,6 +383,7 @@
     <Content Include="Views\BendAccount\BendAccountArtialIndex.cshtml" />
     <Content Include="Views\BendAccount\BendAccountEditorIndex.cshtml" />
     <Content Include="Views\BendAccount\BendAccountAddIndex.cshtml" />
+    <Content Include="Views\Bendadmin\BendadminAritialIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
