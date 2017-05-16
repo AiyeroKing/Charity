@@ -10,8 +10,16 @@
     <link href="~/Content/css/Background/_BackEnd_Layout/_BackEnd_LayoutStyle.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <style>
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
     </style>
 </head>
+
 <body>
     <div class="nav_all_back_top">
 
@@ -22,6 +30,12 @@
             <h3><span class="font_charity_cha">Cha</span><span class="font_charity_rity">rity</span></h3>
         </div>
 
+        <div class="home_userincfer">
+            <a href="../Bendadmin/BendadminAritialIndex?Id=@(Session["UserAccount"] != null ? (Session["UserAccount"] as Charity.Model.Tadmin).ID : 0)">
+                管理员:@(Session["UserAccount"] != null ? (Session["UserAccount"] as Charity.Model.Tadmin).AdName : "无管理")
+            </a>
+        </div>
+
         <div class="toy_font_tital">
             <h4>义卖网后台管理系统欢迎您的到来！</h4>
         </div>
@@ -30,7 +44,7 @@
                 <h4>后台首页</h4>
             </div>
         </a>
-        <a href="../Bendadmin/BendadminIndex">
+        <a href="../Bendadmin/BendadminAritialIndex?Id=@(Session["UserAccount"] != null ? (Session["UserAccount"] as Charity.Model.Tadmin).ID : 0)">
             <div class="toy_font_guanliyuan">
                 <h4>管理员</h4>
             </div>
@@ -77,11 +91,11 @@
         </ul>
 
         <div class="vvbc_all_buttom">
-            <div  class="vvbc_all_buttom_1"></div>
+            <div class="vvbc_all_buttom_1"></div>
             <div class="vvbc_all_buttom_2"></div>
             <div class="vvbc_all_buttom_3"></div>
             <div class="vvbc_all_buttom_4"></div>
-    
+
         </div>
     </div>
 

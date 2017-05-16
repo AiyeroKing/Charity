@@ -25,19 +25,25 @@ function validate() {
     var inputCode = document.getElementById("J_codetext").value.toUpperCase();
     var codeToUp = code.toUpperCase();
     if (inputCode.length <= 0) {
-        document.getElementById("J_codetext").setAttribute("placeholder", "输入验证码");
+        document.getElementById("J_codetext").setAttribute("placeholder", "亲输入验证码");
+        document.getElementById("Checknumber_Id").setAttribute("value","false");
         createCode();
         return false;
     }
+
     else if (inputCode != codeToUp) {
         document.getElementById("J_codetext").value = "";
-        document.getElementById("J_codetext").setAttribute("placeholder", "验证码错误");
+        document.getElementById("J_codetext").setAttribute("placeholder", "验证失败请重新输入!");
+        document.getElementById("Checknumber_Id").setAttribute("value", "false");
         createCode();
         return false;
     }
+
     else {
-        window.open(document.getElementById("J_down").getAttribute("data-link"));
+        //window.open(document.getElementById("J_down").getAttribute("data-link"));
         document.getElementById("J_codetext").value = "";
+        document.getElementById("val_icon_a").setAttribute("style", "display:none");
+        document.getElementById("Checknumber_Id").setAttribute("value", "true");
         createCode();
         return true;
     }

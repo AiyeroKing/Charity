@@ -293,7 +293,54 @@ body {
     box-shadow: 0px 2px 2px yellow;
 }
 
+.home_userincfer{
+    position:absolute;
+    margin-left:33%;
+    margin-top:-2.3%;
+}
+    .home_userincfer a {
+        animation: userccv 1s infinite linear;
+    }
+@keyframes userccv{
+    0%{
+        color:rebeccapurple;
+    }
+    10%{
+        color:red;
+    }
+    20% {
+        color: palevioletred;
+    }
+    30% {
+        color: purple;
+    }
+    40% {
+        color: rebeccapurple;
+    }
 
+    50% {
+        color: red;
+    }
+
+    60% {
+        color: palevioletred;
+    }
+
+    70% {
+        color: purple;
+    }
+    80% {
+        color: red;
+    }
+
+    90% {
+        color: palevioletred;
+    }
+
+    100% {
+        color: purple;
+    }
+}
 
 
 

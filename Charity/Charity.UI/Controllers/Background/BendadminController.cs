@@ -1,5 +1,6 @@
 ﻿using Charity.Bll.Bend;
 using Charity.Model;
+using System;
 using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
@@ -19,7 +20,6 @@ namespace Charity.UI.Controllers.Background
             ViewBag.List = queryResult;
             return View();
         }
-
         /// <summary>
         /// 管理员增加页面一
         /// </summary>
@@ -40,29 +40,50 @@ namespace Charity.UI.Controllers.Background
         /// 管理员编辑页面
         /// </summary>
         /// <returns></returns>
-  
         public ActionResult BendEditIndex(int Id = 0)
         {
-            var queryResult = _bendadmindBll.Query_Bendadmind(Id);
-            ViewData.Model = queryResult;
-            return View(ViewData.Model);
+            if (Id == 0)
+            {
+                return RedirectToAction("BendadminAritialIndex", "Bendadmin");
+            }
+            else
+            {
+                var queryResult = _bendadmindBll.Query_Bendadmind(Id);
+                ViewData.Model = queryResult;
+                return View(ViewData.Model);
+            }
         }
-
         public ActionResult BendadminAritialIndex(int Id = 0)
         {
-            var queryResult = _bendadmindBll.Query_Bendadmind(Id);
-            ViewData.Model = queryResult;
-            return View(ViewData.Model);
-        }
-        
+            if (Id == 0)
+            {
+                Tadmin NoneModel = new Tadmin();
+                NoneModel.ID = 0;
+                NoneModel.AdSetTime = DateTime.Now;
+                NoneModel.AdSection = "什么都没有";
+                NoneModel.AdRemark = "什么也没有";
+                NoneModel.AdPhone = "什么也没有";
+                NoneModel.AdPassWord = "什么也没有";
+                NoneModel.AdName = "什么也没有";
+                NoneModel.AdIdCard = "什么也没有";
+                NoneModel.AdAccount = "什么也没有";
+                return View(NoneModel);
 
+            }
+            else
+            {
+                var queryResult = _bendadmindBll.Query_Bendadmind(Id);
+                ViewData.Model = queryResult;
+                return View(ViewData.Model);
+            }
+        }
         #endregion
 
         #region --序列号验证
         public ActionResult CheckXuliehao(string xuliehao)
         {
             string xuliehao1 = "123456";
-            if(xuliehao == xuliehao1)
+            if (xuliehao == xuliehao1)
             {
                 return RedirectToAction("BendAddadmintwoIndex", "Bendadmin");
             }
@@ -102,6 +123,5 @@ namespace Charity.UI.Controllers.Background
 
         }
         #endregion
-
     }
 }

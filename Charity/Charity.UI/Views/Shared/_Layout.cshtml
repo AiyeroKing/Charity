@@ -14,8 +14,6 @@
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <!--导入自定义的js文件-->
     @*<script src="~/Content/js/Foreground/LayoutJS.js" defer></script>*@
-</head>
-<body>
     <style type="text/css">
         a {
             font-family: YouYuan;
@@ -42,7 +40,51 @@
                 color: hotpink;
                 text-decoration: none;
             }
+
+        .li_massage_borad_three:hover ul {
+            display: block;
+        }
+
+        .three_all {
+            display: none;
+        }
+        #li_olly{
+            display:none;
+        }
     </style>
+    <script type="text/javascript">
+        function homeopen() {
+
+            var Id = document.getElementById("textId_check").value;
+            var a = 0;
+            if (Id == a) {
+               
+            }
+            else {
+                var li_login = document.getElementById('li_login');
+                li_login.style.display = "none";
+
+                var li_sign = document.getElementById('li_sign');
+                li_sign.style.display = "none";
+
+                var li_olly = document.getElementById('li_olly');
+                li_olly.style.display = "block";
+
+                
+            }
+        }
+        /*用window.onload调用myfun()*/
+        window.onload = homeopen;//不要括号
+
+    </script>
+</head>
+<body>
+
+    
+
+    <div style="display:none;">
+        <input type="text" id="textId_check" value="@(Session["AdminAccount"] != null ? (Session["AdminAccount"] as Charity.Model.Tuseraccount).ID : 0) " />
+    </div>
     <!--顶部导航栏-->
     <div class="header_navbar">
         <header class="clearfix">
@@ -89,9 +131,22 @@
                             <li>@Html.ActionLink("贫困捐助", "SubsidizationIndex", "Subsidization")</li>
                             <li>@Html.ActionLink("最新资讯", "NewNewsIndex", "NewNews")</li>
                             <li>@Html.ActionLink("联系我们", "ContactUsIndex", "ContactUs")</li>
+                            <li class="li_massage_borad_one" id="li_login"><a href="../LoginSignUp/LoginIndex">登录</a></li>
+                                <li class="li_massage_borad_two" id="li_sign"><a href="../LoginSignUp/SignUpIndex">注册</a></li>
+                     
+                            <li class="li_massage_borad_three" id="li_olly">
+                                <a href="#">
+                                    用户:@(Session["AdminAccount"] != null ? (Session["AdminAccount"] as Charity.Model.Tuseraccount).UsNiname : "无用户登录")
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="three_all">
+                                    <li><a href="../LoginSignUp/LoginSignOut">用户注销</a></li>
+                                    <li><a href="../LoginSignUp/UserLoginIndex">管理员登录</a></li>
+                                    <li><a href="#">用户个人介绍</a></li>
+                                </ul>
+                            </li>
                             <li class="li_massage_borad"><a href="../ContactUs/ContactBoardIndex">留言板</a></li>
-                            <li class="li_massage_borad_one"><a href="../LoginSignUp/LoginIndex">登录</a></li>
-                            <li class="li_massage_borad_two"><a href="../LoginSignUp/SignUpIndex">注册</a></li>
+
                             @*<li style="margin-left:2em;" class="="signUp_Login">@Html.ActionLink("登陆", "LoginIndex", "LoginSignUp")</li>
                                 <li class="="signUp_Login">@Html.ActionLink("注册", "SignUpIndex", "LoginSignUp")</li>*@
                         </ul>

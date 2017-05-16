@@ -32,27 +32,41 @@
 
 <body class="LoginIndex_Body">
     <div>
-        <form>
+        <form  method="post" action="/LoginSignUp/CheckadminLogin">
+
             <dl class="admin_login">
                 <dt>
                     <img src="~/Content/img/Layout/favicon.ico" /> <strong class="Login_tital">登录我的义卖网</strong>
                     <em class="Login_tital">CharityOS System</em>
                 </dt>
                 <dd class="user_icon">
-                    <input type="text" placeholder="账号" class="login_txtbx" required="required" />
+                    <input type="text" placeholder="账号"  name="UserAccount" class="login_txtbx" required/>
                 </dd>
                 <dd class="pwd_icon">
-                    <input type="password" placeholder="密码" class="login_txtbx" required="required" />
+                    <input type="password" placeholder="密码"  name="UserPassword" class="login_txtbx" required />
                 </dd>
-                <dd class="val_icon">
+                <dd class="val_icon" id="val_icon_a">
                     <div class="checkcode">
-                        <input type="text" id="J_codetext" placeholder="验证码" maxlength="4" class="login_txtbx" required="required">
+                        <input type="text" id="J_codetext" placeholder="验证码" maxlength="4" class="login_txtbx">
                         <canvas class="J_codeimg" id="myCanvas" onclick="createCode()">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
                     </div>
-                    <input type="button" value="验证码核验" class="ver_btn" onClick="validate();">
+                    <div style="display:none">
+                        <input type="text" id="Checknumber_Id" name="Checknumber" value="" required="required" />
+                    </div>
+                    <input type="button" value="输入确认" class="ver_btn" onclick="validate();" />
                 </dd>
+                @*<dd class="val_icon" id="val_icon_a">
+                    <div class="checkcode">
+                        <input type="text" id="J_codetext" placeholder="验证码" maxlength="4" class="login_txtbx" required>
+                        <canvas class="J_codeimg" id="myCanvas" onclick="createCode()">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+                    </div>
+                    <input type="button" value="输入确认" class="ver_btn" onclick="validate();" />
+                    <div style="display:none">
+                        <input type="text" id="Checknumber_Id" name="Checknumber" value="" required="required" />
+                    </div>
+                </dd>*@
                 <dd>
-                    <input type="button" value="立即登陆" class="submit_btn" />
+                    <input type="submit" value="立即登录▶登录前需确认" class="submit_btn" />
                 </dd>
                 <dd>
                     <a href="/LoginSignUp/SignUpIndex"><input type="button" value="用户注册" class="submit_btn" /></a>
@@ -61,6 +75,7 @@
                     <a href="/LoginSignUp/UserLoginIndex"><input type="button" value="管理员登录" class="submit_btnblack" /></a>
                     <a href="/Home/HomeIndex"><input type="button" value="返回主页" class="submit_btnHome" /></a>
                 </dd>
+
                 <dd>
                     <p>© 2017-2017 桂林电子科技大学信息科技学院 版权所有</p>
                     <p>桂Z0-99999999-9</p>

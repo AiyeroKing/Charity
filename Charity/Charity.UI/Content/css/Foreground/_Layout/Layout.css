@@ -141,7 +141,7 @@
 }
 
 .li_massage_borad {
-    left: 240px;
+    left: 22%;
     background: #485263;
     border-radius: 6px;
     height: 30px;
@@ -150,40 +150,141 @@
     box-shadow: 3px 3px 2px #485263;
 }
 
+.li_massage_borad:hover {
+    background: #485263;
+    box-shadow: 3px 3px 2px blue;
+}
+
+.li_massage_borad a {
+    margin-top: 0.2em;
+}
+
 .li_massage_borad_one {
-    left: 250px;
-    background: cyan;
+    left: 18%;
+    background: #485263;
     border-radius: 6px;
     height: 30px;
-    width: 60px;
-    margin-top: 13px;
-    box-shadow: 3px 3px 2px yellow;
+    width: 73px;
+    margin-top: 12px;
+    box-shadow: 3px 3px 2px #485263;
 }
 
     .li_massage_borad_one:hover {
         background: #485263;
-        box-shadow: 3px 3px 2px yellow;
+        box-shadow: 3px 3px 2px red;
     }
 
     .li_massage_borad_one a {
         margin-top: -0.8em;
+        margin-left:0.5em;
     }
 
 .li_massage_borad_two {
-    left: 250px;
-    background: yellow;
+    left: 20%;
+    background: #485263;
     border-radius: 6px;
     height: 30px;
-    width: 60px;
-    margin-top: 13px;
-    box-shadow: 2px 3px 2px cyan;
+    width: 73px;
+    margin-top: 12px;
+    box-shadow: 3px 3px 2px #485263;
 }
 
     .li_massage_borad_two:hover {
         background: #485263;
-        box-shadow: 3px 3px 2px cyan;
+        box-shadow: 3px 3px 2px yellow;
     }
 
     .li_massage_borad_two a {
         margin-top: -0.8em;
+        margin-left: 0.5em;
     }
+
+.li_massage_borad_three {
+    left: 18%;
+    background: #485263;
+    border-radius: 6px;
+    height: 30px;
+    /*width: 73px;*/
+    text-align:center;
+    margin-top: 12px;
+    box-shadow: 2px 3px 2px #485263;
+}
+
+   .li_massage_borad_three:hover {
+        background: #999;
+        box-shadow: 0px 3px 2px red;
+    }
+.li_massage_borad_three a {
+    margin-top: -0.8em;
+    margin-left: 0.5em;
+    animation:iikkk 2s infinite linear;
+}
+@keyframes iikkk{
+    0%{
+        color:red;
+    }
+    10% {
+        color:rebeccapurple;
+    }
+    20% {
+        color: purple;
+    }
+    30% {
+        color: yellow;
+    }
+    40% {
+        color: saddlebrown;
+    }
+   50% {
+        color: orchid;
+    }
+    60% {
+        color: red;
+    }
+
+    70% {
+        color: rebeccapurple;
+    }
+
+    80% {
+        color: purple;
+    }
+
+    90% {
+        color: yellow;
+    }
+
+    100% {
+        color: saddlebrown;
+    }
+}
+
+
+
+
+.three_all{
+    margin-top:-1em;
+    margin-left:0.6em;
+    z-index:9999;
+    background-color:red;
+    padding-top:1em;
+}
+
+.three_all li{
+    padding:9px;
+    height:30px;
+    width:100%;
+    background-color:red;
+    border-bottom:solid 1px black;
+    box-shadow:2px 2px 2px black;
+}
+    .three_all li:hover {
+        background-color: #485263;
+        border-left: solid 2px #ffffff;
+        border-right: solid 2px #ffffff;
+        box-shadow: 2px 2px 2px yellow;
+    }
+
+.three_all li a{
+    letter-spacing:3px;
+}
