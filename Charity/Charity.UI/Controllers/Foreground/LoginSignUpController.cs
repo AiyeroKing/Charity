@@ -11,7 +11,8 @@ namespace Charity.UI.Controllers.Foreground
 {
     public class LoginSignUpController : Controller
     {
-        #region --登录注册页面显示返回值
+
+        #region --返回页面
         // GET: LoginSignUp
         //public ActionResult LoginSignUpIndex()
         //{
@@ -38,16 +39,14 @@ namespace Charity.UI.Controllers.Foreground
         /// 后台登录页面
         /// </summary>
         /// <returns></returns>
-
-
         public ActionResult UserLoginIndex(Vusersign user)
         {
             return View();
         }
         #endregion
 
-        [HttpPost]
         #region --后台管理系统密码验证登录
+        [HttpPost]
         public ActionResult CheckUserLogin(Vusersign user)
         {
             BendadmindBll _bendadmindBll = new BendadmindBll();
@@ -70,8 +69,8 @@ namespace Charity.UI.Controllers.Foreground
         }
         #endregion
 
-        [HttpPost]
         #region --前台管理系统密码验证登录
+        [HttpPost]
         public ActionResult CheckadminLogin(Vusersign admin)
         {
             BendAccountBll _bendaccountBll = new BendAccountBll();
@@ -94,6 +93,7 @@ namespace Charity.UI.Controllers.Foreground
             return RedirectToAction("LoginIndex", "LoginSignUp");
         }
         #endregion
+
         #region --用户注销登录
         public ActionResult LoginSignOut()
         {
@@ -110,6 +110,17 @@ namespace Charity.UI.Controllers.Foreground
             loginsignoutModel = null;
             Session["AdminAccount"] = loginsignoutModel;//将值存在一个
             return RedirectToAction("HomeIndex", "Home");
+        }
+        #endregion
+
+        #region --添加功能
+        [HttpPost]
+        public ActionResult AddAccountMSG(Tuseraccount model)
+        {
+            BendAccountBll _bendaccountBll = new BendAccountBll();
+            var result = false;
+            result = _bendaccountBll.AddAccountMSG(model);
+            return RedirectToAction("LoginIndex", "LoginSignUp");
         }
         #endregion
     }
