@@ -38,10 +38,10 @@
             <div class="boxc_a1_con_one">
             <ul>
                 <li style="background-color:brown">
-                    <a href="../FundsReleased/FundsReleasedIndex"><input class="ooood_1" type="button" value="企业捐助"></a>
+                    <a href="../FundsReleased/FundsReleasedIndex"><input class="ooood_1" type="button" value="善款需求"></a>
                 </li>
                 <li style="background-color:cyan">
-                    <a href="../FundsReleased/FundsReleasedtwoIndex"><input class="ooood_2" type="button" value="个人捐助"></a>
+                    <a href="../FundsReleased/FundsReleasedtwoIndex"><input class="ooood_2" type="button" value="筹集善款"></a>
                 </li>
                 <li class="order-now">
                     <a href="../FundsReleased/FundsReleasedIndex">刷新纪录</a>
@@ -53,23 +53,28 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>企业名称</th>
-                            <th>总捐款额</th>
-                            <th>救助总额</th>
-                            <th>捐款次数</th>
-                            <th>企业类型</th>
-                            <th>信息详情</th>
+                            <th>贫困地区</th>
+                            <th>负责人姓名</th>
+                            <th>负责人联系方式</th>
+                            <th>贫困申请资金</th>
+                            <th>创建时间</th>
+                            <th>贫困地区介绍</th>
                         </tr>
                     </thead>
-                    <tbody >
-                        <tr>
-                            <td>新浪公司</td>
-                            <td>10000.02￥</td>
-                            <td>41￥</td>
-                            <td>41次</td>
-                            <td>商务服务</td>
-                            <td class="td_checkmesg"><a href="#"><div>查看详情</div></a></td>
-                        </tr>
+                    <tbody>
+                        @{
+                            foreach (var item in ViewBag.List)
+                            {
+                                <tr>
+                                    <td>@item.ApplyArea</td>
+                                    <td>@item.ApplyName</td>
+                                    <td>@item.ApplyPhone</td>
+                                    <td>@item.ApplyValue</td>
+                                    <td>@item.ApplySetTime</td>
+                                    <td class="td_checkmesg"><a href="../Subsidization/AritialSubsidizationIndex?Id=@item.ID"><div>查看详情</div></a></td>
+                                </tr>
+                            }
+                        }
                     </tbody>
                 </table>
             </div>

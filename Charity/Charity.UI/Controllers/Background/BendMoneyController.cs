@@ -19,7 +19,6 @@ namespace Charity.UI.Controllers.Background
         /// </summary>
         /// <returns></returns>
         // GET: BendMoney
-
         public ActionResult BendMoneyIndex()
         {
             var queryResult = _bendmoneyBll.Scan_Money();

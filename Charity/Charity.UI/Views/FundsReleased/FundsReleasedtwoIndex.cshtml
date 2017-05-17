@@ -37,10 +37,10 @@
             <div class="boxc_a1_con_one">
                 <ul>
                     <li>
-                        <a href="../FundsReleased/FundsReleasedIndex"><input class="ooood_2" type="button" value="企业捐助"></a>
+                        <a href="../FundsReleased/FundsReleasedIndex"><input class="ooood_2" type="button" value="善款需求"></a>
                     </li>
                     <li>
-                        <a href="../FundsReleased/FundsReleasedtwoIndex"><input class="ooood_1" type="button" value="个人捐助"></a>
+                        <a href="../FundsReleased/FundsReleasedtwoIndex"><input class="ooood_1" type="button" value="筹集善款"></a>
                     </li>
                     <li class="order-now">
                         <a href="../FundsReleased/FundsReleasedtwoIndex">刷新纪录</a>
@@ -52,23 +52,27 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>捐款人</th>
-                            <th>总捐款额</th>
-                            <th>救助总额</th>
-                            <th>捐款次数</th>
-                            <th>会员类型</th>
-                            <th>信息详情</th>
+                            <th>捐赠资金</th>
+                            <th>捐赠人姓名</th>
+                            <th>捐赠人联系方式</th>
+                            <th>捐赠人证件</th>
+                            <th>创建时间</th>
+                       
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>新浪公司</td>
-                            <td>10000.02￥</td>
-                            <td>41￥</td>
-                            <td>41次</td>
-                            <td>普通会员</td>
-                            <td class="td_checkmesg"><a href="#"><div>查看详情</div></a></td>
-                        </tr>
+                        @{
+                            foreach (var item in ViewBag.List)
+                            {
+                                <tr>
+                                    <td>@item.ChrityMoney</td>
+                                    <td>@item.ChrityName</td>
+                                    <td>@item.ChrityPhone</td>
+                                    <td>@item.ChrityIdcard</td>
+                                    <td>@item.ChritySetTime</td>
+                                </tr>
+                            }
+                        }
                     </tbody>
                 </table>
             </div>

@@ -387,6 +387,7 @@
     <Content Include="Views\LoginSignUp\SignEditorIndex.cshtml" />
     <Content Include="Views\NewNews\NewNewsAritailIndex.cshtml" />
     <Content Include="Views\Subsidization\AritialSubsidizationIndex.cshtml" />
+    <Content Include="Views\FundsReleased\FundsReleaseAritaildIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
