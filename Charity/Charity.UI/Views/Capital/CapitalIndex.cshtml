@@ -42,54 +42,51 @@
             <h3>在线捐款</h3>
         </div>
         <div class="Capital_select_all_right">
-            <form class="cd-form floating-labels" action="" method="post" enctype="multipart/form-data">
-                <fieldset>
+            <form class="cd-form floating-labels" action="../Capital/AddMoneyMSG"  method="post" enctype="multipart/form-data">
+                    <fieldset>
 
-                    <div class="error-message">
-                        <p>募捐信息输入</p>
-                    </div>
-                    <div class="icon">
-                        <label class="cd-label" for="cd-company">捐赠者姓名</label>
-                        <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                    </div>
-                    <div class="icon">
-                        <label class="cd-label" for="cd-company">捐赠人身份证</label>
-                        <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                    </div>
-                    <div class="icon">
-                        <label class="cd-label" for="cd-company">捐赠人所在地区</label>
-                        <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                    </div>
-                    <div class="icon">
-                        <label class="cd-label" for="cd-company">捐赠人联系方式</label>
-                        <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                    </div>
-                    <div class="icon">
-                        <label class="cd-label" for="cd-company">捐赠金额</label>
-                        <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                    </div>
-                    <div>
-                        <h4>捐赠方式</h4>
+                        <div class="error-message">
+                            <p>募捐信息输入</p>
+                        </div>
+                        <div class="icon">
+                            <label class="cd-label" for="cd-company">捐赠者姓名</label>
+                            <input class="company" type="text" id="cd-company" style="background-color:white;color:#ff6a00" required name="ChrityName">
+                        </div>
+                        <div class="icon">
+                            <label class="cd-label" for="cd-company">捐赠人身份证</label>
+                            <input class="company" type="text" id="cd-company" style="background-color:white;color:#ff6a00" required name="ChrityIdcard">
+                        </div>
 
-                        <ul class="cd-form-list">
-                            <li>
-                                <input type="radio" name="radio-button" id="cd-radio-1" checked>
-                                <label for="cd-radio-1" style="color:#ff6a00">在线捐赠</label>
-                            </li>
+                        <div class="icon">
+                            <label class="cd-label" for="cd-company">捐赠人联系方式</label>
+                            <input class="company" type="text" id="cd-company" style="background-color:white;color:#ff6a00" required name="ChrityPhone">
+                        </div>
+                        <div class="icon">
+                            <label class="cd-label" for="cd-company">捐赠金额</label>
+                            <input class="company" type="text" id="cd-company" style="background-color:white;color:#ff6a00" required name="ChrityMoney">
+                        </div>
+                        <div>
+                            <h4>捐赠方式</h4>
 
-                        </ul>
-                    </div>
-                    <div class="icon">
-                        <label class="cd-label" for="cd-textarea">备注（字数不得大于500字）</label>
-                        <textarea class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="保存提交" style="position:absolute;margin-left:0%;">
-                        <button type="reset" class="btn btn-warning" style="margin-left:50%;margin-top:20px;">重置</button>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
+                            <ul class="cd-form-list">
+                                <li>
+                                    <input type="radio" id="cd-radio-1" checked>
+                                    <label for="cd-radio-1" style="color:#ff6a00">在线捐赠</label>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="icon">
+                            <label class="cd-label" for="cd-textarea"> 备注（字数不得大于500字）</label>
+                            <textarea class="message" id="cd-textarea" style="color:#ff6a00" name="ChrityRemark"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="保存提交" style="position:absolute;margin-left:0%;">
+                            <button type="reset" class="btn btn-warning" style="margin-left:50%;margin-top:20px;">重置</button>
+                        </div>
+                    </fieldset>
+                </form>
+</div>
     </div>
 </body>
 

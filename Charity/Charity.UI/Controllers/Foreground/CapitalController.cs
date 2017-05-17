@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Charity.Bll.Bend;
+using Charity.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,7 @@ namespace Charity.UI.Controllers.Foreground
 {
     public class CapitalController : Controller
     {
+        BendMoneyBll _bendmoneyBll = new BendMoneyBll();
         #region -- 返回页面
 
         /// <summary>
@@ -18,6 +21,16 @@ namespace Charity.UI.Controllers.Foreground
         public ActionResult CapitalIndex()
         {
             return View();
+        }
+        #endregion
+
+        #region --添加功能
+        [HttpPost]
+        public ActionResult AddMoneyMSG(Tmoney model)
+        {
+            var result = false;
+            result = _bendmoneyBll.AddMoneyMSG(model);
+            return RedirectToAction("FundsReleasedtwoIndex", "FundsReleased");
         }
         #endregion
     }
