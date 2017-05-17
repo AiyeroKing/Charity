@@ -123,7 +123,6 @@
     <Compile Include="Controllers\Background\BendMoneyController.cs" />
     <Compile Include="Controllers\Background\BendPovertyController.cs" />
     <Compile Include="Controllers\Background\BendShopController.cs" />
-    <Compile Include="Controllers\Foreground\AuctionController.cs" />
     <Compile Include="Controllers\Foreground\CapitalController.cs" />
     <Compile Include="Controllers\Foreground\ContactUsController.cs" />
     <Compile Include="Controllers\Foreground\FundsReleasedController.cs" />

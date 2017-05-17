@@ -37,37 +37,39 @@
     <div class="box_massage_all_1">
         <h2>留言板 << <span class="massage_color">Massage</span></h2>
         <div class="box_massage_all_2">
-            <form>
+
+            <form method="post" action="../ContactUs/AddGuestbookMSG">
                 <div class="input-group">
                     <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">标题</button></span>
-                    <input type="text" class="form-control" style="width:60%;">
+                    <input type="text" class="form-control" style="width:60%;" name="BoredTital" required>
                     <span class="fuhao_xinghao">*</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">联系人</button></span>
-                    <input type="text" class="form-control" style="width:20%;">
+                    <input type="text" class="form-control" style="width:20%;" name="BoredName" required>
                     <span class="fuhao_xinghao">*</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">主页</button></span>
-                    <input type="text" class="form-control" style="width:40%;">
+                    <input type="text" class="form-control" style="width:40%;" name="BoredIndex">
                 </div>
                 <div class="input-group">
                     <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">联系方式</button></span>
-                    <input type="text" class="form-control" style="width:30%;">
+                    <input type="text" class="form-control" style="width:30%;" name="BoredTelphone">
                 </div>
                 <div class="input-group">
                     <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; background-color:#ad7ee4;">邮箱</button></span>
-                    <input type="email" class="form-control" style="width:40%;">
+                    <input type="email" class="form-control" style="width:40%;" name="BoredEmail">
                 </div>
                 <div class="input-group">
                     <span class="input-group-btn"><button class="btn btn-default" type="button" style="width:100px; height:140px; background-color:#ad7ee4;">我的留言</button></span>
-                    <textarea class="form-control" rows="6" style="width:400px;" maxlength="500"></textarea>
+                    <textarea class="form-control" rows="6" style="width:400px;" maxlength="500" name="BoredBody" required></textarea>
                     <span class="fuhao_xinghao">*</span>
                 </div>
                 <div class="height_gaodu"></div>
                 <button type="submit" class="btn btn-success" style="margin-right:150px; margin-left:80px;">提交一下</button>
                 <button type="reset" class="btn btn-info">重置一下</button>
+
             </form>
         </div>
         <h3 class="box_massage_all_3"><marquee scrollamount=3>备注:带<span class="xinghao_xinghao_buttom">*</span>号为必填;不带<span class="xinghao_xinghao_buttom">*</span>号则选填</marquee></h3>
