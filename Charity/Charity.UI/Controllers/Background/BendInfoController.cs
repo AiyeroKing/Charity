@@ -22,7 +22,7 @@ namespace Charity.UI.Controllers.Background
         {
             var queryResult = _bendinfoBll.Query_scanbendinfo();
             ViewBag.List = queryResult;
-            return View();
+            return View(ViewBag.List);
         }
         /// <summary>
         /// 资讯明细

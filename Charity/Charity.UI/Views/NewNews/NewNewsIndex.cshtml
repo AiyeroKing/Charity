@@ -44,31 +44,35 @@
                     </span> <span class="News_bosy_div_all_span_1">/</span>
                     <span class="News_bosy_div_all_span_2">全部资讯</span>
                 </h5>
-
+                <div class="folkm" style="margin-top:0.5em;
+    box-shadow:0px 2px 2px black;
+    background-color:red;">
+                    <div class="folkm_1"><a>资讯标题</a></div>
+                    <span class="folkm_2"> <a >撰写人</a></span>
+                    <span class="folkm_3"> <a>创建时间</a></span>
+                    <span class="folkm_4"> <a>查看</a></span>
+                </div>
                 <!-- 完成以下需要数据---------------------------------------------------------------------------------->
-                <form></form>
+                <div class="form_infolo">
+                    @{
+                        foreach (var item in ViewBag.List)
+                        {
 
-            </div>
-        </div>
-        <!--右边20%区域-->
-        <div class="News_bosy_div_all_3">
-            <div class="span_oil_all_right">
-                <div class="right_heixian_only_one"></div>
-                <div class="News_bosy_right_1"> <span>今日最新</span></div>
-                <div class="right_heixian_only_two"></div>
-            </div>
-            <div class="span_oil_all_right">
-                <div class="right_heixian_only_one"></div>
-                <div class="News_bosy_right_2"> <span>本周最新</span></div>
-                <div class="right_heixian_only_two"></div>
-            </div>
-            <div class="span_oil_all_right">
-                <div class="right_heixian_only_one"></div>
-                <div class="News_bosy_right_3"> <span>本月更新</span></div>
-                <div class="right_heixian_only_two"></div>
+
+                            <p class="form_p_info">
+                                <a href="../NewNews/NewNewsAritailIndex?Id=@item.ID">@item.InfoTital</a>
+                                <span class="form_span_info"> <a href="#" style="color:cornflowerblue;">@item.InfoName</a></span>
+                                <span class="form_span_info"> <a href="#"  style="color:violet;">@item.InfoSetTime</a></span>
+                                <span class="form_span_info"> <a href="../NewNews/NewNewsAritailIndex?Id=@item.ID">查看</a></span>
+                            </p>  
+                        }
+                    }
+                </div>
+
             </div>
         </div>
     </div>
+
 
     <!--联系淘宝客服-->
     <div class="div_body" data-spm="1-b-s">

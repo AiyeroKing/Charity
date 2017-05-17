@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "NewNewsAritailIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Charity.Model.Tinfo
+
+<head>
+    <title>Charity-最新资讯</title>
+    <link href="~/Content/css/Foreground/NewNews/NewNewsStyle.css" rel="stylesheet" />
+    @*<link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />*@
+    <style>
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--过渡条。。过渡线-->
+    <div class="progress_NewNews"></div>
+
+    <!--标签导航 我的首页/最新资讯-->
+    <div class="nav_NewNews_top">
+        <ul class="breadcrumb">
+            <li>
+                <a href="../Home/HomeIndex">我的首页</a>
+            </li>
+            <li class="active">
+                最新资讯
+            </li>
+        </ul>
+    </div>
+
+    <!--最新资讯DIV-->
+    <div class="News_bosy_div_all">
+        <h2 class="News_bosy_div_h2"><span>最新资讯</span></h2>
+
+        <!--左边60%区域-->
+        <div class="News_bosy_div_all_2">
+            <div class="News_bosy_div_all_sign1">
+                <h5 class="News_bosy_div_all_sign1_a">
+                    <span>
+                        <a href="../Home/HomeIndex">我的主页</a>
+                    </span> <span class="News_bosy_div_all_span_1">/</span>
+                    <span class="News_bosy_div_all_span_2">全部资讯</span>
+                </h5>
+
+                <div class="div_nvb_1">
+                    <h1>标题:@Model.InfoTital</h1>
+                </div>
+
+                <div class="div_nvb_2">
+                    <h3>撰写人:@Model.InfoName</h3>
+                </div>
+
+                <div class="div_nvb_3">
+                    <h4>内容:@Model.InfoBody</h4>
+                    
+                </div>
+
+                <div class="div_nvb_4">
+                    <h4>创建时间:@Model.InfoSetTime</h4>
+                </div>
+
+
+
+                <div class="btn_comeback">
+                    <a href="../NewNews/NewNewsIndex"><input type="button" value="X" class="btn btn-danger" /></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+

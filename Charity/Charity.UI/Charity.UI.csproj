@@ -385,6 +385,7 @@
     <Content Include="Views\Bendadmin\BendadminAritialIndex.cshtml" />
     <Content Include="Views\LoginSignUp\SignAritailIndex.cshtml" />
     <Content Include="Views\LoginSignUp\SignEditorIndex.cshtml" />
+    <Content Include="Views\NewNews\NewNewsAritailIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
