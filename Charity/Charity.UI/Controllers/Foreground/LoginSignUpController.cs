@@ -35,6 +35,32 @@ namespace Charity.UI.Controllers.Foreground
         {
             return View();
         }
+
+        /// <summary>
+        /// 详情页面
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult SignAritailIndex(int Id)
+        {
+            BendAccountBll _bendaccountBll = new BendAccountBll();
+            var queryResult = _bendaccountBll.Query_Account(Id);
+            ViewData.Model = queryResult;
+            return View(ViewData.Model);
+        }
+
+        /// <summary>
+        /// 详情编辑页面
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult SignEditorIndex(int Id)
+        {
+            BendAccountBll _bendaccountBll = new BendAccountBll();
+            var queryResult = _bendaccountBll.Query_Account(Id);
+            ViewData.Model = queryResult;
+            return View(ViewData.Model);
+        }
+
+
         /// <summary>
         /// 后台登录页面
         /// </summary>
@@ -108,7 +134,7 @@ namespace Charity.UI.Controllers.Foreground
             //loginsignoutModel.UsRemark = "无";
             //loginsignoutModel.UsSettime = DateTime.Now;
             loginsignoutModel = null;
-            Session["AdminAccount"] = loginsignoutModel;//将值存在一个
+            Session["AdminAccount"] = null;//将值存在一个
             return RedirectToAction("HomeIndex", "Home");
         }
         #endregion
@@ -121,6 +147,18 @@ namespace Charity.UI.Controllers.Foreground
             var result = false;
             result = _bendaccountBll.AddAccountMSG(model);
             return RedirectToAction("LoginIndex", "LoginSignUp");
+        }
+        #endregion
+
+        #region --编辑
+        [HttpPost]
+        public ActionResult EidtorAccountMSG(Tuseraccount model)
+        {
+            BendAccountBll _bendaccountBll = new BendAccountBll();
+            var result = false;
+            result = _bendaccountBll.Update_AccountMSG(model);
+            Session["AdminAccount"] = null;//将值存在一个
+            return RedirectToAction("HomeIndex", "Home");
         }
         #endregion
     }

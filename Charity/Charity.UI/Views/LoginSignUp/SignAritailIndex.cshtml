@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "SignAritailIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Charity.Model.Tuseraccount
+
+
+<head>
+    <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<div class="color_1_accout" style=" position: absolute;
+            width: 200px;
+            height: 70px;
+            background-color: yellow;
+            margin-left: -10%;
+            margin-top: 2.2%;
+            z-index: -999;">
+</div>
+
+<div class="back_div_color" style="margin-top:-2.2em;">
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../Home/HomeIndex">前台主页</a>
+            </li>
+            <li class="active">
+                个人用户详细情况
+            </li>
+        </ul>
+    </div>
+
+
+
+    <form>
+
+        <h2 class="admin_add_one_h2" >个人用户详细情况</h2>
+
+        <div class="admin_add_one_div_1" style="height:680px; margin-top:2%;" >
+
+            <div class="admin_add_one_div_2">
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户账号</span>
+                    <input type="text" class="form-control" required readonly name="UsAccount" value="@Model.UsAccount">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户密码</span>
+                    <input type="text" class="form-control" required readonly name="UsPassword" value="@Model.UsPassword">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户姓名</span>
+                    <input type="text" style="width:150px;" class="form-control" required readonly name="UsName" value="@Model.UsName">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">用户昵称</span>
+                    <input type="text" style="width:150px;" class="form-control" required name="UsNiname" readonly value="@Model.UsNiname">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">联系方式</span>
+                    <input type="text" class="form-control" required readonly name="UsPhone" value="@Model.UsPhone">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">身份证</span>
+                    <input type="text" style="width:300px;" class="form-control" required readonly name="UsIdcard" value="@Model.UsIdcard">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">电子邮箱</span>
+                    <input type="text" class="form-control" required readonly name="Usmail" value="@Model.Usmail">
+                </div><br>
+
+
+            </div>
+            <div class="hr_lone_long"></div>
+            <div class="hr_lone_textarea">
+                <p class="cd-label" for="cd-textarea">备注（字数不得大于500字）:</p>
+                <textarea class="message" readonly id="cd-textarea" style="color:#ff6a00" name="UsRemark">@Model.UsRemark</textarea>
+            </div>
+        </div>
+
+        <div style="margin-left:46%;margin-top:-8%; padding-bottom:20px;">
+            <a href="../LoginSignUp/SignEditorIndex?Id=@Model.ID"><input type="button" class="btn btn-success" value="编辑个人信息"></a>
+        </div>
+    </form>
+</div>

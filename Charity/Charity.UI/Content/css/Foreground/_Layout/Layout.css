@@ -1,6 +1,7 @@
 ﻿/*以下内容是RenderBody样式*/
 .RenderBody {
     padding-top: 4.8em;
+    min-height:800px;
 }
 /*一下内容是底部页面尾部导航*/
 .login {

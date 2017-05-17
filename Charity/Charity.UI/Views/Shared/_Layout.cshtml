@@ -52,9 +52,10 @@
             display:none;
         }
     </style>
+
+
     <script type="text/javascript">
         function homeopen() {
-
             var Id = document.getElementById("textId_check").value;
             var a = 0;
             if (Id == a) {
@@ -69,14 +70,13 @@
 
                 var li_olly = document.getElementById('li_olly');
                 li_olly.style.display = "block";
-
-                
             }
         }
         /*用window.onload调用myfun()*/
         window.onload = homeopen;//不要括号
 
     </script>
+
 </head>
 <body>
 
@@ -131,18 +131,19 @@
                             <li>@Html.ActionLink("贫困捐助", "SubsidizationIndex", "Subsidization")</li>
                             <li>@Html.ActionLink("最新资讯", "NewNewsIndex", "NewNews")</li>
                             <li>@Html.ActionLink("联系我们", "ContactUsIndex", "ContactUs")</li>
+
                             <li class="li_massage_borad_one" id="li_login"><a href="../LoginSignUp/LoginIndex">登录</a></li>
                                 <li class="li_massage_borad_two" id="li_sign"><a href="../LoginSignUp/SignUpIndex">注册</a></li>
                      
                             <li class="li_massage_borad_three" id="li_olly">
                                 <a href="#">
-                                    用户:@(Session["AdminAccount"] != null ? (Session["AdminAccount"] as Charity.Model.Tuseraccount).UsNiname : "无用户登录")
+                                    用户:@(Session["AdminAccount"]!= null?(Session["AdminAccount"] as Charity.Model.Tuseraccount).UsNiname:"无用户登录")
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="three_all">
                                     <li><a href="../LoginSignUp/LoginSignOut">用户注销</a></li>
                                     <li><a href="../LoginSignUp/UserLoginIndex">管理员登录</a></li>
-                                    <li><a href="#">用户个人介绍</a></li>
+                                    <li><a href="../LoginSignUp/SignAritailIndex?Id=@(Session["AdminAccount"]!= null?(Session["AdminAccount"] as Charity.Model.Tuseraccount).ID:0)">用户个人介绍</a></li>
                                 </ul>
                             </li>
                             <li class="li_massage_borad"><a href="../ContactUs/ContactBoardIndex">留言板</a></li>
@@ -157,8 +158,7 @@
     </div>
 
     <!--跳转的网页显示区域-->
-    <div class="RenderBody">@RenderBody()</div>
-
+    <div class="RenderBody" >@RenderBody()</div>
     <!--底部导航栏-->
 
     <div class="siteFooterBox">
