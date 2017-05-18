@@ -18,6 +18,7 @@ namespace Charity.Dal.Bend
                                             ApplyPhone,
                                             ApplyInfo,
                                             ApplyValue,
+                                            Srcimg,
                                             ApplySetTime
                                             from dbo.Tpoverty
                                            ";
@@ -35,12 +36,13 @@ namespace Charity.Dal.Bend
             var result = false;
             const string AddPovertyMSGsql = @"
                                INSERT INTO dbo.Tpoverty
-                                        ( ApplyArea, ApplyName,ApplyPhone,ApplyInfo,ApplyValue,ApplySetTime) 
+                                        ( ApplyArea, ApplyName,ApplyPhone,ApplyInfo,ApplyValue,Srcimg,ApplySetTime) 
                                 VALUES  ( @ApplyArea, 
                                           @ApplyName,
                                           @ApplyPhone,
                                           @ApplyInfo,
                                           @ApplyValue,
+                                          @Srcimg,
                                           @ApplySetTime
                                          )";
 
@@ -69,6 +71,7 @@ namespace Charity.Dal.Bend
                                             ApplyPhone,
                                             ApplyInfo,
                                             ApplyValue,
+                                            Srcimg,
                                             ApplySetTime
                                             from dbo.Tpoverty
                                             where ID = @Id

@@ -47,9 +47,16 @@ namespace Charity.Model
             get; set;
         }
         /// <summary>
+        /// 图片路径
+        /// </summary>
+        public string Srcimg
+        {
+            get; set;
+        }
+        /// <summary>
         /// 申请金额
         /// </summary>
-        public int ApplyValue
+        public string ApplyValue
         {
             get; set;
         }

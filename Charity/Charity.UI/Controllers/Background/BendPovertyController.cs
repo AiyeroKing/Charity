@@ -2,6 +2,7 @@
 using Charity.Model;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -56,11 +57,48 @@ namespace Charity.UI.Controllers.Background
 
         #region --添加功能
         [HttpPost]
-        public ActionResult AddPovertyMSG(Tpoverty model)
+        public ActionResult AddPovertyMSG()
         {
+
+            Tpoverty  tpovertyMolde = new Tpoverty();
+            NameValueCollection nvc = System.Web.HttpContext.Current.Request.Form;
+            HttpFileCollection hfc = System.Web.HttpContext.Current.Request.Files;
+            string imgPath = "";
+            if (hfc.Count > 0)
+            {
+                imgPath = "/DataImg/proverty/" + hfc[0].FileName;
+                string PhysicalPath = Server.MapPath(imgPath);
+                hfc[0].SaveAs(PhysicalPath);
+            }
+            tpovertyMolde.ApplyArea = nvc.Get("ApplyArea");
+            tpovertyMolde.ApplyInfo = nvc.Get("ApplyInfo");
+            tpovertyMolde.ApplyName = nvc.Get("ApplyName");
+            tpovertyMolde.ApplyPhone = nvc.Get("ApplyPhone");
+            tpovertyMolde.ApplyValue = nvc.Get("ApplyValue");
+            //tpovertyMolde.ApplyValue = int.Parse(abc); 
+            tpovertyMolde.Srcimg = imgPath;
+
             var result = false;
-            result = _bendpovertyBll.AddPovertyMSG(model);
-            return RedirectToAction("BendPovertyIndex", "BendPoverty");
+             result = _bendpovertyBll.AddPovertyMSG(tpovertyMolde);
+            return Redirect("/BendPoverty/BendPovertyIndex");
+        }
+        #endregion
+
+        #region --图片上传
+        public ActionResult Upload()
+        {
+            NameValueCollection nvc = System.Web.HttpContext.Current.Request.Form;
+
+            HttpFileCollection hfc = System.Web.HttpContext.Current.Request.Files;
+            string imgPath = "";
+            if (hfc.Count > 0)
+            {
+                imgPath = "//DataImg//proverty//" + hfc[0].FileName;
+                string PhysicalPath = Server.MapPath(imgPath);
+                hfc[0].SaveAs(PhysicalPath);
+            }
+            //注意要写好后面的第二第三个参数
+            return Json(new {imgPath1 = imgPath }, "text/html", JsonRequestBehavior.AllowGet);
         }
         #endregion
 

@@ -8,6 +8,8 @@
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/ajaxfileupload.js"></script>
     <style>
         a {
             text-decoration: none;
@@ -17,6 +19,51 @@
                 text-decoration: none;
             }
     </style>
+    <script type="text/javascript">
+          $(function () {
+              $(":button").click(function () {
+                  if ($("#file1").val().length > 0) {
+                      ajaxFileUpload();
+                  }
+                  else {
+                      alert("请选择图片");
+                  }
+              })
+          })
+          function ajaxFileUpload() {
+              $.ajaxFileUpload
+                  (
+                  {
+                      url: '/BendPoverty/AddPovertyMSG', //用于文件上传的服务器端请求地址
+                      type: 'post',
+                      data: {
+                          ApplyArea: $("input[name='ApplyArea']").val(),
+                          ApplyInfo: $("textarea[name='ApplyInfo']").val(),
+                          ApplyName: $("input[name='ApplyName']").val(),
+                          ApplyPhone: $("input[name='ApplyPhone']").val(),
+                          ApplyValue: $("input[name='ApplyValue']").val()
+                      }, //此参数非常严谨，写错一个引号都不行
+                      secureuri: false, //一般设置为false
+                      fileElementId: 'file1', //文件上传空间的id属性
+                  dataType: 'json', //返回值类型 一般设置为json
+                  success: function (data, status)  //服务器成功响应处理函数
+                  {
+                      $("#img1").attr("src", data.imgPath1);
+                      if (typeof (data.error) != 'undefined') {
+                          if (data.error != '') {
+                          } else {
+                          }
+                      }
+                  },
+                  error: function (data, status, e)//服务器响应失败处理函数
+                  {
+                      alert(e);
+                  }
+    }
+    )
+          return false;
+    }
+    </script>
 </head>
 
 <div style=" position: absolute;
@@ -55,34 +102,41 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">贫困地区</span>
-                    <input type="text" class="form-control" required name="ApplyArea">
+                    <input type="text" class="form-control" required name="ApplyArea" id="ApplyArea">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">负责人姓名</span>
-                    <input type="text" class="form-control" required name="ApplyName">
+                    <input type="text" class="form-control" required name="ApplyName" id="ApplyName">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">负责人联系方式</span>
-                    <input type="text" style="width:150px;" class="form-control" required name="ApplyPhone">
+                    <input type="text" style="width:150px;" class="form-control" required name="ApplyPhone" id="ApplyPhone">
                 </div><br>
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">贫困申请资金</span>
-                    <input type="text" class="form-control" required name="ApplyValue">
+                    <input type="text" class="form-control" required name="ApplyValue" id="ApplyValue">
                 </div><br>
             </div>
-            <div class="img_prove_show"></div>
+
+            <div class="img_prove_show" style="text-align:center">
+                <div style="margin-top:20%;margin-left:30%;">
+                    <p><input type="file" id="file1" name="file" /></p>
+                </div>
+            </div>
+
+
             <div class="hr_lone_long_1"></div>
             <div class="hr_lone_textarea_1">
                 <p class="cd-label" for="cd-textarea">贫困地区介绍:</p>
-                <textarea class="message_1"  id="cd-textarea" style="color:#ff6a00" name="ApplyInfo"></textarea>
+                <textarea class="message_1" style="color:#ff6a00" name="ApplyInfo" id="ApplyInfo"></textarea>
             </div>
         </div>
 
-        <div  style="margin-left: 40%;margin-top:-4%;">
-            <button type="submit" class="btn btn-success">添加提交</button><span class="width_buttom">&</span>
+        <div style="margin-left: 40%;margin-top:-4%;">
+            <a href="../BendPoverty/BendPovertyIndex"><input type="button" class="btn btn-success" value="添加提交"></a><span class="width_buttom">&</span>
             <button type="reset" class="btn btn-danger">重置一下</button>
         </div>
     </form>

@@ -24,7 +24,7 @@ namespace Charity.UI.Controllers
 
 
         #region --图片上传
-        public ActionResult Upload(int Id,string name)
+        public ActionResult Upload()
         {
             NameValueCollection nvc = System.Web.HttpContext.Current.Request.Form;
 
