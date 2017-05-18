@@ -17,6 +17,14 @@
                 text-decoration: none;
             }
     </style>
+    <SCRIPT language="JavaScript">
+        function fresh() {
+            if (location.href.indexOf("?reload=true") < 0) {
+                location.href += "?reload=true";
+            }
+        }
+        setTimeout("fresh()", 50)
+    </SCRIPT>
 </head>
 
 <div style=" position: absolute;

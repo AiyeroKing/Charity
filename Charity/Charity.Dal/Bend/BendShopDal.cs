@@ -22,6 +22,7 @@ namespace Charity.Dal.Bend
                                                  ShopCharityWay,
                                                  ShopCharityIdcard,
                                                  ShopSetTime,
+                                                 Scrimg,
                                                  ShopRemark
                                             from dbo.Tshop
                                            ";
@@ -46,6 +47,7 @@ namespace Charity.Dal.Bend
                                                  ShopCharityWay,
                                                  ShopCharityIdcard,
                                                  ShopSetTime,
+                                                 Scrimg,
                                                  ShopRemark
                                             from dbo.Tshop
                                             where ShopSale like @ShopSale
@@ -73,6 +75,7 @@ namespace Charity.Dal.Bend
                                             ShopCharityWay,
                                             ShopCharityIdcard,
                                             ShopSetTime,
+                                            Scrimg,
                                             ShopRemark
                                          ) 
                                 VALUES  ( 
@@ -85,6 +88,7 @@ namespace Charity.Dal.Bend
                                                  @ShopCharityWay,
                                                  @ShopCharityIdcard,
                                                  @ShopSetTime,
+                                                 @Scrimg,
                                                  @ShopRemark
                                          )";
 
@@ -117,6 +121,7 @@ namespace Charity.Dal.Bend
                                                     ShopCharityWay,
                                                     ShopCharityIdcard,
                                                     ShopSetTime,
+                                                    Scrimg, 
                                                     ShopRemark
                                             from dbo.Tshop
                                             where ID = @Id

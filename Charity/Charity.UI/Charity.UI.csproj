@@ -407,6 +407,7 @@
     <Folder Include="Content\img\LoginSignUp\" />
     <Folder Include="DataBase\" />
     <Folder Include="DataImg\proverty\" />
+    <Folder Include="DataImg\shop\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />

@@ -1,141 +1,180 @@
-﻿@{
-    ViewBag.Title = "ItemsCollectionIndex";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿
 
 <head>
-    <title>Charity-物品募捐</title>
-    <link href="~/Content/css/Foreground/ItemsCollection/ItemsCollectionStyle.css" rel="stylesheet" />
-    <link href="~/Content/img/ItemsCollection/default.css" rel="stylesheet" />
-    <link href="~/Content/img/ItemsCollection/reset.css" rel="stylesheet" /><!-- CSS reset -->
-    <link href="~/Content/img/ItemsCollection/style.css" rel="stylesheet" /><!-- Resource style -->
-    <script src="~/Content/img/ItemsCollection/modernizr.js"></script>
+    <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/ajaxfileupload.js"></script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(":button").click(function () {
+                if ($("#file1").val().length > 0) {
+                    ajaxFileUpload();
+                }
+                else {
+                    alert("请选择图片");
+                }
+            })
+        })
+        function ajaxFileUpload() {
+            $.ajaxFileUpload
+                (
+                {
+                    url: '/BendShop/AddShopMSG', //用于文件上传的服务器端请求地址
+                    type: 'post',
+                    data: {
+
+                        ShopArea: $("input[name='ShopArea']").val(),
+                        ShopCharityIdcard: $("input[name='ShopCharityIdcard']").val(),
+                        ShopCharityName: $("input[name='ShopCharityName']").val(),
+                        ShopCharityPhone: $("input[name='ShopCharityPhone']").val(),
+                        ShopCharityWay: $("input[name='ShopCharityWay']").val(),
+                        ShopName: $("input[name='ShopName']").val(),
+                        ShopRemark: $("textarea[name='ShopRemark']").val(),
+                        ShopSale: $("select[name='ShopSale']").val(),
+                        ShopValue: $("input[name='ShopValue']").val()
+                        //ApplyArea: $("input[name='ApplyArea']").val(),
+                        //ApplyInfo: $("textarea[name='ApplyInfo']").val(),
+                        //ApplyName: $("input[name='ApplyName']").val(),
+                        //ApplyPhone: $("input[name='ApplyPhone']").val(),
+                        //ApplyValue: $("input[name='ApplyValue']").val()
+                    }, //此参数非常严谨，写错一个引号都不行
+                    secureuri: false, //一般设置为false
+                    fileElementId: 'file1', //文件上传空间的id属性
+                    dataType: 'json', //返回值类型 一般设置为json
+                    success: function (data, status)  //服务器成功响应处理函数
+                    {
+                        $("#img1").attr("src", data.imgPath1);
+                        if (typeof (data.error) != 'undefined') {
+                            if (data.error != '') {
+                            } else {
+                            }
+                        }
+                    },
+                    error: function (data, status, e)//服务器响应失败处理函数
+                    {
+                        alert(e);
+                    }
+                }
+                )
+            return false;
+        }
+    </script>
 </head>
 
-<body>
-    <div id="progress_ItemsCollection"></div>
-    <!--小导航栏-->
+<div style=" position: absolute;
+            width: 200px;
+            height: 70px;
+            background-color: yellow;
+            margin-left: -10%;
+            margin-top: 11%;
+            z-index: -999;">
+</div>
+
+<div class="back_div_color">
     <div>
         <ul class="breadcrumb">
             <li>
-                <a href="../Home/HomeIndex">我的首页</a>
+                <a href="../Home/HomeIndex">主页</a>
             </li>
             <li>
-                <a href="../ItemsCollection/ItemsCollectionIndex"> 募捐系列</a>
+                <a href="../Market/BookMarketIndex">捐赠商品管理</a>
             </li>
             <li class="active">
-                物品募捐
+                捐赠商品添加
             </li>
         </ul>
     </div>
-    <div class="help_head_img"></div>
-    <div class="itemcollect_div_all">
-        <h2 class="h2_item_tital_1">捐赠物品</h2>
-        <hr class="hr_cc_1" />
-        <div class="form_input_submit">
-            <div class="jq22-container">
-                <!--<div class="jq22-content bgcolor-8">
 
-                </div-->
-                <form class="cd-form floating-labels" action="../ItemsCollection/AddShopMSG" method="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <div class="error-message">
-                            <p>募捐人信息输入</p>
-                        </div>
-                        <legend style="color:azure;">物品捐赠信息登入</legend>
-                        <div class="icon">
-                            <label class="cd-label" for="cd-company">捐赠者姓名</label>
-                            <input class="company" type="text" name="ShopCharityName" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                        </div>
-                        <div class="icon">
-                            <label class="cd-label" for="cd-company">捐赠人身份证</label>
-                            <input class="company" type="text" name="ShopCharityIdcard" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                        </div>
-                        <div class="icon">
-                            <label class="cd-label" for="cd-company">捐赠人所在地区</label>
-                            <input class="company" type="text" name="ShopArea" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                        </div>
-                        <div class="icon">
-                            <label class="cd-label" for="cd-company">捐赠人联系方式</label>
-                            <input class="company" type="text" name="ShopCharityPhone" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <div class="error-message2">
-                            <p>募捐物品信息输入</p>
-                        </div>
-                        <div class="icon">
-                            <label class="cd-label" for="cd-company">物品名称</label>
-                            <input class="company" type="text" name="ShopName" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                        </div>
-                        <div class="icon">
-                            <label class="cd-label" for="cd-company">物品估量价值</label>
-                            <input class="company" type="text" name="ShopValue" id="cd-company" style="background-color:white;color:#ff6a00" required>
-                        </div>
-                        <div>
-                            <h4>物品类型</h4>
+    <form method="post" action="../BendShop/AddShopMSG">
 
-                            <p class="cd-select icon">
-                                <select class="budget" style="color:#ff6a00" name="ShopSale" required>
-                                    <option value="无" disabled selected>请选择物品类型...</option>
-                                    <option value="衣物">衣物</option>
-                                    <option value="书籍/报刊">书籍/报刊</option>
-                                    <option value="电子设备">电子设备</option>
-                                    <option value="家具">家具</option>
-                                    <option value="收藏">收藏</option>
-                                    <option value="其他">其他</option>
-                                </select>
-                            </p>
-                        </div>
+        <h2 class="admin_add_one_h2">捐赠商品添加页面</h2>
 
-                        <div>
-                            <h4>捐赠方式</h4>
+        <div class="admin_add_one_div_1">
 
-                            <ul class="cd-form-list">
-                                <li>
-                                    <input type="radio" name="ShopCharityWay" id="cd-radio-1" value="在线邮寄" checked>
-                                    <label for="cd-radio-1" style="color:#ff6a00">在线邮寄</label>
-                                </li>
+            <div class="admin_add_one_div_4">
 
-                                <li>
-                                    <input type="radio" name="ShopCharityWay" id="cd-radio-2" value="现场捐赠">
-                                    <label for="cd-radio-2" style="color:#ff6a00">附近站点捐赠</label>
-                                </li>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">物品名称</span>
+                    <input type="text" class="form-control" required name="ShopName">
+                </div><br>
 
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">物品价值</span>
+                    <input type="text" class="form-control" required name="ShopValue">
+                </div><br /><br><br>
 
-                            </ul>
-                        </div>
+                <div>
+                    <h4 class="h4_11c">物品类型:</h4>
+                    <select class="budget" style="color:#ff6a00" name="ShopSale" required>
+                        <option value="无" disabled selected>请选择物品类型...</option>
+                        <option value="衣物">衣物</option>
+                        <option value="书籍/报刊">书籍/报刊</option>
+                        <option value="电子设备">电子设备</option>
+                        <option value="家具">家具</option>
+                        <option value="收藏">收藏</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠地区</span>
+                    <input type="text" class="form-control" required name="ShopArea">
+                </div><br>
+
+                <div class="nnv_hr_cor"></div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠人姓名</span>
+                    <input type="text" class="form-control" required name="ShopCharityName">
+                </div><br>
 
 
 
-                        @*<div class="error-message3">
-                            <p>募捐物品实物图片上传</p>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠人联系方式</span>
+                    <input type="text" class="form-control" required name="ShopCharityPhone">
+                </div><br>
 
-                            <input type="file" name="files[]" id="demo-fileInput-4" multiple>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠方式</span>
+                    <input type="text" style="width:150px;" class="form-control" required name="ShopCharityWay">
+                </div><br>
 
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:100px;">捐赠人证件</span>
+                    <input type="text" class="form-control" required name="ShopCharityIdcard">
+                </div><br>
 
-                        </div>*@
+            </div>
 
+            <div class="img_prove_show" style="text-align:center">
+                <div style="margin-top:20%;margin-left:30%;">
+                    <p><input type="file" id="file1" name="file" /></p>
+                </div>
+            </div>
 
-
-
-
-                        <div class="icon">
-                            <label class="cd-label" for="cd-textarea">捐赠商品介绍:</label>
-                            <textarea class="message" name="ShopRemark" id="cd-textarea" style="color:#ff6a00"></textarea>
-                        </div>
-
-                        <div>
-
-                            <input type="submit" value="保存提交" style="position:absolute;margin-left:0%;">
-                            <button type="reset" class="btn btn-warning" style="margin-left:50%;margin-top:20px;">重置</button>
-                        </div>
-                    </fieldset>
-                </form>
+            <div class="hr_lone_long_2"></div>
+            <div class="hr_lone_textarea_3">
+                <p class="cd-label" for="cd-textarea">捐赠商品介绍:</p>
+                <textarea class="message_2" style="color:#ff6a00" name="ShopRemark"></textarea>
             </div>
         </div>
-    </div>
 
-    <script src="~/Scripts/jquery-1.10.2.js"></script>
-    <script src="~/Content/img/ItemsCollection/main.js"></script> <!-- Resource jQuery -->
-</body>
+        <div style="margin-left:42%;margin-top:-3%;">
+
+            <a href="../Market/BookMarketIndex"><input type="button" class="btn btn-success" value="添加提交"></a><span class="width_buttom">&</span>
+            <button type="reset" class="btn btn-danger">重置一下</button>
+        </div>
+    </form>
+
+</div>

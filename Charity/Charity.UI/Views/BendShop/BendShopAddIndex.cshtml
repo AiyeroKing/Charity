@@ -9,6 +9,8 @@
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/css/Background/Bendadmin/adminBend.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/ajaxfileupload.js"></script>
     <style>
         a {
             text-decoration: none;
@@ -18,6 +20,57 @@
                 text-decoration: none;
             }
     </style>
+    <script type="text/javascript">
+        $(function () {
+            $(":button").click(function () {
+                if ($("#file1").val().length > 0) {
+                    ajaxFileUpload();
+                }
+                else {
+                    alert("请选择图片");
+                }
+            })
+        })
+        function ajaxFileUpload() {
+            $.ajaxFileUpload
+                (
+                {
+                        url: '/BendShop/AddShopMSG', //用于文件上传的服务器端请求地址
+                    type: 'post',
+                    data: {
+
+                        ShopArea: $("input[name='ShopArea']").val(),
+                        ShopCharityIdcard: $("input[name='ShopCharityIdcard']").val(),
+                        ShopCharityName: $("input[name='ShopCharityName']").val(),
+                        ShopCharityPhone: $("input[name='ShopCharityPhone']").val(),
+                        ShopCharityWay: $("input[name='ShopCharityWay']").val(),
+                        ShopName: $("input[name='ShopName']").val(),
+                        ShopRemark: $("textarea[name='ShopRemark']").val(),
+                        ShopSale: $("select[name='ShopSale']").val(),
+                        ShopValue: $("input[name='ShopValue']").val()
+
+                    }, //此参数非常严谨，写错一个引号都不行
+                    secureuri: false, //一般设置为false
+                    fileElementId: 'file1', //文件上传空间的id属性
+                    dataType: 'json', //返回值类型 一般设置为json
+                    success: function (data, status)  //服务器成功响应处理函数
+                    {
+                        $("#img1").attr("src", data.imgPath1);
+                        if (typeof (data.error) != 'undefined') {
+                            if (data.error != '') {
+                            } else {
+                            }
+                        }
+                    },
+                    error: function (data, status, e)//服务器响应失败处理函数
+                    {
+                        alert(e);
+                    }
+                }
+                )
+            return false;
+        }
+    </script>
 </head>
 
 <div style=" position: absolute;
@@ -103,25 +156,24 @@
                     <input type="text" class="form-control" required name="ShopCharityIdcard">
                 </div><br>
 
-
-
-
             </div>
 
-            <div class="img_prove_show">
-                商品图片
+            <div class="img_prove_show" style="text-align:center">
+                <div style="margin-top:20%;margin-left:30%;">
+                    <p><input type="file" id="file1" name="file" /></p>
+                </div>
             </div>
 
             <div class="hr_lone_long_2"></div>
             <div class="hr_lone_textarea_3">
                 <p class="cd-label" for="cd-textarea">捐赠商品介绍:</p>
-                <textarea class="message_2"  id="cd-textarea" style="color:#ff6a00" name="ShopRemark"></textarea>
+                <textarea class="message_2"   style="color:#ff6a00" name="ShopRemark"></textarea>
             </div>
         </div>
 
         <div style="margin-left:42%;margin-top:-3%;">
 
-            <button type="submit" class="btn btn-success">添加提交</button><span class="width_buttom">&</span>
+            <a href="../BendShop/BendShopIndex"><input type="button" class="btn btn-success" value="添加提交"></a><span class="width_buttom">&</span>
             <button type="reset" class="btn btn-danger">重置一下</button>
         </div>
     </form>

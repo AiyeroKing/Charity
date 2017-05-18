@@ -2,6 +2,7 @@
 using Charity.Model;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -53,15 +54,7 @@ namespace Charity.UI.Controllers.Background
         }
         #endregion
 
-        #region --添加功能
-        [HttpPost]
-        public ActionResult AddShopMSG(Tshop model)
-        {
-            var result = false;
-            result = _bendshopBll.AddShopMSG(model);
-            return RedirectToAction("BendShopIndex", "BendShop");
-        }
-        #endregion
+        
 
         #region --编辑功能
         public ActionResult Update_ShopMSG(Tshop model)
@@ -80,5 +73,44 @@ namespace Charity.UI.Controllers.Background
         }
         #endregion
 
+
+
+    
+
+
+
+
+        #region --添加功能
+        [HttpPost]
+        public ActionResult AddShopMSG()
+        {
+
+            Tshop tshopMolde = new Tshop();
+            NameValueCollection nvc = System.Web.HttpContext.Current.Request.Form;
+            HttpFileCollection hfc = System.Web.HttpContext.Current.Request.Files;
+            string imgPath = "";
+            if (hfc.Count > 0)
+            {
+                imgPath = "/DataImg/shop/" + hfc[0].FileName;
+                string PhysicalPath = Server.MapPath(imgPath);
+                hfc[0].SaveAs(PhysicalPath);
+            }
+
+            tshopMolde.Scrimg = imgPath;
+            tshopMolde.ShopArea = nvc.Get("ShopArea");
+            tshopMolde.ShopCharityIdcard = nvc.Get("ShopCharityIdcard");
+            tshopMolde.ShopCharityName = nvc.Get("ShopCharityName");
+            tshopMolde.ShopCharityPhone = nvc.Get("ShopCharityPhone");
+            tshopMolde.ShopCharityWay = nvc.Get("ShopCharityWay");
+            tshopMolde.ShopName = nvc.Get("ShopName");
+            tshopMolde.ShopRemark = nvc.Get("ShopRemark");
+            tshopMolde.ShopSale = nvc.Get("ShopSale");
+            tshopMolde.ShopValue = nvc.Get("ShopValue");
+
+            var result = false;
+            result = _bendshopBll.AddShopMSG(tshopMolde);
+            return Redirect("/BendShop/BendShopIndex");
+        }
+        #endregion
     }
 }

@@ -77,7 +77,7 @@ namespace Charity.Model.ViewModel
             get; set;
         }
 
-        public int ShopValue
+        public string ShopValue
         {
             get; set;
         }

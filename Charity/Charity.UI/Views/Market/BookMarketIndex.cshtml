@@ -6,6 +6,14 @@
 <head>
     <title>Charity-慈善义卖</title>
     <link href="~/Content/css/Foreground/Market/MarketStyle.css" rel="stylesheet" />
+    <SCRIPT language="JavaScript">
+        function fresh() {
+            if (location.href.indexOf("?reload=true") < 0) {
+                location.href += "?reload=true";
+            }
+        }
+        setTimeout("fresh()", 50)
+    </SCRIPT>
 </head>
 
 <body>
@@ -58,7 +66,7 @@
                                 <div class="col-md-4">
                                     <div class="thumbnail">
                                         <div class="img_show_qu">
-                                            <img class="img_size" src="~/Content/img/loveBIZ/1.png" />
+                                            <img src="@item.Scrimg" style="width:100%;height:100%" />
                                         </div>
                                         <h5 class="shop_tital">@item.ShopName</h5>
                                         <span class="shop_value">¥@item.ShopValue</span>

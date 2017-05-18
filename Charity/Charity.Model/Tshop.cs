@@ -21,7 +21,7 @@ namespace Charity.Model
         /// <summary>
         /// 商品价值
         /// </summary>
-        public int ShopValue
+        public string ShopValue
         {
             get; set;
         }
@@ -88,6 +88,14 @@ namespace Charity.Model
         {
             get; set;
         }
+        /// <summary>
+        /// 存储图片的路径
+        /// </summary>
+        public string Scrimg
+        {
+            get; set;
+        }
 
+    
     }
 }
