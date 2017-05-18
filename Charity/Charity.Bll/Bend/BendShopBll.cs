@@ -17,7 +17,13 @@ namespace Charity.Bll.Bend
         {
             return bendshopDal.Scan_Shop();
         }
+        #endregion
 
+        #region  --有条件对数据库进行 BendShop 遍历的操作--
+        public IList<Tshop> Scan_onesShop(string ShopSale)
+        {
+            return bendshopDal.Scan_onesShop(ShopSale);
+        }
         #endregion
 
         #region  --对数据库进行 BendShop 增加的操作--

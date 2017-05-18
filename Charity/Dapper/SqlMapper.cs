@@ -859,6 +859,8 @@ this IDbConnection cnn, string sql, dynamic param = null, IDbTransaction transac
                 reader.Dispose();
                 reader = null;
             }
+           
+            
             finally
             {
                 if (reader != null)
@@ -1098,6 +1100,7 @@ this IDbConnection cnn, string sql, Func<TFirst, TSecond, TThird, TFourth, TRetu
                     }
 
                 }
+             
 
                 int pos;
                 for (pos = startingPos; pos < reader.FieldCount; pos++)

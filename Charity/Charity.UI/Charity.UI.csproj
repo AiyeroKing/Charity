@@ -296,6 +296,7 @@
     <Content Include="Content\js\Foreground\_Layout\Layout.js" />
     <Content Include="Content\js\iview\iview.js" />
     <Content Include="Content\js\iview\vue.js" />
+    <Content Include="DataBase\ajaxfileupload.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\img\Home\3.jpg" />
@@ -310,6 +311,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -388,12 +390,20 @@
     <Content Include="Views\NewNews\NewNewsAritailIndex.cshtml" />
     <Content Include="Views\Subsidization\AritialSubsidizationIndex.cshtml" />
     <Content Include="Views\FundsReleased\FundsReleaseAritaildIndex.cshtml" />
+    <Content Include="Views\Home\HometwoIndex.cshtml" />
+    <Content Include="Views\Market\SeeMarketShopMSG.cshtml" />
+    <Content Include="Views\Market\BuyMarketShop.cshtml" />
+    <Content Include="Views\Market\YiwuMarketIndex.cshtml" />
+    <Content Include="Views\Market\BookMarketIndex.cshtml" />
+    <Content Include="Views\Market\DianziMarketIndex.cshtml" />
+    <Content Include="Views\Market\JiajuMarketIndex.cshtml" />
+    <Content Include="Views\Market\ShoucangMarketIndex.cshtml" />
+    <Content Include="Views\Market\OtherMarketIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
     <Folder Include="Content\img\Auction\" />
     <Folder Include="Content\img\LoginSignUp\" />
-    <Folder Include="DataBase\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />

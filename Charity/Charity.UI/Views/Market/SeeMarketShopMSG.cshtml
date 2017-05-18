@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "SeeMarketShopMSG";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Charity.Model.Tshop
+
+<head>
+    <link href="~/Content/css/Foreground/Market/MarketStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="progress_Market"></div>
+
+    <!--小导航栏-->
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../Home/HomeIndex">我的首页</a>
+            </li>
+            <li>
+                <a href="../Market/MarketIndex">义卖专区</a>
+            </li>
+            <li >
+                <a href="../Market/MarketIndex">慈善义卖</a>
+            </li>
+            <li class="active">
+                物品详情
+            </li>
+        </ul>
+    </div>
+    <div class="help_head_img"></div>
+
+    <div class="body_little_2">
+        <div class="area_one">
+            <div class="main_left_one_nav">
+                <div class="main-menu-title">义卖物品分类</div>
+                <div class="main-menu-item"><a href="#">衣物</a></div>
+                <div class="main-menu-item"><a href="#">书类</a></div>
+                <div class="main-menu-item"><a href="#">电子</a></div>
+                <div class="main-menu-item"><a href="#">家居</a></div>
+                <div class="main-menu-item"><a href="#">收藏</a></div>
+                <div class="main-menu-item"><a href="#">其他</a></div>
+            </div>
+
+            <div class="web-address">
+                <ul>
+                    <li class="web-address-home"><a href="../Home/HomeIndex">首页</a></li>
+                    <li class="web-address-item"><a href="../Market/MarketIndex">义卖超市</a></li>
+                    <li class="web-address-item"><a>物品详情</a></li>
+                </ul>
+            </div>
+
+            <div class="body_little_3">
+                <div class="main-content-top"></div>
+
+                <div class="main-content-middle">
+                   
+                    <table class="table table-bordered" align="center"> 
+                        <tbody>
+                            <tr  style="text-align:center">
+                                <td colspan="3" style="background-color:aquamarine">捐赠物品信息</td>
+                                <td colspan="3" style="display:none">@Model.ID</td>
+                            </tr>
+                           
+                            <tr >
+                                <td><span class="font_style">物品名称:</span>@Model.ShopName</td>
+                                <td><span class="font_style">物品价值:</span>@Model.ShopValue</td>
+                                <td  rowspan="2" width="40%" height="200px"><span class="font_style">物品图片:</span>
+
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><span class="font_style">物品类型:</span>@Model.ShopSale</td>
+                                <td><span class="font_style">捐赠地区:</span>@Model.ShopArea</td>
+                                
+                            </tr>
+                          
+                            <tr style="text-align:center">
+                                <td colspan="3" style="background-color:bisque">捐赠此物品的爱心人信息</td>
+                            </tr>
+                            <tr>
+                                <td><span class="font_style_1">捐赠人姓名:</span>@Model.ShopCharityName</td>
+                                <td><span class="font_style_1">捐赠人联系方式:</span>@Model.ShopCharityPhone</td>
+                                <td><span class="font_style_1">捐赠方式:</span>@Model.ShopSale</td>
+                            </tr>
+                            <tr>
+                                <td><span class="font_style_1">捐赠人证件:</span>@Model.ShopCharityIdcard</td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="height:150px;text-align:left;"><span class="font_style_1">备注:</span>@Model.ShopRemark</td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="3"><span class="font_style_1">创建时间:</span>@Model.ShopSetTime</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                <div class="main-content-bottom"></div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+

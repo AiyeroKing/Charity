@@ -37,7 +37,7 @@
                 <!--<div class="jq22-content bgcolor-8">
 
                 </div-->
-                <form class="cd-form floating-labels" action="" method="post" enctype="multipart/form-data">
+                <form class="cd-form floating-labels" action="../ItemsCollection/AddShopMSG" method="post" enctype="multipart/form-data">
                     <fieldset>
                         <div class="error-message">
                             <p>募捐人信息输入</p>
@@ -45,19 +45,19 @@
                         <legend style="color:azure;">物品捐赠信息登入</legend>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">捐赠者姓名</label>
-                            <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
+                            <input class="company" type="text" name="ShopCharityName" id="cd-company" style="background-color:white;color:#ff6a00" required>
                         </div>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">捐赠人身份证</label>
-                            <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
+                            <input class="company" type="text" name="ShopCharityIdcard" id="cd-company" style="background-color:white;color:#ff6a00" required>
                         </div>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">捐赠人所在地区</label>
-                            <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
+                            <input class="company" type="text" name="ShopArea" id="cd-company" style="background-color:white;color:#ff6a00" required>
                         </div>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">捐赠人联系方式</label>
-                            <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
+                            <input class="company" type="text" name="ShopCharityPhone" id="cd-company" style="background-color:white;color:#ff6a00" required>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -66,24 +66,24 @@
                         </div>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">物品名称</label>
-                            <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
+                            <input class="company" type="text" name="ShopName" id="cd-company" style="background-color:white;color:#ff6a00" required>
                         </div>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">物品估量价值</label>
-                            <input class="company" type="text" name="cd-company" id="cd-company" style="background-color:white;color:#ff6a00" required>
+                            <input class="company" type="text" name="ShopValue" id="cd-company" style="background-color:white;color:#ff6a00" required>
                         </div>
                         <div>
                             <h4>物品类型</h4>
 
                             <p class="cd-select icon">
-                                <select class="budget" style="color:#ff6a00" required>
+                                <select class="budget" style="color:#ff6a00" name="ShopSale" required>
                                     <option value="无" disabled selected>请选择物品类型...</option>
-                                    <option value="1">衣物</option>
-                                    <option value="2">书籍/报刊</option>
-                                    <option value="3">电子设备</option>
-                                    <option value="3">家具</option>
-                                    <option value="3">收藏</option>
-                                    <option value="3">其他</option>
+                                    <option value="衣物">衣物</option>
+                                    <option value="书籍/报刊">书籍/报刊</option>
+                                    <option value="电子设备">电子设备</option>
+                                    <option value="家具">家具</option>
+                                    <option value="收藏">收藏</option>
+                                    <option value="其他">其他</option>
                                 </select>
                             </p>
                         </div>
@@ -93,12 +93,12 @@
 
                             <ul class="cd-form-list">
                                 <li>
-                                    <input type="radio" name="radio-button" id="cd-radio-1" checked>
+                                    <input type="radio" name="ShopCharityWay" id="cd-radio-1" value="在线邮寄" checked>
                                     <label for="cd-radio-1" style="color:#ff6a00">在线邮寄</label>
                                 </li>
 
                                 <li>
-                                    <input type="radio" name="radio-button" id="cd-radio-2">
+                                    <input type="radio" name="ShopCharityWay" id="cd-radio-2" value="现场捐赠">
                                     <label for="cd-radio-2" style="color:#ff6a00">附近站点捐赠</label>
                                 </li>
 
@@ -108,21 +108,21 @@
 
 
 
-                        <div class="error-message3">
+                        @*<div class="error-message3">
                             <p>募捐物品实物图片上传</p>
 
                             <input type="file" name="files[]" id="demo-fileInput-4" multiple>
 
 
-                        </div>
+                        </div>*@
 
 
 
 
 
                         <div class="icon">
-                            <label class="cd-label" for="cd-textarea">备注（字数不得大于500字）</label>
-                            <textarea class="message" name="cd-textarea" id="cd-textarea" style="color:#ff6a00"></textarea>
+                            <label class="cd-label" for="cd-textarea">捐赠商品介绍:</label>
+                            <textarea class="message" name="ShopRemark" id="cd-textarea" style="color:#ff6a00"></textarea>
                         </div>
 
                         <div>

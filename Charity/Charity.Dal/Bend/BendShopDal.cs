@@ -33,6 +33,31 @@ namespace Charity.Dal.Bend
         }
         #endregion
 
+        #region --以列表查询显示
+        public IList<Tshop> Scan_onesShop(string ShopSale)
+        {
+            const string Scan_Shopsql = @"select ID,
+                                                 ShopName,
+                                                 ShopValue,
+                                                 ShopSale,
+                                                 ShopArea,
+                                                 ShopCharityName,
+                                                 ShopCharityPhone,
+                                                 ShopCharityWay,
+                                                 ShopCharityIdcard,
+                                                 ShopSetTime,
+                                                 ShopRemark
+                                            from dbo.Tshop
+                                            where ShopSale like @ShopSale
+                                           ";
+            //using (DbConnection conn = DbFactory.CreateConnection())
+            //{
+            //    return conn.Query<Tinfo>(Query_MesgBendInfo).ToList();
+            //}
+            return base.Query<Tshop>(Scan_Shopsql,new { ShopSale = "%"+ShopSale+"%" }).ToList();
+        }
+        #endregion
+
         #region  --对数据库进行 Shop 增加的操作--
         public bool AddShopMSG(Tshop model)
         {

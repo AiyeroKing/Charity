@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "BuyMarketShop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Charity.Model.ViewModel.VBuyShop
+
+<head>
+    <title>Charity-商品购买</title>
+    <link href="~/Content/css/Foreground/Capital/CapitalStyle.css" rel="stylesheet" />
+    <link href="~/Content/img/ItemsCollection/default.css" rel="stylesheet" />
+    <link href="~/Content/img/ItemsCollection/reset.css" rel="stylesheet" /><!-- CSS reset -->
+    <link href="~/Content/img/ItemsCollection/style.css" rel="stylesheet" /><!-- Resource style -->
+    <script src="~/Content/img/ItemsCollection/modernizr.js"></script>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <div id="progress_Capital"></div>
+    <!--小导航栏-->
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="../Home/HomeIndex">我的首页</a>
+            </li>
+            <li>
+                <a href="../Market/BuyMarketShop"> 商品超市</a>
+            </li>
+            <li class="active">
+                商品购买
+            </li>
+        </ul>
+    </div>
+    <div class="help_head_img"></div>
+    <hr />
+
+    <div class="Capital_select_all">
+        <div class="Capital_select_all_left">
+            <h3>商品购买</h3>
+        </div>
+        <div class="Capital_select_all_right">
+            <form class="cd-form floating-labels" action="../Market/delectMarketMSG" method="post" enctype="multipart/form-data">
+                <fieldset>
+
+                    <input class="company"  type="text" id="cd-company" name="shopID" value="@Model.shopID" style="display:none" readonly>
+
+                    <div class="error-message">
+                        <p>购买信息输入</p>
+                    </div>
+                    <div class="icon">
+                        <label class="cd-label" for="cd-company">用户昵称</label>
+                        <input class="company" type="text" id="cd-company" name="UsNiname" value="@Model.UsNiname" style="background-color:white;color:#ff6a00" readonly >
+                    </div>
+                    <div class="icon">
+                        <label class="cd-label" for="cd-company">用户姓名</label>
+                        <input class="company" type="text" id="cd-company" name="UsName" value="@Model.UsName" style="background-color:white;color:#ff6a00" readonly >
+                    </div>
+
+                    <div class="icon">
+                        <label class="cd-label" for="cd-company">物品名</label>
+                        <input class="company" type="text" id="cd-company" name="ShopName"  value="@Model.ShopName" style="background-color:white;color:#ff6a00" readonly >
+                    </div>
+                    <div class="icon">
+                        <label class="cd-label" for="cd-company">物品价值</label>
+                        <input class="company" type="text" id="cd-company" name="ShopValue" value="¥@Model.ShopValue" style="background-color:white;color:#ff6a00" readonly >
+                    </div>
+
+
+                    <div>
+                        <h4>捐赠方式</h4>
+
+                        <ul class="cd-form-list">
+                            <li>
+                                <input type="radio" id="cd-radio-1" checked>
+                                <label for="cd-radio-1" style="color:#ff6a00">在线购买</label>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <label class="cd-label" for="cd-textarea"> 备注（字数不得大于500字）</label>
+                        <textarea class="message" id="cd-textarea" style="color:#ff6a00" name="ChrityRemark"></textarea>
+                    </div>
+                    <div>
+                       <input type="submit" value="购买" style="position:absolute;margin-left:0%;">
+                        <button type="reset" class="btn btn-warning" style="margin-left:50%;margin-top:20px;">重置备注</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Content/img/ItemsCollection/main.js"></script> <!-- Resource jQuery -->
