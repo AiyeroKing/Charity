@@ -13,11 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charity.Dal", "Charity.Dal\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "项目设计方案", "项目设计方案", "{15C6C64C-492C-491E-A14A-5AE833C2DA01}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Aiyero\Desktop\Charity项目DataBase需求.docx = ..\..\..\..\Aiyero\Desktop\Charity项目DataBase需求.docx
-		..\..\..\..\Aiyero\Desktop\Charity项目总计划.xlsx = ..\..\..\..\Aiyero\Desktop\Charity项目总计划.xlsx
-		..\..\..\..\Aiyero\Desktop\Charity项目计划明细.xlsx = ..\..\..\..\Aiyero\Desktop\Charity项目计划明细.xlsx
+		Charity项目DataBase需求.docx = Charity项目DataBase需求.docx
+		Charity项目总计划.xlsx = Charity项目总计划.xlsx
+		Charity项目计划明细.xlsx = Charity项目计划明细.xlsx
 		框架流程图例.dgml = 框架流程图例.dgml
-		..\..\..\..\Aiyero\Desktop\流程图.vsdx = ..\..\..\..\Aiyero\Desktop\流程图.vsdx
+		流程图.vsdx = 流程图.vsdx
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper", "Dapper\Dapper.csproj", "{A2CB89E9-CD2B-4050-8A82-CBB73E806410}"
