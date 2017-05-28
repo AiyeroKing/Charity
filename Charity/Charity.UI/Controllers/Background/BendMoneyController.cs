@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
+    /// <summary>
+    /// 资金管理 -- 后台控制器
+    /// </summary>
     public class BendMoneyController : Controller
     {
 
@@ -23,6 +26,9 @@ namespace Charity.UI.Controllers.Background
         {
             var queryResult = _bendmoneyBll.Scan_Money();
             ViewBag.List = queryResult;
+
+            var queryResultTwo = _bendmoneyBll.Scan_AllMoney();
+            ViewBag.ListTwo = queryResultTwo;
             return View();
         }
         /// <summary>

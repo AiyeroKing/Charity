@@ -9,6 +9,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
+    /// <summary>
+    /// 物品管理 -- 后台控制器
+    /// </summary>
     public class BendShopController : Controller
     {
         BendShopBll _bendshopBll = new BendShopBll();

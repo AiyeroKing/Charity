@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
+    /// <summary>
+    /// 资讯管理 -- 后台控制器
+    /// </summary>
     public class BendInfoController : Controller
     {
         BendInfoBll _bendinfoBll = new BendInfoBll();

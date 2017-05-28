@@ -38,6 +38,12 @@
     height:85%;
     border:solid 1px #999999;
 }
+.back_div_color_two1 {
+    margin-left: 1%;
+    width: 98%;
+    height: 80%;
+    border: solid 1px #999999;
+}
 
 .add_action_one {
     position: absolute;
@@ -91,4 +97,54 @@
     margin-left:10%;
     width:100%;
     margin-top:-1.5%;
+}
+
+.Maney_show_1{
+    float:left;
+    margin: 0.3% 1%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 18%;
+    background-color: #ccc;
+    border-radius: 3px;
+    animation:border_a 2s infinite linear; 
+}
+@keyframes border_a{
+    0% {
+        border: solid 1px black;
+    }
+    20% {
+        border: solid 1px red;
+    }
+    40% {
+        border: solid 1px #ccc;
+    }
+    60% {
+        border: solid 1px #0026ff;
+    }
+    80% {
+        border: solid 1px #7017ab;
+    }
+    100% {
+        border: solid 1px black;
+    }
+}
+
+.font_color_bule{
+   font-weight:600;
+}
+
+
+.Maney_show_1:hover{
+    animation: colrle 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes colrle{
+    0% {
+        background-color: #ccc;
+    }
+    100% {
+        background-color: deepskyblue;
+    }
 }

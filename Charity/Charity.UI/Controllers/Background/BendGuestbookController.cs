@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
+    /// <summary>
+    /// 留言板管理 --- 后台控制器
+    /// </summary>
     public class BendGuestbookController : Controller
     {
 

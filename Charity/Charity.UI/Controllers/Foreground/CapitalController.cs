@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Foreground
 {
+    /// <summary>
+    /// 资金捐助-前台控制器
+    /// </summary>
     public class CapitalController : Controller
     {
         BendMoneyBll _bendmoneyBll = new BendMoneyBll();

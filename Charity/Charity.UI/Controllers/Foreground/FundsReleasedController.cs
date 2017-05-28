@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Foreground
 {
+    /// <summary>
+    /// 善款公开--前台控制器
+    /// </summary>
     public class FundsReleasedController : Controller
     {
         #region --返回页面
@@ -20,6 +23,12 @@ namespace Charity.UI.Controllers.Foreground
             BendPovertyBll _bendpovertyBll = new BendPovertyBll();
             var queryResult = _bendpovertyBll.Scan_Poverty();
             ViewBag.List = queryResult;
+
+            BendMoneyBll _bendmoneyBll = new BendMoneyBll();
+            var queryResultTwo = _bendmoneyBll.Scan_AllMoney();
+            ViewBag.ListTwo = queryResultTwo;
+
+
             return View();
         }
 
@@ -32,6 +41,10 @@ namespace Charity.UI.Controllers.Foreground
             BendMoneyBll _bendmoneyBll = new BendMoneyBll();
             var queryResult = _bendmoneyBll.Scan_Money();
             ViewBag.List = queryResult;
+
+            var queryResultTwo = _bendmoneyBll.Scan_AllMoney();
+            ViewBag.ListTwo = queryResultTwo;
+
             return View();
         }
         #endregion

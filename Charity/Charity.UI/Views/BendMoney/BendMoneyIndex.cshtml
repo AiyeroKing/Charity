@@ -41,7 +41,7 @@
         </ul>
     </div>
 
-    <div class="back_div_color_two">
+    <div class="back_div_color_two1">
 
         <table class="table table-striped" align="center"  style="text-align:center">
             <thead>
@@ -86,6 +86,32 @@
         </table>
 
     </div>
+
+    @{ 
+        //var allmaney = ViewBag.ListTwo;
+    <div>
+        <div class="Maney_show_1">
+            <span class="font_color_bule">总募捐物品价值:<span style="color:red">¥@ViewBag.ListTwo[0].AllMoney</span>.</span>
+        </div>
+
+        <div class="Maney_show_1">
+            <span class="font_color_bule">总义卖物品所得:<span style="color:red">¥@ViewBag.ListTwo[1].AllMoney</span>.</span>
+</div>
+
+        <div class="Maney_show_1">
+            <span class="font_color_bule">总善筹资金:<span style="color:red">¥@ViewBag.ListTwo[2].AllMoney</span>.</span>
+</div>
+
+        <div class="Maney_show_1">
+            <span class="font_color_bule">贫困申请总资金:<span style="color:red">¥@ViewBag.ListTwo[3].AllMoney</span>.</span>
+</div>
+
+        <div class="Maney_show_1">
+            <span class="font_color_bule">总价值资金:<span style="color:red">¥@ViewBag.ListTwo[4].AllMoney</span>.</span>
+</div>
+    </div>
+    }
+
 </div>
 
 

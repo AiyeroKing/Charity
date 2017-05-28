@@ -30,6 +30,21 @@ namespace Charity.Bll.Bend
 
         #endregion
 
+        #region  --对数据库进行 BendPoverty 增加的操作--
+        public bool UpdateFivemaneyMSG(TAllmoney model)
+        {
+            BendMoneyDal bendmoneyDal = new BendMoneyDal();
+            var Ideng = bendmoneyDal.Scan_AllMoney();
+            
+            model.ID = Ideng[4].ID;
+            model.AllMoney = model.AllMoney + Ideng[4].AllMoney;
+
+            return bendmoneyDal.UpdateFivemaneyMSG(model);
+            
+        }
+
+        #endregion
+
         #region  --对数据库进行 BendPoverty 单个查找的操作--
         public Tpoverty Query_Poverty(int Id)
         {

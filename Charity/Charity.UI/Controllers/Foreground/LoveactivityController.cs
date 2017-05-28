@@ -6,6 +6,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Foreground
 {
+    /// <summary>
+    /// 爱心活动首页--前台控制器
+    /// </summary>
     public class LoveactivityController : Controller
     {
         /// <summary>

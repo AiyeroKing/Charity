@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Foreground
 {
+    /// <summary>
+    /// 商品义卖界面--前台控制器
+    /// </summary>
     public class MarketController : Controller
     {
         BendShopBll _bendshopBll = new BendShopBll();

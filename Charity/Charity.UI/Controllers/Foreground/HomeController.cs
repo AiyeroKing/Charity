@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers
 {
+    /// <summary>
+    /// 前台首页--前台控制器
+    /// </summary>
     public class HomeController : Controller
     {
         public ActionResult HomeIndex()

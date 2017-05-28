@@ -5,6 +5,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
+    /// <summary>
+    /// 管理员管理 -- 后台控制器
+    /// </summary>
     public class BendadminController : Controller
     {
         BendadmindBll _bendadmindBll = new BendadmindBll();

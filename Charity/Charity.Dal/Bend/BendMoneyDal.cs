@@ -29,6 +29,8 @@ namespace Charity.Dal.Bend
         }
         #endregion
 
+
+
         #region  --对数据库进行 Money 增加的操作--
         public bool AddMoneyMSG(Tmoney model)
         {
@@ -115,5 +117,42 @@ namespace Charity.Dal.Bend
             }
         }
         #endregion
+
+
+
+        #region --以列表查询显示
+        public IList<TAllmoney> Scan_AllMoney()
+        {
+            const string Scan_AllMoneysql = @"    select ID,
+                                                      AllMoney
+                                               from dbo.TAllmoney
+                                           ";
+            //using (DbConnection conn = DbFactory.CreateConnection())
+            //{
+            //    return conn.Query<Tinfo>(Query_MesgBendInfo).ToList();
+            //}
+            return base.Query<TAllmoney>(Scan_AllMoneysql).ToList();
+        }
+        #endregion
+
+
+        #region --对贫困表总资金进行添加
+        public bool UpdateFivemaneyMSG(TAllmoney model)
+        {
+            const string UpdateFivemaneyMSG = @"
+
+				UPDATE dbo.TAllmoney
+				SET	  AllMoney = @AllMoney
+				WHERE ID=@ID";
+
+            using (DbConnection conn = DbFactory.CreateConnection())
+            {
+                var result = conn.Execute(UpdateFivemaneyMSG, model) > 0;
+                return result;
+            }
+        }
+        #endregion
+
+
     }
 }

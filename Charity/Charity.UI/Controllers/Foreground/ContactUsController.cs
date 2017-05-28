@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Foreground
 {
+    /// <summary>
+    /// 联系我们--前台控制器
+    /// </summary>
     public class ContactUsController : Controller
     {  
         // GET: Capital

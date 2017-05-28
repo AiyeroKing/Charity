@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Foreground
 {
+    /// <summary>
+    /// 贫困申请首页
+    /// </summary>
     public class SubsidizationController : Controller
     {
         BendPovertyBll _bendpovertyBll = new BendPovertyBll();

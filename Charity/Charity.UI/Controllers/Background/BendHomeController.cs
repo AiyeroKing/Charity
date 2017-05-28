@@ -6,6 +6,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
+    /// <summary>
+    /// 后台首页 -- 后台控制器
+    /// </summary>
     public class BendHomeController : Controller
     {
         // GET: BendHome

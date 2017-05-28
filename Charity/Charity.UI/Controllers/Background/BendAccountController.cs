@@ -8,7 +8,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
-    
+    /// <summary>
+    /// 爱心人士用户管理 --- 后台控制器
+    /// </summary>
     public class BendAccountController : Controller
     {
         BendAccountBll _bendaccountBll = new BendAccountBll();

@@ -20,6 +20,14 @@ namespace Charity.Bll.Bend
 
         #endregion
 
+        #region  --对数据库进行 AllMoney 遍历的操作--
+        public IList<TAllmoney> Scan_AllMoney()
+        {
+            return bendmoneyDal.Scan_AllMoney();
+        }
+
+        #endregion
+
         #region  --对数据库进行 BendMoney 增加的操作--
         public bool AddMoneyMSG(Tmoney model)
         {

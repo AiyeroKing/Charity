@@ -9,6 +9,9 @@ using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Background
 {
+    /// <summary>
+    /// 贫困管理 -- 后台控制器
+    /// </summary>
     public class BendPovertyController : Controller
     {
         BendPovertyBll _bendpovertyBll = new BendPovertyBll();
@@ -77,6 +80,15 @@ namespace Charity.UI.Controllers.Background
             tpovertyMolde.ApplyValue = nvc.Get("ApplyValue");
             //tpovertyMolde.ApplyValue = int.Parse(abc); 
             tpovertyMolde.Srcimg = imgPath;
+
+
+            TAllmoney  tallmoney = new TAllmoney();
+
+            tallmoney.AllMoney=Convert.ToInt32(tpovertyMolde.ApplyValue);
+            tallmoney.ID = 5;
+
+            var booluer = false;
+            booluer = _bendpovertyBll.UpdateFivemaneyMSG(tallmoney);
 
             var result = false;
              result = _bendpovertyBll.AddPovertyMSG(tpovertyMolde);
