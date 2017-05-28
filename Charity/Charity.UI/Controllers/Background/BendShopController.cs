@@ -1,4 +1,5 @@
 ﻿using Charity.Bll.Bend;
+using Charity.Bll.TAllmoneyl;
 using Charity.Model;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace Charity.UI.Controllers.Background
     public class BendShopController : Controller
     {
         BendShopBll _bendshopBll = new BendShopBll();
+
+        TAllmoneylBll TAllmoneylBll = new TAllmoneylBll();
 
         #region --返回页面
         /// <summary>
@@ -57,13 +60,15 @@ namespace Charity.UI.Controllers.Background
         }
         #endregion
 
-        
-
         #region --编辑功能
         public ActionResult Update_ShopMSG(Tshop model)
         {
             var result = false;
+            int Id = model.ID;
+            var result1 = TAllmoneylBll.delet_buyshop(Id);//先减去原来的价值
             result = _bendshopBll.Update_ShopMSG(model);
+            var result2 = TAllmoneylBll.Add_shopvule(model);//添加更新后的价值
+            var result3 = TAllmoneylBll.all_buyshop();
             return RedirectToAction("BendShopIndex", "BendShop");
         }
         #endregion
@@ -71,17 +76,12 @@ namespace Charity.UI.Controllers.Background
         #region --删除功能
         public ActionResult Shop_Delected(int Id = 0)
         {
+            var result1 = TAllmoneylBll.delet_buyshop(Id);//先减去原来的价值
             var delectResult = _bendshopBll.Shop_Delected(Id);
+            var result2 = TAllmoneylBll.all_buyshop();
             return RedirectToAction("BendShopIndex", "BendShop");
         }
         #endregion
-
-
-
-    
-
-
-
 
         #region --添加功能
         [HttpPost]
@@ -92,13 +92,19 @@ namespace Charity.UI.Controllers.Background
             NameValueCollection nvc = System.Web.HttpContext.Current.Request.Form;
             HttpFileCollection hfc = System.Web.HttpContext.Current.Request.Files;
             string imgPath = "";
-            if (hfc.Count > 0)
+            if (hfc[0].FileName == "")
             {
-                imgPath = "/DataImg/shop/" + hfc[0].FileName;
-                string PhysicalPath = Server.MapPath(imgPath);
-                hfc[0].SaveAs(PhysicalPath);
+                return Redirect("/BendShop/BendShopAddIndex");
             }
-
+            else
+            {
+                if (hfc.Count > 0)
+                {
+                    imgPath = "/DataImg/shop/" + hfc[0].FileName;
+                    string PhysicalPath = Server.MapPath(imgPath);
+                    hfc[0].SaveAs(PhysicalPath);
+                }
+            }
             tshopMolde.Scrimg = imgPath;
             tshopMolde.ShopArea = nvc.Get("ShopArea");
             tshopMolde.ShopCharityIdcard = nvc.Get("ShopCharityIdcard");
@@ -112,6 +118,11 @@ namespace Charity.UI.Controllers.Background
 
             var result = false;
             result = _bendshopBll.AddShopMSG(tshopMolde);
+
+            var result1 = TAllmoneylBll.Add_shopvule(tshopMolde);
+            var result2 = TAllmoneylBll.all_buyshop();
+
+
             return Redirect("/BendShop/BendShopIndex");
         }
         #endregion

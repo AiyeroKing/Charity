@@ -1,5 +1,5 @@
 ﻿
-
+@model Charity.Model.Tuseraccount
 <head>
     <link href="~/Content/css/Background/Bendadmin/BendaminStyle.css" rel="stylesheet" />
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -30,7 +30,7 @@
             $.ajaxFileUpload
                 (
                 {
-                    url: '/BendShop/AddShopMSG', //用于文件上传的服务器端请求地址
+                        url: '/ItemsCollection/AddShopMSG', //用于文件上传的服务器端请求地址
                     type: 'post',
                     data: {
 
@@ -72,16 +72,9 @@
     </script>
 </head>
 
-<div style=" position: absolute;
-            width: 200px;
-            height: 70px;
-            background-color: yellow;
-            margin-left: -10%;
-            margin-top: 11%;
-            z-index: -999;">
-</div>
 
-<div class="back_div_color">
+
+<div class="back_div_color" style="height:700px">
     <div>
         <ul class="breadcrumb">
             <li>
@@ -135,14 +128,14 @@
                 <div class="nnv_hr_cor"></div>
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人姓名</span>
-                    <input type="text" class="form-control" required name="ShopCharityName">
+                    <input type="text" class="form-control" required name="ShopCharityName" readonly value="@Model.UsName">
                 </div><br>
 
 
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人联系方式</span>
-                    <input type="text" class="form-control" required name="ShopCharityPhone">
+                    <input type="text" class="form-control" required name="ShopCharityPhone" readonly value="@Model.UsPhone">
                 </div><br>
 
                 <div class="input-group">
@@ -152,7 +145,7 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" style="width:100px;">捐赠人证件</span>
-                    <input type="text" class="form-control" required name="ShopCharityIdcard">
+                    <input type="text" class="form-control" required name="ShopCharityIdcard" readonly value="@Model.UsIdcard">
                 </div><br>
 
             </div>
@@ -163,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="hr_lone_long_2"></div>
+            @*<div class="hr_lone_long_2"></div>*@
             <div class="hr_lone_textarea_3">
                 <p class="cd-label" for="cd-textarea">捐赠商品介绍:</p>
                 <textarea class="message_2" style="color:#ff6a00" name="ShopRemark"></textarea>
@@ -172,7 +165,10 @@
 
         <div style="margin-left:42%;margin-top:-3%;">
 
-            <a href="../Market/BookMarketIndex"><input type="button" class="btn btn-success" value="添加提交"></a><span class="width_buttom">&</span>
+            @*<a href="../ItemsCollection/AddShopMSG">*@
+            <input type="button" class="btn btn-success" value="添加提交" onclick="ajaxFileUpload()">
+            @*</a>*@
+            <span class="width_buttom">&</span>
             <button type="reset" class="btn btn-danger">重置一下</button>
         </div>
     </form>

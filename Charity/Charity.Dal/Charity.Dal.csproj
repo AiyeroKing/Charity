@@ -52,6 +52,7 @@
     <Compile Include="Common\DbFactory.cs" />
     <Compile Include="Common\SqlStringExtensions.cs" />
     <Compile Include="SQLHelper.cs" />
+    <Compile Include="TAllmoney\TAllmoneylDal.cs" />
     <Compile Include="User\UserDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

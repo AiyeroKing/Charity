@@ -1,9 +1,7 @@
 ﻿using Charity.Bll.Bend;
+using Charity.Bll.TAllmoneyl;
 using Charity.Model.ViewModel;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Charity.UI.Controllers.Foreground
@@ -14,6 +12,7 @@ namespace Charity.UI.Controllers.Foreground
     public class MarketController : Controller
     {
         BendShopBll _bendshopBll = new BendShopBll();
+        TAllmoneylBll TAllmoneyBll = new TAllmoneylBll();
 
         #region --返回页面
         /// <summary>
@@ -148,9 +147,15 @@ namespace Charity.UI.Controllers.Foreground
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
+       
         public ActionResult delectMarketMSG(VBuyShop model)
         {
             int Id = model.shopID;
+            
+            var result = TAllmoneyBll.Add_buyshop(Id);//对购买商品进行 善款筹集添加
+            var result2 = TAllmoneyBll.delet_buyshop(Id);//对购买商品进行 义卖物品总价值删减
+            var result3 = TAllmoneyBll.all_buyshop();//对购买商品进行 总慈善价值累计
+
             var delectResult = _bendshopBll.Shop_Delected(Id);
             return RedirectToAction("MarketIndex", "Market");
         }

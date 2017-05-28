@@ -1,4 +1,5 @@
 ﻿using Charity.Bll.Bend;
+using Charity.Bll.TAllmoneyl;
 using Charity.Model;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Charity.UI.Controllers.Background
     {
 
         BendMoneyBll _bendmoneyBll = new BendMoneyBll();
+        TAllmoneylBll TAllmoneylBll = new TAllmoneylBll();
 
         #region --返回页面
         /// <summary>
@@ -66,7 +68,14 @@ namespace Charity.UI.Controllers.Background
         public ActionResult AddMoneyMSG(Tmoney model)
         {
             var result = false;
+
+
+            var result1 = TAllmoneylBll.AddMoneyMSG(model);
+            var result2 = TAllmoneylBll.all_buyshop();
+
+
             result = _bendmoneyBll.AddMoneyMSG(model);
+            var result0 = TAllmoneylBll.all_buyshop();
             return RedirectToAction("BendMoneyIndex", "BendMoney");
         }
         #endregion
@@ -75,7 +84,12 @@ namespace Charity.UI.Controllers.Background
         public ActionResult Update_MoneyMSG(Tmoney model)
         {
             var result = false;
+            int Id = model.ID;
+            var result1 = TAllmoneylBll.Deleted_MoneyMSG(Id);//先减去原来的价值
             result = _bendmoneyBll.Update_MoneyMSG(model);
+            var result2 = TAllmoneylBll.AddMoneyMSG(model);
+            var result3 = TAllmoneylBll.all_buyshop();
+
             return RedirectToAction("BendMoneyIndex", "BendMoney");
         }
         #endregion
@@ -83,6 +97,9 @@ namespace Charity.UI.Controllers.Background
         #region --删除功能
         public ActionResult Money_Delected(int Id = 0)
         {
+            var result1 = TAllmoneylBll.Deleted_MoneyMSG(Id);//先减去原来的价值
+            var result2 = TAllmoneylBll.all_buyshop();
+            var result0 = TAllmoneylBll.all_buyshop();
             var delectResult = _bendmoneyBll.Money_Delected(Id);
             return RedirectToAction("BendMoneyIndex", "BendMoney");
         }

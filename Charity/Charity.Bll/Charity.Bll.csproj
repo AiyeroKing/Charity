@@ -46,6 +46,7 @@
     <Compile Include="Bend\BendMoneyBll.cs" />
     <Compile Include="Bend\BendPovertyBll.cs" />
     <Compile Include="Bend\BendShopBll.cs" />
+    <Compile Include="TAllmoney\TAllmoneylBll.cs" />
     <Compile Include="User\UserBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

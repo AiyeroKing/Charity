@@ -1,4 +1,5 @@
 ﻿using Charity.Bll.Bend;
+using Charity.Bll.TAllmoneyl;
 using Charity.Model;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Charity.UI.Controllers.Background
     public class BendPovertyController : Controller
     {
         BendPovertyBll _bendpovertyBll = new BendPovertyBll();
+        TAllmoneylBll TAllmoneylBll = new TAllmoneylBll();
 
         #region --返回页面
         /// <summary>
@@ -82,16 +84,20 @@ namespace Charity.UI.Controllers.Background
             tpovertyMolde.Srcimg = imgPath;
 
 
-            TAllmoney  tallmoney = new TAllmoney();
+            //TAllmoney  tallmoney = new TAllmoney();
 
-            tallmoney.AllMoney=Convert.ToInt32(tpovertyMolde.ApplyValue);
-            tallmoney.ID = 5;
+            //tallmoney.AllMoney=Convert.ToInt32(tpovertyMolde.ApplyValue);
+            //tallmoney.ID = 5;
 
-            var booluer = false;
-            booluer = _bendpovertyBll.UpdateFivemaneyMSG(tallmoney);
+            //var booluer = false;
+            //booluer = _bendpovertyBll.UpdateFivemaneyMSG(tallmoney);
 
             var result = false;
              result = _bendpovertyBll.AddPovertyMSG(tpovertyMolde);
+
+            var result1 = TAllmoneylBll.AddProvertyMoneyMSG(tpovertyMolde);
+            var result0 = TAllmoneylBll.all_buyshop();
+
             return Redirect("/BendPoverty/BendPovertyIndex");
         }
         #endregion
@@ -118,7 +124,11 @@ namespace Charity.UI.Controllers.Background
         public ActionResult Update_PovertyMSG(Tpoverty model)
         {
             var result = false;
+            int Id = model.ID;
+            var result1 = TAllmoneylBll.Delect_ProvertyMoneyMSG(Id);
             result = _bendpovertyBll.Update_PovertyMSG(model);
+            var result2 = TAllmoneylBll.AddProvertyMoneyMSG(model);
+                var result0 = TAllmoneylBll.all_buyshop();
             return RedirectToAction("BendPovertyIndex", "BendPoverty");
         }
         #endregion
@@ -126,7 +136,9 @@ namespace Charity.UI.Controllers.Background
         #region --删除功能
         public ActionResult Poverty_Delected(int Id = 0)
         {
+            var result1 = TAllmoneylBll.Delect_ProvertyMoneyMSG(Id);
             var delectResult = _bendpovertyBll.Poverty_Delected(Id);
+            var result0 = TAllmoneylBll.all_buyshop();
             return RedirectToAction("BendPovertyIndex", "BendPoverty");
         }
         #endregion

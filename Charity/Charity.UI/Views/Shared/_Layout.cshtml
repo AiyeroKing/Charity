@@ -102,20 +102,15 @@
                             <li>@Html.ActionLink("首页", "HomeIndex", "Home")</li>
                             <li>@Html.ActionLink("慈善义卖", "MarketIndex", "Market")</li>
                             @*<li>@Html.ActionLink("义拍卖会", "AuctionIndex", "Auction")</li>*@
-                            <li>@Html.ActionLink("物品募捐", "ItemsCollectionIndex", "ItemsCollection")</li>
-                            <li>@Html.ActionLink("资金募捐", "CapitalIndex", "Capital")</li>
-                            <!--<li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">募捐系列 <b class="caret"></b> </a>
-                                <ul class="dropdown-menu">
-                                    <li class="divider"></li>
-                                    <li>@Html.ActionLink("物品募捐", "ItemsCollectionIndex", "ItemsCollection")</li>
-                                    <li class="divider"></li>
-                                    <li>@Html.ActionLink("资金募捐", "CapitalIndex", "Capital")</li>
-                                    <li class="divider"></li>
-                                    @*<li>@Html.ActionLink("善款公布", "FundsReleasedIndex", "FundsReleased")</li>
-                                    <li class="divider"></li>*@
-                                </ul>
-                            </li>-->
+
+
+                            <li><a href="../ItemsCollection/ItemsCollectionIndex?sd=@(Session["AdminAccount"] != null ? (Session["AdminAccount"] as Charity.Model.Tuseraccount).ID : 0)">物品募捐</a></li>
+
+
+                            @*<li>@Html.ActionLink("物品募捐", "ItemsCollectionIndex", "ItemsCollection")</li>*@
+                            @*<li>@Html.ActionLink("资金募捐", "CapitalIndex", "Capital")</li>*@
+                            <li><a href="../Capital/CapitalIndex?sd=@(Session["AdminAccount"] != null ? (Session["AdminAccount"] as Charity.Model.Tuseraccount).ID : 0)">资金募捐</a></li>
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">爱心系列 <b class="caret"></b> </a>
                                 <ul class="dropdown-menu">

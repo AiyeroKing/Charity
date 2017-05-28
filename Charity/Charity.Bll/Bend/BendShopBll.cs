@@ -59,5 +59,6 @@ namespace Charity.Bll.Bend
         }
 
         #endregion
+
     }
 }

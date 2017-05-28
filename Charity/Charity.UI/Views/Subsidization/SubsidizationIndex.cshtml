@@ -53,7 +53,7 @@
                                     </div>
                                 </p>
                                 <p>
-                                    <a class="btn btn-primary" href="../Capital/CapitalIndex">捐助</a> <div class="link_btn_chakan"><a class="btn " href="../Subsidization/AritialSubsidizationIndex?Id=@item.ID">查看详情</a></div>
+                                    <a class="btn btn-primary" href="../Capital/CapitalIndex?sd=@(Session["AdminAccount"] != null ? (Session["AdminAccount"] as Charity.Model.Tuseraccount).ID : 0)">捐助</a> <div class="link_btn_chakan"><a class="btn " href="../Subsidization/AritialSubsidizationIndex?Id=@item.ID">查看详情</a></div>
                                 </p>
                             </div>
                         </div>

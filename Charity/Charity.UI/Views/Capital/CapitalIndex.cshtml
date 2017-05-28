@@ -3,7 +3,7 @@
     ViewBag.Title = "CapitalIndex";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@model Charity.Model.Tuseraccount
 <head>
     <title>Charity-资金捐助</title>
     <link href="~/Content/css/Foreground/Capital/CapitalStyle.css" rel="stylesheet" />
@@ -50,11 +50,11 @@
                         </div>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">捐赠者姓名</label>
-                            <input class="company" type="text" id="cd-company" style="background-color:white;color:#ff6a00" required name="ChrityName">
+                            <input class="company" type="text" id="cd-company" value="@Model.UsName" style="background-color:white;color:#ff6a00" required name="ChrityName" readonly>
                         </div>
                         <div class="icon">
                             <label class="cd-label" for="cd-company">捐赠人身份证</label>
-                            <input class="company" type="text" id="cd-company" style="background-color:white;color:#ff6a00" required name="ChrityIdcard">
+                            <input class="company" type="text" id="cd-company" value="@Model.UsIdcard" style="background-color:white;color:#ff6a00" required name="ChrityIdcard" readonly>
                         </div>
 
                         <div class="icon">
