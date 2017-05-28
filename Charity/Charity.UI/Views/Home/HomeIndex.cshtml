@@ -7,12 +7,13 @@
 <head>
     <title>Charity-Home</title>
     <link href="~/Content/css/Foreground/Home/HomeStyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
 </head>
 
 <div id="progress_home"></div>
 
 <div class="dome_one">
-    <div class="demo">
+    <div class="demo" style="width:100%">
         <a class="control prev"></a><a class="control next abs"></a><!--自定义按钮，移动端可不写-->
         <div class="slider">
             <!--主体结构，请用此类名调用插件，此类名可自定义-->
@@ -195,11 +196,11 @@
                 <li><a class="s2" href="/LoginSignUp/LoginIndex">登录</a></li>
                 <li><a class="s3" href="/NewNews/NewNewsIndex">shop资讯</a></li>
                 <li><a class="s4" href="/Market/MarketIndex">团购</a></li>
-                <li><a class="s6" href="#">热门标签</a></li>
-                <li><a class="s7" href="#">个人中心</a></li>
-                <li><a class="s8" href="#">网站地图</a></li>
-                <li><a class="s9" href="#">站点公告</a></li>
-                <li><a class="s10" href="#">帮助中心</a></li>
+                <li><a class="s6" href="../loveBIZ/loveBIZIndex">热门标签</a></li>
+                <li><a class="s7" href="../LoginSignUp/SignAritailIndex?Id=@(Session["AdminAccount"] != null ? (Session["AdminAccount"] as Charity.Model.Tuseraccount).ID : 0)">个人中心</a></li>
+                <li><a class="s8" href="../ContactUs/ContactUsIndex">网站地图</a></li>
+                <li><a class="s9" href="/NewNews/NewNewsIndex">站点公告</a></li>
+                <li><a class="s10" href="/NewNews/ContactBoardIndex">留言板</a></li>
                 <li><a class="s11" href="/ContactUs/ContactUsIndex">联系我们</a></li>
             </ul>
         </div>

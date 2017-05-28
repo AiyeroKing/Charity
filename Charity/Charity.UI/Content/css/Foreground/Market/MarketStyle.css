@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #000000;
+    background-color: azure;
 }
 
 
@@ -77,14 +77,16 @@
 
 .body_little_2 {
     width: 100%;
-    height: 800px;
+    height: 900px;
+    background-color:azure;
 }
 
 .area_one {
     width: 80%;
-    height: 98%;
+    height: 850px;
     background-color: white;
     margin: 5% 10%;
+    /*margin-bottom:20px;*/
     border: solid 8px #808080;
 }
 
@@ -179,11 +181,9 @@ ul {
 
 .main-content-middle {
     width: 100%;
-    padding: 0px 31px 10px 31px;
-    height: auto;
+    padding: 10px 10px 10px 10px;
     background: url('../../../img/Market/sub-content-middle-bg.png');
-    /*border-right:solid 2px black;*/
-    min-height: 98%;
+    min-height:99%;
 }
 
 .main-content-bottom {

@@ -24,6 +24,11 @@ namespace Charity.UI.Controllers
             //return RedirectToAction("UserIndex", "User");
         }
 
+        public ActionResult Fuxieyi()
+        {
+            return View();
+        }
+
 
 
         #region --图片上传

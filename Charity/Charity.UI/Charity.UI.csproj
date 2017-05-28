@@ -146,6 +146,15 @@
     <Content Include="Content\css\Background\Bendadmin\BendaminStyle.css" />
     <Content Include="Content\css\Background\BendHome\BendHome.css" />
     <Content Include="Content\css\Background\_BackEnd_Layout\_BackEnd_LayoutStyle.css" />
+    <Content Include="Content\img\Auction\dot.png" />
+    <Content Include="Content\img\Auction\img1.png" />
+    <Content Include="Content\img\Auction\img2.png" />
+    <Content Include="Content\img\Auction\img3.png" />
+    <Content Include="Content\img\Auction\img4.png" />
+    <Content Include="Content\img\Auction\img5.png" />
+    <Content Include="Content\img\Auction\loading.gif" />
+    <Content Include="Content\img\Auction\next.png" />
+    <Content Include="Content\img\Auction\prev.png" />
     <Content Include="Content\img\BendHome\qq.png" />
     <Content Include="Content\img\BendHome\qq 1.png" />
     <Content Include="Content\img\BendHome\weibo 1.png" />
@@ -255,6 +264,8 @@
     <Content Include="Content\js\Foreground\ContactUs\ContactUs.js" />
     <Content Include="Content\js\Foreground\FundsReleased\FundsReleased.js" />
     <Content Include="Content\img\Loveactivity\help_head.jpg" />
+    <Content Include="Content\js\Foreground\Home\jquery-1.11.0.min.js" />
+    <Content Include="Content\js\Foreground\Home\jquery.flexslider-min.js" />
     <Content Include="Content\js\Foreground\Home\YuxiSlider.jQuery.min.js" />
     <Content Include="Content\js\Foreground\ItemsCollection\bootstrap.min.css" />
     <Content Include="Content\js\Foreground\ItemsCollection\bootstrap.min.js" />
@@ -400,10 +411,10 @@
     <Content Include="Views\Market\JiajuMarketIndex.cshtml" />
     <Content Include="Views\Market\ShoucangMarketIndex.cshtml" />
     <Content Include="Views\Market\OtherMarketIndex.cshtml" />
+    <Content Include="Views\Home\Fuxieyi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\fonts\image\" />
-    <Folder Include="Content\img\Auction\" />
     <Folder Include="Content\img\LoginSignUp\" />
     <Folder Include="DataBase\" />
     <Folder Include="DataImg\proverty\" />

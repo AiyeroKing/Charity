@@ -1,7 +1,7 @@
 ﻿/*以下内容是RenderBody样式*/
 .RenderBody {
     padding-top: 4.8em;
-    min-height:800px;
+    min-height:600px;
 }
 /*一下内容是底部页面尾部导航*/
 .login {
@@ -142,7 +142,7 @@
 }
 
 .li_massage_borad {
-    left: 22%;
+    left: 18%;
     background: #485263;
     border-radius: 6px;
     height: 30px;
@@ -151,17 +151,16 @@
     box-shadow: 3px 3px 2px #485263;
 }
 
-.li_massage_borad:hover {
-    background: #485263;
-    box-shadow: 3px 3px 2px blue;
-}
+    .li_massage_borad:hover {
+        box-shadow: 3px 3px 2px blue;
+    }
 
 .li_massage_borad a {
     margin-top: 0.2em;
 }
 
 .li_massage_borad_one {
-    left: 18%;
+    left: 12%;
     background: #485263;
     border-radius: 6px;
     height: 30px;
@@ -171,7 +170,8 @@
 }
 
     .li_massage_borad_one:hover {
-        background: #485263;
+        background-color: white;
+        border: solid 1px #999;
         box-shadow: 3px 3px 2px red;
     }
 
@@ -181,7 +181,7 @@
     }
 
 .li_massage_borad_two {
-    left: 20%;
+    left: 15%;
     background: #485263;
     border-radius: 6px;
     height: 30px;
@@ -191,7 +191,8 @@
 }
 
     .li_massage_borad_two:hover {
-        background: #485263;
+        background: white;
+        border: solid 1px #999;
         box-shadow: 3px 3px 2px yellow;
     }
 
@@ -201,64 +202,29 @@
     }
 
 .li_massage_borad_three {
-    left: 18%;
+    left: 16%;
     background: #485263;
     border-radius: 6px;
     height: 30px;
     /*width: 73px;*/
-    text-align:center;
+    text-align: center;
     margin-top: 12px;
     box-shadow: 2px 3px 2px #485263;
+    color: red;
 }
 
-   .li_massage_borad_three:hover {
+    .li_massage_borad_three:hover {
         background: #999;
         box-shadow: 0px 3px 2px red;
+        color: red;
     }
 .li_massage_borad_three a {
     margin-top: -0.8em;
     margin-left: 0.5em;
     animation:iikkk 2s infinite linear;
+    color:red;
 }
-@keyframes iikkk{
-    0%{
-        color:red;
-    }
-    10% {
-        color:rebeccapurple;
-    }
-    20% {
-        color: purple;
-    }
-    30% {
-        color: yellow;
-    }
-    40% {
-        color: saddlebrown;
-    }
-   50% {
-        color: orchid;
-    }
-    60% {
-        color: red;
-    }
 
-    70% {
-        color: rebeccapurple;
-    }
-
-    80% {
-        color: purple;
-    }
-
-    90% {
-        color: yellow;
-    }
-
-    100% {
-        color: saddlebrown;
-    }
-}
 
 
 
@@ -288,4 +254,5 @@
 
 .three_all li a{
     letter-spacing:3px;
+    color:white;
 }

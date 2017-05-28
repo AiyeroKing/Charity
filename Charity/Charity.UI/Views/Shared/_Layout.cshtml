@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>CharitySale</title> <!--慈善义卖网站-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+
     <link rel="Shortcut Icon" href="~/favicon.ico" />
     <!--导入bootstarp.css样式-->
     <link href="~/Content/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -18,7 +20,8 @@
         a {
             font-family: YouYuan;
             font-weight: 600;
-            text-decoration: none;
+
+
         }
 
             a:hover {
@@ -99,7 +102,7 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-left" style="margin-left:10%;">
-                            <li>@Html.ActionLink("首页", "HomeIndex", "Home")</li>
+                            <li>@Html.ActionLink("爱心首页", "HomeIndex", "Home")</li>
                             <li>@Html.ActionLink("慈善义卖", "MarketIndex", "Market")</li>
                             @*<li>@Html.ActionLink("义拍卖会", "AuctionIndex", "Auction")</li>*@
 
@@ -162,10 +165,9 @@
                 <div class="siteMFooterABox">
                     <a class="site_hoverCss3A" href="../ContactUs/ContactBoardIndex" target="_self" rel="nofollow">留言板</a><span>|</span>
                     <a class="site_hoverCss3A" href="../ContactUs/ContactUsIndex" target="_self" rel="nofollow">联系我们</a><span>|</span>
-                    <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">服务协议</a><span>|</span>
-                    <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">项目发起规范</a><span>|</span>
-                    <a class="site_hoverCss3A" href="#" target="_blank" rel="nofollow">帮助中心</a><span>|</span>
-                    <a class="site_hoverCss3A" href="../loveBIZ/loveBIZIndex" target="_blank" rel="nofollow">合作专区</a>
+                    <a class="site_hoverCss3A" href="../Home/Fuxieyi" target="_self" rel="nofollow">服务协议</a><span>|</span>
+                    <a class="site_hoverCss3A" href="../NewNews/NewNewsIndex" target="_self" rel="nofollow">最新资讯</a><span>|</span>
+                    <a class="site_hoverCss3A" href="../loveBIZ/loveBIZIndex" target="_self" rel="nofollow">合作专区</a>
                 </div>
             </div>
         </div>
